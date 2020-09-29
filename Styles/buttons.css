@@ -26,11 +26,12 @@
   .btn-default:hover {
     background-color: var(--gray-dark-hover);
   }
-
+  .btn-toggle-switch {
+  }
   /* Contains image */
 
   .btn-text-icon {
-      
+
   }
   .btn-icon {
       
@@ -38,9 +39,25 @@
 
   /* Different forms */
   .btn-icon-round {
-      height: 40px;
-      width: 40px;
       border-radius: 50%;
+      text-align: center;
   }
 
   /*Sizes diff */
+  .btn-s {
+    height: 28px;
+    width: 28px;
+  }
+  .btn-m {
+    height: 32px;
+    width: 32px;
+  }
+  .btn-l {
+    height: 40px;
+    width: 40px;
+  }
+  .btn-xl {
+    height: 50px;
+    width: 50px;
+  }
+  /* TODO: Transparent button with blue text */
