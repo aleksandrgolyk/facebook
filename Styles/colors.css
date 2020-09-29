@@ -1,8 +1,9 @@
 .mainColors{
---body-background: #18191A;
---input: #3A3B3C;
---color-text-in-button: #A8ABAF;
---color-icon: #B8BBBF;
---color-active-icon: #2D88FF;
---color-text-users: #E2E4E9;
+--gray-background: #18191A;
+--gray-dark: #3A3B3C;
+--gray: #A8ABAF;
+--gray-light: #B8BBBF;
+--blue: #2D88FF;
+--gray-light-light: #E2E4E9;
+--green: #46AB5E;
 }
