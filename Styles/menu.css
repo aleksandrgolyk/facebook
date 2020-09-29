@@ -1,0 +1,36 @@
+
+.menu{
+    width: 360px;
+    background-color: #18191a;
+}
+.menu-item{
+    display: flex;
+    width: 344px;
+    height: 52px;
+    align-items: center;
+    margin-left: 8px;
+    margin-right: 8px;
+    padding-left: 8px;
+}
+.menu-item:hover{
+    background-color: #3a3b3c;
+    border-radius: 10px;
+}
+.menu-item img{
+    width: 36px;
+    height: 36px;
+    margin: 8px 12px 8px 0;
+}
+.menu-item .text {
+    color: #e4e6eb;
+    font-size: 15px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    display: block;
+}
+.ava img  {
+    border-radius: 100%;
+}
+ul{
+    padding-inline-start: 0px;
+}
