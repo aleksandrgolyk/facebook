@@ -1,0 +1,70 @@
+.card{
+    background-color: #242527;
+    color: white;
+    width: 350px;
+    height: 200px;
+    border-radius: 5px;
+}
+
+.info-section{
+	height: 70%;
+}
+
+.avatar{
+	float: left;
+    margin-top: 15px;
+    margin-left: 10px;
+}
+
+.avatar-image{
+	border-radius: 35px;
+}
+
+.info{
+	margin-left: 90px;
+	padding-top: 10px;
+}
+
+.button-section{
+	display: flex;
+    margin: 10px 15px 0px 15px;
+    justify-content: space-around;
+}
+
+.person-name{
+	font-weight: bold;
+    font-size: 20px;
+    color: white;
+}
+
+.friends{
+	margin-top: 10px;
+    font-size: 14px;
+}
+
+.friends-icon{
+	float: left;
+}
+
+.friends-text{
+	padding: 0px 10px 0px 50px;
+}
+
+.card-button{
+	border-radius: 5px 5px 5px 5px;
+	padding: 0;
+    border: 0;
+    height: 32px;
+	width: 47px;
+
+}
+
+.card-message-button{
+	
+	padding: 0;
+    border: 0;
+    border-radius: 5px 5px 5px 5px;
+    width: 155px;
+    height: 32px;
+
+}
