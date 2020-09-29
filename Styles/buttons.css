@@ -1,0 +1,63 @@
+@import "colors.css";
+/* Unfixed size, main */
+.btn {
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    padding: 12px 16px;
+    font-size: 16px;
+    cursor: pointer;
+    height: 100%;
+}
+
+  /* Colors (types) of button */
+
+  .btn-primary {
+    background-color: var(--blue);
+    color: var(--gray-light-light);
+  }
+  .btn-primary:hover {
+    background-color: var(--blue-hover);
+  }
+  .btn-default {
+    background-color: var(--gray-dark);
+    color: var(--gray-light);
+  }
+  .btn-default:hover {
+    background-color: var(--gray-dark-hover);
+  }
+  .btn-toggle-switch {
+  }
+  /* Contains image */
+
+  .btn-text-icon {
+
+  }
+  .btn-icon {
+      
+  }
+
+  /* Different forms */
+  .btn-icon-round {
+      border-radius: 50%;
+      text-align: center;
+  }
+
+  /*Sizes diff */
+  .btn-s {
+    height: 28px;
+    width: 28px;
+  }
+  .btn-m {
+    height: 32px;
+    width: 32px;
+  }
+  .btn-l {
+    height: 40px;
+    width: 40px;
+  }
+  .btn-xl {
+    height: 50px;
+    width: 50px;
+  }
+  /* TODO: Transparent button with blue text */

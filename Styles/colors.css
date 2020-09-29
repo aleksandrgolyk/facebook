@@ -1,9 +1,11 @@
-.mainColors{
+:root {
 --gray-background: #18191A;
 --gray-dark: #3A3B3C;
+--gray-dark-hover: #484A4B;
 --gray: #A8ABAF;
 --gray-light: #B8BBBF;
 --blue: #2D88FF;
+--blue-hover: #3F91FC;
 --gray-light-light: #E2E4E9;
 --green: #46AB5E;
 }
