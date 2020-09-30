@@ -1,27 +1,29 @@
+@import "Styles/colors.css"
+
 .input {
 width: 100%;
 outline: none;
 box-sizing: border-box;
 border: none;
-color: #A8ABAF;
+color: var(--gray-light-light);
 background-repeat: no-repeat;
-background-color: #3A3B3C;
+background-color:var(--gray-dark);
 cursor: pointer;
 text-align: left;
+line-height: 24px;
 }
 
 .input-WithIcon {
-  border-radius: 50px;
+  border-radius: 24px;
   max-width: 240px;
   font-size: 16px;
   background-image: url('../Images/searchicon.png');
-  background-position: 10px 10px;
-  padding: 16px 16px 8px 40px;
+  background-position: 10px 14px;
+  padding: 12px 8px 12px 40px;
 }
 .input-WithOutIcon {
-  border-radius: 50px;
+  border-radius: 24px;
   max-width: 400px;
   font-size: 16px;
-  background-position: 10px 10px;
-  padding: 16px 16px 8px;
+  padding: 12px 12px 12px;
 }
