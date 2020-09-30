@@ -1,29 +1,32 @@
-@import "Styles/colors.css"
+@import "colors.css";
 
 .input {
-width: 100%;
-outline: none;
-box-sizing: border-box;
-border: none;
-color: var(--gray-light-light);
-background-repeat: no-repeat;
-background-color:var(--gray-dark);
-cursor: pointer;
-text-align: left;
-line-height: 24px;
+    width: 100%;
+    outline: none;
+    box-sizing: border-box;
+    border: none;
+    color: var(--gray-light-light);
+    background-repeat: no-repeat;
+    background-color: var(--gray-dark);
+    cursor: pointer;
+    text-align: left;
+    line-height: 18px;
 }
 
 .input-WithIcon {
-  border-radius: 24px;
-  max-width: 240px;
-  font-size: 16px;
-  background-image: url('../Images/searchicon.png');
-  background-position: 10px 14px;
-  padding: 12px 8px 12px 40px;
+    max-height: 40px;
+    border-radius: 24px;
+    max-width: 240px;
+    font-size: 16px;
+    background-image: url('../Images/searchicon.png');
+    background-position: 10px 10px;
+    padding: 6px 8px 6px 40px;
 }
+
 .input-WithOutIcon {
-  border-radius: 24px;
-  max-width: 400px;
-  font-size: 16px;
-  padding: 12px 12px 12px;
+    max-height: 40px;
+    border-radius: 24px;
+    max-width: 400px;
+    font-size: 14px;
+    padding: 12px 12px 12px;
 }
