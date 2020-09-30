@@ -1,33 +1,27 @@
-#inputWithIcon input[type=text] {
-  border-radius: 50px;
-  width: 100%;
-  max-width: 240px;
-  border: none;
-  color: #A8ABAF;
-  box-sizing: border-box;
-  outline: none;
-  font-size: 16px;
-  background-image: url('searchicon.png'); 
-  background-position: 10px 10px; 
-  background-repeat: no-repeat;
-  padding: 16px 16px 9px 40px;
-  background-color: #3A3B3C;
-  cursor: pointer;
-  text-align: left;
+.input {
+width: 100%;
+outline: none;
+box-sizing: border-box;
+border: none;
+color: #A8ABAF;
+background-repeat: no-repeat;
+background-color: #3A3B3C;
+cursor: pointer;
+text-align: left;
 }
-#inputWithOutIcon input[type=text] {
+
+.input-WithIcon {
   border-radius: 50px;
-  width: 100%;
-  max-width: 400px;
-  border: none;
-  color: #A8ABAF;
-  box-sizing: border-box;
-  outline: none;
+  max-width: 240px;
   font-size: 16px;
-  background-position: 10px 10px; 
-  background-repeat: no-repeat;
-  padding: 16px 16px 9px;
-  background-color: #3A3B3C;
-  cursor: pointer;
-  text-align: left;
+  background-image: url('../Images/searchicon.png');
+  background-position: 10px 10px;
+  padding: 16px 16px 8px 40px;
+}
+.input-WithOutIcon {
+  border-radius: 50px;
+  max-width: 400px;
+  font-size: 16px;
+  background-position: 10px 10px;
+  padding: 16px 16px 8px;
 }
