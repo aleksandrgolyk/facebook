@@ -1,19 +1,24 @@
+@import "colors.css";
+
+body{
+    background-color: var(--gray-background);
+}
+
 .card{
-    background-color: #242527;
-    color: white;
-    width: 350px;
+    background-color: var(--card-background);
+    color: var(--gray-light);
+    width: fit-content;
     height: 200px;
+    border: 1px solid rgba(255,255,255,0.2);
+
     border-radius: 5px;
+    padding: 10px 0 10px 0;
 }
 
 .info-section{
 	height: 70%;
-}
-
-.avatar{
-	float: left;
-    margin-top: 15px;
-    margin-left: 10px;
+    padding: 0 10px 0 10px;
+    display: flex;
 }
 
 .avatar-image{
@@ -21,8 +26,9 @@
 }
 
 .info{
-	margin-left: 90px;
-	padding-top: 10px;
+    display: flex;
+    padding-left: 5px;
+    flex-direction: column;
 }
 
 .button-section{
@@ -37,8 +43,14 @@
     color: white;
 }
 
+.friends-info{
+    padding-top: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
 .friends{
-	margin-top: 10px;
+    padding-top: 2px;
     font-size: 14px;
 }
 
@@ -48,6 +60,7 @@
 
 .friends-text{
 	padding: 0px 10px 0px 50px;
+    max-width: 250px;
 }
 
 .card-button{
