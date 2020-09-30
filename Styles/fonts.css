@@ -3,6 +3,11 @@ body {
     font-family: 'Poppins', sans-serif; 
     font-size: 15px; 
 }
+h1, h2, h3, h4{
+    margin: 0;
+}
+
+
 .fs-mainTitle {
     font-size: 17px;
 }
@@ -18,36 +23,24 @@ body {
 .fs-caption2 {
     font-size: 12px;
 }
-.text-primary {
+.fw-600{
     font-weight: 600;
+}
+.fw-400{
+
+    font-weight: 400;
+}
+.fw-200{
+
+    font-weight: 200;
+}
+.text-primary {
     color: var(--text-color-primary);
 }
 .text-secondary {
-    font-weight: 400;
     color: var(--text-color-secondary);
 }
 .text-disabled {
-    font-weight: 200;
     color: var(--text-color-secondary);
-}
-
-h1, .h1{
-  
-}
-/*Contacts, B-th day*/
-h2, .h2{
-    font-size: 17px;
-    color: var(--gray-light);
-    padding-top: 20px;
-    padding-bottom: 4px;
-}
-h3, .h3{
-    
-}
-h4, .h4{
-   
-}
-h5, .h5{
-    
 }
 
