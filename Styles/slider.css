@@ -132,19 +132,6 @@ a:active {
     }
 }
 
-/*@media (max-width: 1100px) {*/
-/*    .container {*/
-/*        max-width: 690px*/
-/*    }*/
-
-/*    .slider-item {*/
-/*        width: calc((100% / 6) - 4px);*/
-/*    }*/
-
-/*    .item-five, .item-six {*/
-/*        display: block;*/
-/*    }*/
-/*}*/
 @media (max-width: 700px) {
     .container {
         max-width: 400px
