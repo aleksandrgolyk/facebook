@@ -82,7 +82,7 @@ a:active {
     top: 12px;
     left: 12px;
     border-radius: 50%;
-    border: 4px solid #2D88FF;
+    border: 4px solid var(--blue-hover);
 }
 
 .slider-item__title {
@@ -102,6 +102,10 @@ a:active {
     padding: 15px;
     background-color: #3e4042;
     border-radius: 50%;
+    color: var(--gray);
+}
+.slider-arrow:hover {
+    background-color: var(--gray-dark-hover);
 }
 
 @media (max-width: 1300px) {
