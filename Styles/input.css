@@ -1,11 +1,13 @@
+@import "Styles/colors.css"
+
 .input {
 width: 100%;
 outline: none;
 box-sizing: border-box;
 border: none;
-color: #E2E4E9;
+color: var(--gray-light-light);
 background-repeat: no-repeat;
-background-color: #3A3B3C;
+background-color:var(--gray-dark);
 cursor: pointer;
 text-align: left;
 line-height: 24px;
