@@ -1,32 +1,32 @@
 @import "colors.css";
-body{
+body {
     font-family: 'Poppins', sans-serif; 
     font-size: 15px; 
 }
-.mainTitle{
+.fs-mainTitle {
     font-size: 17px;
 }
-.title{
+.fs-title {
     font-size: 15px;
 }
-.bodyMain{
+.fs-body1 {
     font-size: 15px;    
 }
-.captionSmall{
+.fs-caption1 {
     font-size: 13px;
 }
-.captionExtraSmall{
+.fs-caption2 {
     font-size: 12px;
 }
-.primary{
+.text-primary {
     font-weight: 600;
     color: var(--text-color-primary);
 }
-.secondary{
+.text-secondary {
     font-weight: 400;
     color: var(--text-color-secondary);
 }
-.disabled{
+.text-disabled {
     font-weight: 200;
     color: var(--text-color-secondary);
 }
