@@ -1,0 +1,53 @@
+@import "colors.css";
+body{
+    font-family: 'Poppins', sans-serif; 
+    font-size: 15px; 
+}
+.mainTitle{
+    font-size: 17px;
+}
+.title{
+    font-size: 15px;
+}
+.bodyMain{
+    font-size: 15px;    
+}
+.captionSmall{
+    font-size: 13px;
+}
+.captionExtraSmall{
+    font-size: 12px;
+}
+.primary{
+    font-weight: 600;
+    color: var(--text-color-primary);
+}
+.secondary{
+    font-weight: 400;
+    color: var(--text-color-secondary);
+}
+.disabled{
+    font-weight: 200;
+    color: var(--text-color-secondary);
+}
+
+h1, .h1{
+  
+}
+/*Contacts, B-th day*/
+h2, .h2{
+    font-size: 17px;
+    color: var(--gray-light);
+    padding-top: 20px;
+    padding-bottom: 4px;
+}
+h3, .h3{
+    
+}
+h4, .h4{
+   
+}
+h5, .h5{
+    
+}
+
