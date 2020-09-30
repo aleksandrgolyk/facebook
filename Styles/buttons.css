@@ -4,10 +4,13 @@
     border: none;
     border-radius: 8px;
     font-weight: bold;
-    padding: 12px 16px;
+    padding: 12px 12px;
     font-size: 16px;
     cursor: pointer;
-    height: 100%;
+}
+.btn-fixed {
+  width: 124px;
+  height: 36px;
 }
 
   /* Colors (types) of button */
@@ -26,8 +29,11 @@
   .btn-default:hover {
     background-color: var(--gray-dark-hover);
   }
-  .btn-toggle-switch {
+  .btn-switch {
+  position: relative;
+  display: inline-block;
   }
+  
   /* Contains image */
 
   .btn-text-icon {
@@ -41,18 +47,31 @@
   .btn-icon-round {
       border-radius: 50%;
       text-align: center;
+      align-items: center;
+      height: 100%;
+      width: 100%;  
+  }
+  .btn-icon-square {
+    padding-top: 4px;
+    padding-bottom: 4px;
+  }
+  .btn-icon-rectangle {
+   
+    padding: 4px 16px;  
+    text-align: center;
+    align-items: center;
   }
 
   /*Sizes diff */
-  .btn-s {
+  .btn-sm {
     height: 28px;
     width: 28px;
   }
-  .btn-m {
+  .btn-md {
     height: 32px;
     width: 32px;
   }
-  .btn-l {
+  .btn-lg {
     height: 40px;
     width: 40px;
   }
@@ -61,3 +80,16 @@
     width: 50px;
   }
   /* TODO: Transparent button with blue text */
+  .btn-transparent {
+    background-color: transparent;
+    color: var(--blue);
+    font-weight: inherit;
+  }
+  .btn-transparent-invisible {
+    color: transparent;
+  }
+  .btn-transparent:hover {
+    background-color: var(--gray-dark);
+    color: var(--blue);
+    font-weight: inherit;
+  }
