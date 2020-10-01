@@ -39,8 +39,8 @@ h1, h2, h3, h4{
     color: var(--text-color-secondary);
 }
 .text-white-color {
-    color: var(--text-color-secondary);
+    color: var( --text-white-color);
 }
 .text-blue-color{
-    color: var(); 
+    color: var( --text-blue-color); 
 }
