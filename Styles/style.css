@@ -6,7 +6,7 @@
 @import "menu.css";
 @import "menu.css";
 @import "input.css";
-
+@import "../avatar/avatar.css";
 
 /*===============General========*/
 * {
@@ -14,7 +14,9 @@
 }
 
 body {
-    background-color: #242526;
+    background-color: #18191A;
+    overflow: hidden;
+
 }
 
 a {
@@ -37,12 +39,16 @@ a:active {
     height: 60px;
     z-index: 3;
     background-color: #242526;
-    padding: 10px;
-    border-bottom: 1px solid var(--gray-light);
+    padding: 10px 16px;
+    border-bottom: 1px outset var(--gray-light);
+    outline: white;
 }
 
 .logo {
     margin-right: 12px;
+}
+.logo img  {
+    width: 40px;
 }
 
 .aside-header__left {
@@ -76,14 +82,18 @@ a:active {
 /*==============body=============*/
 .body-wrapper {
     padding-top: 90px;
+    height: 100vh;
     display: flex;
     justify-content: space-between;
 }
-
+.aside-left, .aside-right, .content{
+    /*overflow: auto;*/
+    overflow-y: scroll;
+}
 
 /*==============body=============*/
 
-/*===============sidebar-left============*/
+/*===============aside-left============*/
 .aside-left, .aside-right {
     min-width: 360px;
     background-color: blue;
@@ -115,7 +125,7 @@ a:active {
     justify-content: space-between;
 }
 
-.slider-item {
+.slider-item    {
     position: relative;
     width: calc((100% / 6) - 4px);
     /*padding: 0 4px;*/
@@ -189,6 +199,7 @@ a:active {
     background-color: #3e4042;
     border-radius: 50%;
     color: var(--gray);
+    cursor: pointer;
 }
 
 .slider-arrow:hover {
