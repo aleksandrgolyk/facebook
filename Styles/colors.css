@@ -19,8 +19,8 @@
 
     --primary: #2D88FF; /*active-btn*/
     --primary-darken1: #4294FF; /* hover on btn with --primary bgc */
-    --primary-darken2: rgba(45, 136, 255, 0.2); /*transparent primary for btn*/
-    --primary-darken3: #3C4D63; /*active-btn-bgc*/
+    --primary-darken2: rgba(45, 136, 255, 0.2); /*transparent-primary btn*/
+    --primary-darken3: #3C4D63; /* hover transparent-primary btn*/
 
     --dark: #18191A; /*main background*/
     --dark-darken1: #242526; /*background block, card, header        --card-bgc       */

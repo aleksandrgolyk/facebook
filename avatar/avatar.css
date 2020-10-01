@@ -31,24 +31,13 @@ body{
     width: 2.5rem;
     height: 2.5rem;
 }
-
+.avatar > img{
+    border-radius: 50%;
+    transition: opacity .15s ease;
+    max-width: 100%;
+    max-height: 100%;
+}
 /*   Sizes   */
-.avatar.avatar-xs{
-    width: 1rem;
-    height: 1rem;
-}
-.avatar.avatar-sm{
-    width: 2rem;
-    height: 2rem;
-}
-.avatar.avatar-md{
-    width: 2.25rem;
-    height: 2.25rem;
-}
-.avatar.avatar-lg{
-    width: 2.5rem;
-    height: 2.5rem;
-}
 .avatar.avatar-xl{
     width: 6rem;
     height: 6rem;
@@ -56,12 +45,6 @@ body{
 
 
 /*   Hover effect   */
-.avatar > img{
-    border-radius: 50%;
-    transition: opacity .1s ease;
-    max-width: 100%;
-    max-height: 100%;
-}
 .avatar.hover {
     background-color: #fff;
 }
@@ -95,14 +78,14 @@ body{
     z-index: 99;
     bottom: 0;
     right: 0;
-    background-color: var(--succes-shade1);
+    background-color: var(--success-darken1);
     border-radius: 50%;
     height: .75rem;
     width: .75rem;
     border: 2px solid var(--gray-background);
 }
 
-.avatar.avatar-xl.status-active::after{
+.avatar.wh-96.status-active::after{
     bottom: 3%;
     right: 7%;
     height: 1rem;
@@ -118,14 +101,14 @@ body{
     bottom: 0;
     right: 0;
     background-color: var(--dark);
-    color: var(--succes);
+    color: var(--success);
     border-radius: 1rem;
     font-size: .625rem;
     border: 2px solid var(--dark);
 }
 .avatar.status-offline > div > span{
     padding: 0 .1rem;
-    background-color: var(--succes-shade2);
+    background-color: var(--success-shade2);
     border-radius: 1rem;
     font-size: .625rem;
 }
