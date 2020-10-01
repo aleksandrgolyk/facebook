@@ -35,8 +35,8 @@
 
     --notification: #F23E5C;
 
-    --succes: #58C472; /*text, icon*/
-    --succes-shade1: #46AB5E; /*online bgc*/
-    --succes-shade2: rgba(0,255,0,.15); /*offline bgc*/
+    --success: #58C472; /*text, icon*/
+    --success-shade1: #46AB5E; /*online bgc*/
+    --success-shade2: rgba(0,255,0,.15); /*offline bgc*/
 
 }
