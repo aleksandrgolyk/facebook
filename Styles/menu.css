@@ -160,19 +160,3 @@ padding-bottom: 4px;
     padding-top: 8px;
     padding-bottom: 8px;
 }
-.add_chats{
-    align-items: center;
-    border-radius: 50%;
-    width: 36px;
-    background-color: var (--gray-dark);
-    position: relative;
-}
-.add_chat_plus{
-    position: absolute;
-    background-image: url(/rsrc.php/v3/yk/r/K4iCEdlymMZ.png);
-    background-size: 21px 21px;
-    background-repeat: no-repeat;
-    display: inline-block;
-    height: 20px;
-    width: 20px;
-}
