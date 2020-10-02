@@ -7,8 +7,8 @@
 @import "menu.css";
 @import "input.css";
 @import "../avatar/avatar.css";
-
-/*===============General========*/
+@import "tabs.css";
+/*===============General start========*/
 * {
     box-sizing: border-box;
 }
@@ -17,6 +17,10 @@ body {
     background-color: #18191A;
     overflow: hidden;
 
+}
+
+::-webkit-scrollbar {
+    display: none;
 }
 
 a {
@@ -30,7 +34,9 @@ a:active {
     color: #fff;
 }
 
-/*===============General========*/
+/*===============General end========*/
+
+/*=============header start============*/
 .header {
     display: flex;
     justify-content: space-between;
@@ -39,7 +45,7 @@ a:active {
     height: 60px;
     z-index: 3;
     background-color: #242526;
-    padding: 10px 16px;
+    padding: 10px 8px 16px;
     border-bottom: 1px outset var(--gray-light);
     outline: white;
 }
@@ -47,72 +53,82 @@ a:active {
 .logo {
     margin-right: 12px;
 }
-.logo img  {
+
+.logo img {
     width: 40px;
 }
 
-.aside-header__left {
+.aside-header__left, .aside-header__right {
     display: flex;
-
+    color: #fff;
 }
-
-.header-content {
-    display: inline-flex;
+.aside-header__right{
     justify-content: space-between;
+    padding-right: 8px;
+    padding-left: 4px;
 }
-
-.header-content__item {
-    display: block;
-    background-color: #fff;
-    width: calc(100% / 5);
-
-}
-
-.aside-header__right {
-    display: flex;
-
-}
-
-/*=============header============*/
+    /*=============header end============*/
 
 
-/*=============header============*/
-
-
-/*==============body=============*/
+/*==============body start=============*/
 .body-wrapper {
     padding-top: 90px;
+    padding-right: 8px;
+    padding-left: 16px;
     height: 100vh;
     display: flex;
     justify-content: space-between;
+
 }
-.aside-left, .aside-right, .content{
+
+.aside-left, .aside-right, .content {
     /*overflow: auto;*/
     overflow-y: scroll;
 }
 
-/*==============body=============*/
+/*==============body end=============*/
 
-/*===============aside-left============*/
-.aside-left, .aside-right {
+/*===============aside-left start============*/
+.aside-left, .aside-right, .aside-header__left, .aside-header__right {
     min-width: 360px;
+}
+
+.aside-left, .aside-right {
     background-color: blue;
-    display: block;
 }
 
 .content {
     display: block;
     flex: 1;
+    overflow: scroll;
+}
+
+.content::-webkit-scrollbar {
+    width: 10px;
+}
+
+.content::-webkit-scrollbar {
+    width: 12px;
+}
+
+.content::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+}
+
+.content::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
 }
 
 .aside-left ul, .aside-right ul {
     width: 100%;
 }
 
-/*===============aside-left============*/
+/*===============aside-left end============*/
 
 
-/*=====================content ===============*/
+/*=====================content start===============*/
 .container {
     max-width: 680px;
     margin: 0 auto;
@@ -125,7 +141,7 @@ a:active {
     justify-content: space-between;
 }
 
-.slider-item    {
+.slider-item {
     position: relative;
     width: calc((100% / 6) - 4px);
     /*padding: 0 4px;*/
@@ -234,7 +250,8 @@ a:active {
         padding: 0;
 
     }
-    .input-WithIcon::placeholder{
+
+    .input-WithIcon::placeholder {
         opacity: 0;
     }
 }
@@ -330,4 +347,4 @@ a:active {
 
 }
 
-/*=====================content ===============*/
+/*=====================content end===============*/
