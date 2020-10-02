@@ -5,15 +5,15 @@
     outline: none;
     box-sizing: border-box;
     border: none;
-    color: var(--gray-light-light);
+    color: var(--text-primary-darken2);
     background-repeat: no-repeat;
-    background-color: var(--gray-dark);
+    background-color: var(--dark-darken2);
     cursor: pointer;
     text-align: left;
     line-height: 18px;
 }
 
-.input-WithIcon {
+.input-With-Icon {
     max-height: 40px;
     border-radius: 24px;
     max-width: 240px;
@@ -23,11 +23,23 @@
     padding: 6px 8px 6px 40px;
 }
 
-.input-WithOutIcon {
+.input-WithOut-Icon {
     max-height: 40px;
     border-radius: 24px;
     max-width: 400px;
     font-size: 14px;
     padding: 12px 12px 12px;
+}
+
+.input-Under-Post {
+max-width: 410px;
+max-height: 40px;
+padding: 8px 12px 8px 12px;
+font-size: 14px;
 
 }
+
+<i class="far fa-smile"></i>
+<i class="fas fa-camera"></i>
+<i class="fas fa-gifts"></i>
+<i class="far fa-sticky-note"></i>

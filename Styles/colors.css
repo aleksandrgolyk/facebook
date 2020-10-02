@@ -18,25 +18,28 @@
     --blue-link: #216FDB; /*probably we don't need that*/
 
     --primary: #2D88FF; /*active-btn*/
-    --primary-shade1: #4294FF; /* hover on btn with --primary bgc */
-    --primary-shade2: rgba(45, 136, 255, 0.2); /*transparent primary for btn*/
-    --primary-shade3: #3C4D63; /*active-btn-bgc*/
+    --primary-darken1: #4294FF; /* hover on btn with --primary bgc */
+    --primary-darken2: rgba(45, 136, 255, 0.2); /*transparent-primary btn*/
+    --primary-darken3: #3C4D63; /* hover transparent-primary btn*/
 
     --dark: #18191A; /*main background*/
-    --dark-shade1: #242526; /*background block, card, header        --card-bgc       */
-    --dark-shade2: #3A3B3C; /*background btn, input                 --gray-dark      */
-    --dark-shade3: #4E4F50; /*hover input, btn, menu-item*/
-    --dark-shade4: #A8A8A9; /*popup bgc                             --gray           */
-    --dark-shade5: rgba(0,0,0,.4); /* cross btn bgc (People You May Know)*/
+    --dark-darken1: #242526; /*background block, card, header        --card-bgc       */
+    --dark-darken2: #3A3B3C; /*background btn, input                 --gray-dark      */
+    --dark-darken3: #4E4F50; /*hover input, btn, menu-item*/
+    --dark-darken4: #A8A8A9; /*popup bgc                             --gray           */
+    --dark-darken5: rgba(0,0,0,.4); /* cross btn bgc (People You May Know)*/
 
     --text-primary: #fff;
-    --text-primary-shade1: #E4E6E8; /*text-primary*/
-    --text-primary-shade2: #B0B3B8; /*text-secondary                --gray, --gray-light          */
+    --text-primary-darken1: #E4E6E8; /*text-primary*/
+    --text-primary-darken2: #B0B3B8; /*text-secondary                --gray, --gray-light          */
+    --text-blue-color: #2e89ff;
+    --text-white-color: #fff;
 
     --notification: #F23E5C;
 
-    --succes: #58C472; /*text, icon*/
-    --succes-shade1: #46AB5E; /*online bgc*/
-    --succes-shade2: rgba(0,255,0,.15); /*offline bgc*/
+    --success: #58C472; /*text, icon*/
+    --success-darken1: #46AB5E; /*online bgc*/
+    --success-darken2: rgba(0,255,0,.15); /*offline bgc*/
+
 
 }
