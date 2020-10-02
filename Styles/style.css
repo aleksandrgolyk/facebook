@@ -7,6 +7,7 @@
 @import "input.css";
 @import "../avatar/avatar.css";
 @import "tabs.css";
+@import "fonts.css";
 /*===============General start========*/
 * {
     box-sizing: border-box;
@@ -44,7 +45,7 @@ a:active {
     height: 60px;
     z-index: 3;
     background-color: #242526;
-    padding: 10px 8px 16px;
+    padding: 10px 8px 8px;
     border-bottom: 1px outset var(--gray-light);
     outline: white;
 }
@@ -61,19 +62,21 @@ a:active {
     display: flex;
     color: #fff;
 }
-.aside-header__right{
+
+.aside-header__right {
     justify-content: space-between;
     padding-right: 8px;
     padding-left: 4px;
 }
-    /*=============header end============*/
+
+/*=============header end============*/
 
 
 /*==============body start=============*/
 .body-wrapper {
     padding-top: 90px;
     padding-right: 8px;
-    padding-left: 16px;
+    padding-left: 8px;
     height: 100vh;
     display: flex;
     justify-content: space-between;
@@ -83,17 +86,19 @@ a:active {
 .aside-left, .aside-right, .content {
     /*overflow: auto;*/
     overflow-y: scroll;
+
 }
 
 /*==============body end=============*/
 
 /*===============aside-left start============*/
 .aside-left, .aside-right, .aside-header__left, .aside-header__right {
-    min-width: 360px;
+    width: 360px;
 }
 
 .aside-left, .aside-right {
-    background-color: blue;
+    padding-left: 4px;
+    padding-right: 4px;
 }
 
 .content {
@@ -135,7 +140,7 @@ a:active {
 
 .slider {
     position: relative;
-    margin: 0 -4px;
+    /*margin: 0 -4px;*/
     display: flex;
     justify-content: space-between;
 }
@@ -221,13 +226,17 @@ a:active {
     background-color: var(--gray-dark-hover);
 }
 
-@media (max-width: 1420px) {
+.arrow {
+    display: flex;
+}
+
+@media (max-width: 1470px) {
     .container {
         max-width: 600px;
     }
 
     .aside-left, .aside-right {
-        min-width: 280px;
+        width: 280px;
     }
 
     .slider-item {
@@ -237,31 +246,45 @@ a:active {
     .item-six {
         display: none;
     }
+    .friend-invite{
+        flex-direction: column;
+    }
 }
 
-@media (max-width: 1190px) {
+@media (max-width: 1220px) {
     .aside-left, .aside-right {
-        min-width: 200px;
+        width: 240px;
     }
 
-    .input-WithIcon {
+    .input-with-icon {
         max-width: 40px;
         padding: 0;
 
     }
 
-    .input-WithIcon::placeholder {
+    .input-with-icon::placeholder {
         opacity: 0;
+    }
+
+    .advertising-items-inform {
+        padding-left: 6px;
+    }
+
+    .advertising-items-item img {
+        width: 120px;
     }
 }
 
-@media (max-width: 1040px) {
+@media (max-width: 1140px) {
     .container {
-        max-width: 550px
+        max-width: 590px
     }
 
     .aside-left {
         display: none;
+    }
+
+    .aside-right {
     }
 
     .slider-item {
@@ -291,9 +314,19 @@ a:active {
     }
 }
 
-@media (max-width: 700px) {
+@media (max-width: 740px) {
+    .body-wrapper {
+        padding-right: 4px;
+        padding-left: 4px;
+    }
+
     .container {
         max-width: 100%
+    }
+
+    .aside-left, .aside-right {
+        padding-left: 0;
+        padding-right: 0;
     }
 
     .slider-item {
@@ -329,6 +362,7 @@ a:active {
         right: 0;
         padding: 15px;
     }
+
 }
 
 @media (max-width: 450px) {

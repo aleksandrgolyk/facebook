@@ -13,7 +13,7 @@
     line-height: 18px;
 }
 
-.input-With-Icon {
+.input-with-icon {
     max-height: 40px;
     border-radius: 24px;
     max-width: 240px;
@@ -32,14 +32,9 @@
 }
 
 .input-Under-Post {
-max-width: 410px;
-max-height: 40px;
-padding: 8px 12px 8px 12px;
-font-size: 14px;
+    max-width: 410px;
+    max-height: 40px;
+    padding: 8px 12px 8px 12px;
+    font-size: 14px;
 
 }
-
-<i class="far fa-smile"></i>
-<i class="fas fa-camera"></i>
-<i class="fas fa-gifts"></i>
-<i class="far fa-sticky-note"></i>
