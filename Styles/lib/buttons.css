@@ -9,8 +9,8 @@
   overflow: hidden;
   text-overflow: ellipsis;
 }
-.btn:hover {
-  transition: background-color 1s;
+.btn {
+  transition: background-color 1s ease;
 }
 
 /* Colors (types) of button */
@@ -19,23 +19,23 @@
   background-color: var(--primary);
   color: var(--text-primary-darken1);
 }
-.btn-primary:hover {
-  background-color: var(--primary-darken1);
-}
+/*.btn-primary:hover {*/
+/*  background-color: var(--primary-darken1);*/
+/*}*/
 .btn-secondary {
   background-color: var(--dark-darken2);
   color: var(--text-primary-darken2);
 }
-.btn-secondary:hover {
+.btn-secondary.hov {
   background-color: var(--dark-darken3);
 }
 .btn-primary-transparent {
-  background-color: var(--primary-shade2);
+  background-color: var(--primary-darken2);
   color: var(--primary);
 }
-.btn-primary-transparent:hover {
-  background-color: var(--primary-shade3);
-}
+/*.btn-primary-transparent:hover {*/
+/*  background-color: var(--primary-darken2);*/
+/*}*/
 .btn-transparent {
   background-color: transparent;
   color: var(--primary);

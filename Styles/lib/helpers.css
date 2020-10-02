@@ -1,15 +1,18 @@
-
-.hover:hover:after{
+/*    hover (need pos-rel)     */
+.hover:after{
     content:"";
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(255, 255, 255, 0.08);
+    background-color: rgba(255, 255, 255, 0.1);
     z-index: 99;
+    opacity: 0;
 }
-
+.hover:hover:after{
+    opacity: 1;
+}
 .rounded-6.hover:after {
     border-radius: 6px;
 }
@@ -27,16 +30,26 @@
 }
 
 
-
-.transition{
-    transition: all .2s ease-out;
+.transition:after{
+    transition: all .2s ease-out !important;
 }
 
 
+/*    flex      */
 .d-flex{
- display: flex;
+    display: flex;
+}
+.space-between{
+    justify-content: space-between;
 }
 
+.justify-center{
+    /*need for items with icons/avatars with text*/
+    justify-content: center;
+}
+
+
+/*      position      */
 .pos-abs{
     position: absolute;
 }

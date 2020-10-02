@@ -29,8 +29,8 @@ a {
 }
 
 .menu_items {
-    padding: 0px;
-    margin: 0px;
+    padding: 0;
+    margin: 0;
 
 }
 
@@ -42,10 +42,10 @@ a {
 
 }
 
-.menu_items__item:hover {
-    background-color: var(--gray-dark);
-    border-radius: 10px;
-}
+/*.menu_items__item:hover {*/
+/*    background-color: var(--gray-dark);*/
+/*    border-radius: 10px;*/
+/*}*/
 
 .menu_links {
     margin-bottom: 300px;
@@ -213,10 +213,10 @@ a {
     align-items: center;
 }
 
-.contact_items__item:hover {
-    background-color: var(--gray-dark);
-    border-radius: 10px;
-}
+/*.contact_items__item:hover {*/
+/*    background-color: var(--gray-dark);*/
+/*    border-radius: 10px;*/
+/*}*/
 
 .group-chats-wrapper {
     padding-top: 20px;
