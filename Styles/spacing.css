@@ -1,0 +1,120 @@
+/* Vertical padding: top + bottom */
+
+.py-4 {
+  padding-top: 4px !important;
+  padding-bottom: 4px !important;
+}
+.py-6 {
+  padding-top: 6px !important;
+  padding-bottom: 6px !important;
+}
+.py-8 {
+  padding-top: 8px !important;
+  padding-bottom: 8px !important;
+}
+.py-12 {
+  padding-top: 12px !important;
+  padding-bottom: 12px !important;
+}
+.py-16 {
+  padding-top: 16px !important;
+  padding-bottom: 16px !important;
+}
+.py-20 {
+  padding-top: 20px !important;
+  padding-bottom: 20px !important;
+}
+.py-24 {
+  padding-top: 24px !important;
+  padding-bottom: 24px !important;
+}
+
+/* Horisontal padding: left + right*/
+
+.px-4 {
+  padding-left: 4px !important;
+  padding-right: 4px !important;
+}
+.px-6 {
+  padding-left: 6px !important;
+  padding-right: 6px !important;
+}
+.px-8 {
+  padding-left: 8px !important;
+  padding-right: 8px !important;
+}
+.px-12 {
+  padding-left: 12px !important;
+  padding-right: 12px !important;
+}
+.px-16 {
+  padding-left: 16px !important;
+  padding-right: 16px !important;
+}
+.px-20 {
+  padding-left: 20px !important;
+  padding-right: 20px !important;
+}
+.px-24 {
+  padding-left: 24px !important;
+  padding-right: 24px !important;
+}
+
+/* Margin, flow to bottom*/
+
+.mb-4 {
+  margin-bottom: 4px !important;
+}
+.mb-6 {
+  margin-bottom: 6px !important;
+}
+.mb-8 {
+  margin-bottom: 8px !important;
+}
+.mb-12 {
+  margin-bottom: 12px !important;
+}
+.mb-16 {
+  margin-bottom: 16px !important;
+}
+.mb-20 {
+  margin-bottom: 20px !important;
+}
+.mb-24 {
+  margin-bottom: 24px !important;
+}
+
+/* Border radius */
+
+.rounded-6 {
+  border-radius: 6px;
+}
+.rounded-8 {
+  border-radius: 8px;
+}
+.rounded-20 {
+  border-radius: 20px;
+}
+.rounded-50 {
+  border-radius: 50px;
+}
+.rounded-circle {
+  border-radius: 50%;
+}
+
+/* Line heights */
+
+.lh-0 {
+  line-height: 20px !important;
+  /* for font size 12 and 13 */
+}
+.lh-1 {
+  line-height: 24px !important;
+  /* for font size 15 */
+}
+.lh-2 {
+  line-height: 28px !important;
+  /* for font size 17 */
+}
+
+/* TODO: Letterspacing - optional*/

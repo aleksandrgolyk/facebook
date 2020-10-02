@@ -12,7 +12,7 @@
 			height: 40px;
 			width: 100%;
 			position: fixed;
-			background-color: white;
+			background-color: var(--gray-background);
 		}
 	</style>
 </head>
@@ -22,13 +22,23 @@
 				ds
 			</div>
 			<div class="header-block">
-				<ul class="tabs-nav">
-                    <li class="active"><a href="#" class="active"><i class="fa fa-home" aria-hidden="true"></i></a></li>
-                    <li><a href="#"><i class="fa fa-address-book" aria-hidden="true"></i></a></li>
-                    <li><a href="#"><i class="fa fa-television" aria-hidden="true"></i></a></li>
-                    <li><a href="#"><i class="fa fa-users" aria-hidden="true"></i></a></li>
-                    <li><a href="#"><i class="fa fa-gamepad" aria-hidden="true"></i></a></li>
-                </ul>                
+				<nav class="tabs-nav">
+					<div class="active"><a href="#" class="tabs-nav-item">
+						<i class="fa fa-home" aria-hidden="true"></i>
+					</a></div>
+					<a href="#" class="tabs-nav-item hover">
+						<i class="fa fa-address-book" aria-hidden="true"><span class="notif-badge fs-caption2">3</span></i>
+					</a>
+					<a href="#" class="tabs-nav-item hover">
+						<i class="fa fa-television" aria-hidden="true"><span class="notif-badge fs-caption2">9+</span></i>
+					</a>
+					<a href="#" class="tabs-nav-item hover">
+						<i class="fa fa-users" aria-hidden="true"></i>
+					</a>
+					<a href="#" class="tabs-nav-item hover">
+						<i class="fa fa-gamepad" aria-hidden="true"></i>
+					</a>
+				</nav>
 			</div>
 			<div class="header-block">
 				ds

@@ -1,94 +1,140 @@
 @import "colors.css";
-/* Unfixed size, main */
-.btn {
-    border: none;
-    border-radius: 8px;
-    font-weight: bold;
-    padding: 12px 12px;
-    font-size: 16px;
-    cursor: pointer;
-}
-.btn-fixed {
-  width: 124px;
-  height: 36px;
-}
-  /* Colors (types) of button */
 
-  .btn-primary {
-    background-color: var(--blue);
-    color: var(--gray-light-light);
-  }
-  .btn-primary:hover {
-    background-color: var(--blue-hover);
-  }
-  .btn-default {
-    background-color: var(--gray-dark);
-    color: var(--gray-light);
-  }
-  .btn-default:hover {
-    background-color: var(--gray-dark-hover);
-  }
-  .btn-switch {
+.btn {
+  border: none;
+  cursor: pointer;
+  text-align: center;
+  align-items: center;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.btn:hover {
+  transition: background-color 1s;
+}
+
+/* Colors (types) of button */
+
+.btn-primary {
+  background-color: var(--primary);
+  color: var(--text-primary-darken1);
+}
+.btn-primary:hover {
+  background-color: var(--primary-darken1);
+}
+.btn-secondary {
+  background-color: var(--dark-darken2);
+  color: var(--text-primary-darken2);
+}
+.btn-secondary:hover {
+  background-color: var(--dark-darken3);
+}
+.btn-primary-transparent {
+  background-color: var(--primary-shade2);
+  color: var(--primary);
+}
+.btn-primary-transparent:hover {
+  background-color: var(--primary-shade3);
+}
+.btn-transparent {
+  background-color: transparent;
+  color: var(--primary);
+  font-weight: inherit;
+}
+.btn-transparent:hover {
+  background-color: var(--dark-darken2);
+  color: var(--primary);
+}
+.btn-invisible {
+  display: none;
+}
+/* Accept this to parent of invisible button + rename
+
+ .parent-show:hover + .btn-invisible {
+  display: block;
+  color: var(--primary);
+} */
+
+/* Different forms:
+  round: .rounded-circle;
+  square: py-4
+  rectangle: py-4, px-12
+  */
+
+/*Sizes diff */
+
+.btn-sm {
+  height: 28px;
+  width: 28px;
+}
+.btn-md {
+  height: 32px;
+  width: 32px;
+}
+.btn-lg {
+  height: 40px;
+  width: 40px;
+}
+.btn-xl {
+  height: 50px;
+  width: 50px;
+}
+
+/* Button text align */
+
+.btn-text-left {
+  text-align: left;
+}
+/* Optional, default state */
+.btn-text-center {
+  text-align: center;
+}
+
+/* Toggle switch */
+
+.switch {
   position: relative;
   display: inline-block;
-  }
-  
-  /* Contains image */
-
-  .btn-text-icon {
-
-  }
-  .btn-icon {
-      
-  }
-
-  /* Different forms */
-  .btn-icon-round {
-      border-radius: 50%;
-      text-align: center;
-      align-items: center;
-      height: 100%;
-      width: 100%;  
-  }
-  .btn-icon-square {
-    padding-top: 4px;
-    padding-bottom: 4px;
-  }
-  .btn-icon-rectangle {
-   
-    padding: 4px 16px;  
-    text-align: center;
-    align-items: center;
-  }
-
-  /*Sizes diff */
-  .btn-sm {
-    height: 28px;
-    width: 28px;
-  }
-  .btn-md {
-    height: 32px;
-    width: 32px;
-  }
-  .btn-lg {
-    height: 40px;
-    width: 40px;
-  }
-  .btn-xl {
-    height: 50px;
-    width: 50px;
-  }
-  /* TODO: Transparent button with blue text */
-  .btn-transparent {
-    background-color: transparent;
-    color: var(--blue);
-    font-weight: inherit;
-  }
-  .btn-transparent-invisible {
-    color: transparent;
-  }
-  .btn-transparent:hover {
-    background-color: var(--gray-dark);
-    color: var(--blue);
-    font-weight: inherit;
-  }
+  width: 60px;
+  height: 34px;
+}
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: var(--dark-darken4);
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  border-radius: 34px;
+}
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: #e2e4e9;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  border-radius: 50%;
+}
+input:checked + .slider {
+  background-color: var(--primary);
+}
+input:focus + .slider {
+  box-shadow: 0 0 1px var(--primary);
+}
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
