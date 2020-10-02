@@ -62,8 +62,11 @@ a{
 
 }
 .menu_links__links-img{
-    margin: 0 12px 8px 0;
+    margin: 8px 12px 8px 8px;
     border-radius: 10px;
+}
+.menu_links__links-img:hover{
+
 }
 .fast-links{
     padding-top: 20px;
@@ -114,7 +117,6 @@ a{
     padding-bottom: 8px;
     padding-left: 8px;
     align-items: center; 
-  
 }
 .advertising-items-item:hover{
     background-color:var(--gray-dark);
@@ -132,7 +134,6 @@ a{
     display: flex;
     justify-content: space-between;
     padding-left: 8px;
-
 }
 .request{
     width: 80%;
@@ -152,20 +153,17 @@ a{
 }
 
 .request-item{
-    padding-top: 12px;
-    padding-bottom: 12px;
+    padding: 8px 0 8px 8px;
     display: flex;
+    margin-bottom: 10px;
 }
-.request-item:hover{
+.request-item:hover{  
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.05);
 }
-.request-item img{
-    margin-left: 8px;
-    border-radius: 50%;
-    margin: 8px 12px 8px 0;
-    
-}
+
 .request-descr{
-    margin-bottom: 12px;
+    margin-left: 12px;
 }
 .request-descr a{
     margin: 4px;
@@ -186,7 +184,9 @@ a{
     padding-bottom: 8px;
     border-bottom: 1px solid var(--gray-line);
 }
-
+.contact-item-img{
+    margin: 8px 12px 8px 8px;
+}
 .contact_items__item{
     display: flex;
     align-items: center;
@@ -194,10 +194,6 @@ a{
 .contact_items__item:hover{
     background-color:var(--gray-dark);
     border-radius: 10px;
-}
-.contact_items__item-img {
-    border-radius: 50%;
-    margin: 8px 12px 8px 0;
 }
 .group-chats-wrapper {
     padding-left: 8px;    
