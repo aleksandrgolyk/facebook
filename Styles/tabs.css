@@ -1,6 +1,5 @@
-@import "colors.css";
-body{
-    background-color: var(--gray-background);
+    body{
+    /*background-color: var(--gray-background);*/
 }
 .tabs-nav{
     width: 100%;
@@ -35,8 +34,8 @@ body{
     border-radius: 40px;
     padding: 2px 6px;
 }
-.hover:hover{
-    background-color: var(--dark-shade3);
+.hov:hover{
+    background-color: var(--dark-darken3);
     border-radius: 5px;
 }
 .tabs-nav .active{
