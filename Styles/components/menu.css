@@ -1,5 +1,5 @@
-@import "colors.css";
-@import "sizes.css";
+@import "../config/colors.css";
+@import "../lib/sizes.css";
 
 body {
     margin: 0;
@@ -193,10 +193,10 @@ a {
     margin-bottom: 10px;
 }
 
-.request-item:hover {
-    border-radius: 10px;
-    background-color: rgba(255, 255, 255, 0.05);
-}
+/*.request-item:hover {*/
+/*    border-radius: 10px;*/
+/*    background-color: rgba(255, 255, 255, 0.05);*/
+/*}*/
 
 .request-descr {
     margin-left: 12px;

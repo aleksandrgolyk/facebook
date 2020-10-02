@@ -1,4 +1,4 @@
-@import "colors.css";
+@import "../config/colors.css";
 
 .btn {
   border: none;

@@ -1,4 +1,4 @@
-@import "colors.css";
+@import "../config/colors.css";
 
 body{
     background-color: var(--gray-background);

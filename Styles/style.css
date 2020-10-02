@@ -1,13 +1,15 @@
 /*================Breakpoints===============*/
 /*1420, 1190, 1040, 900, 700*/
 /*================Breakpoints===============*/
-@import "buttons.css";
-@import "colors.css";
-@import "menu.css";
-@import "input.css";
-@import "../avatar/avatar.css";
-@import "tabs.css";
-@import "fonts.css";
+@import "lib/buttons.css";
+@import "config/colors.css";
+@import "components/menu.css";
+@import "components/input.css";
+@import "components/avatar.css";
+@import "lib/sizes.css";
+@import "components/tabs.css";
+@import "lib/fonts.css";
+@import "lib/helpers.css";
 /*===============General start========*/
 * {
     box-sizing: border-box;
