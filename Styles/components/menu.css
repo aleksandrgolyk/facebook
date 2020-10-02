@@ -1,6 +1,7 @@
 @import "../config/colors.css";
 @import "../lib/sizes.css";
 
+
 body {
     margin: 0;
     padding: 0;
@@ -38,7 +39,6 @@ a {
     width: 95%;
     height: 52px;
     align-items: center;
-    padding: 0 8px;
 
 }
 
@@ -47,19 +47,7 @@ a {
     border-radius: 10px;
 }
 
-.menu_items__item-img {
-    margin: 8px 12px 8px 0;
-}
-
-.menu_items__item-text {
-    /*padding-top: 12px;*/
-    /*padding-bottom: 12px;*/
-    /*display: block;*/
-}
-
 .menu_links {
-    padding-left: 8px;
-    padding-right: 8px;
     margin-bottom: 300px;
 }
 
@@ -73,28 +61,14 @@ a {
     align-items: center;
 
 }
-
+.menu_links__item:hover{
+    background-color: var(--gray-dark);
+    border-radius: 10px;
+}
 .menu_links__links-img {
-    margin: 8px 12px 8px 8px;
     border-radius: 10px;
 }
 
-.menu_links__links-img:hover {
-
-}
-
-.fast-links {
-    padding-top: 20px;
-    padding-bottom: 4px;
-}
-
-.menu_inform {
-    flex-wrap: wrap;
-    padding-left: 8px;
-    padding-right: 8px;
-    padding-bottom: 15px;
-
-}
 
 .menu_inform a {
     text-decoration: none;
@@ -180,6 +154,8 @@ a {
 
 .requests {
     border-bottom: 1px solid var(--gray-line);
+    margin-bottom: 4px;
+   
 }
 
 .title-request {
