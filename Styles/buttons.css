@@ -45,13 +45,6 @@
   background-color: var(--dark-darken2);
   color: var(--primary);
 }
-
-/* Different forms:
-  round: .rounded-circle;
-  square: py-4
-  rectangle: py-4, px-12
-  */
-
 .btn-invisible {
   display: none;
 }
@@ -61,6 +54,12 @@
   display: block;
   color: var(--primary);
 } */
+
+/* Different forms:
+  round: .rounded-circle;
+  square: py-4
+  rectangle: py-4, px-12
+  */
 
 /*Sizes diff */
 
@@ -79,6 +78,16 @@
 .btn-xl {
   height: 50px;
   width: 50px;
+}
+
+/* Button text align */
+
+.btn-text-left {
+  text-align: left;
+}
+/* Optional, default state */
+.btn-text-center {
+  text-align: center;
 }
 
 /* Toggle switch */
@@ -113,7 +122,7 @@
   width: 26px;
   left: 4px;
   bottom: 4px;
-  background-color: #E2E4E9;
+  background-color: #e2e4e9;
   -webkit-transition: 0.2s;
   transition: 0.2s;
   border-radius: 50%;
