@@ -8,6 +8,7 @@
 @import "../avatar/avatar.css";
 @import "tabs.css";
 @import "fonts.css";
+@import "spacing.css";
 /*===============General start========*/
 * {
     box-sizing: border-box;
