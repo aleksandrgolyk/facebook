@@ -101,3 +101,20 @@
 .rounded-circle {
   border-radius: 50%;
 }
+
+/* Line heights */
+
+.lh-0 {
+  line-height: 20px !important;
+  /* for font size 12 and 13 */
+}
+.lh-1 {
+  line-height: 24px !important;
+  /* for font size 15 */
+}
+.lh-2 {
+  line-height: 28px !important;
+  /* for font size 17 */
+}
+
+/* TODO: Letterspacing - optional*/
