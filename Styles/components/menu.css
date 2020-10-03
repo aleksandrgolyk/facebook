@@ -37,7 +37,7 @@ a {
 .menu_items__item {
     display: flex;
     width: 95%;
-    height: 52px;
+   /* height: 52px;*/
     align-items: center;
 
 }

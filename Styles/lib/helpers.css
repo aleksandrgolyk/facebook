@@ -47,6 +47,9 @@
     /*need for items with icons/avatars with text*/
     justify-content: center;
 }
+.align-items-center{
+    align-items: center;
+}
 
 
 /*      position      */
