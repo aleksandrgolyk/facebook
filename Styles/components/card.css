@@ -1,0 +1,73 @@
+@import "../config/colors.css";
+
+body{
+    background-color: var(--gray-background);
+}
+
+.card{
+    background-color: var(--card-background);
+    color: var(--gray-light);
+    border: 1px solid rgba(255,255,255,0.2);
+    max-width: 322px;
+}
+
+.info-section{
+    display: flex;
+}
+
+.card-avatar{
+    margin-right: 16px;
+    display: flex;
+}
+
+.info{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.button-section{
+	display: flex;
+}
+
+.friends-info{
+    display: flex;
+    flex-direction: column;
+}
+
+.friends{
+    display: flex;
+    align-items: center;
+}
+
+.friends:last-child{
+    margin-bottom: 0;
+}
+
+.icon-info{
+margin-right: 8px !important;
+width: 2em !important;
+height: 2em !important;
+}
+
+.friends:last-child{
+    padding-bottom: 0px;
+}
+
+.friends-text{
+    line-height: 16px;
+    min-width: 186px;
+}
+
+.card-button{
+    margin-right: 8px;
+    border:none;
+}
+
+.card-button:first-child{
+    flex: 1;
+}
+
+.card-button:last-child{
+    margin-right: 0;
+}

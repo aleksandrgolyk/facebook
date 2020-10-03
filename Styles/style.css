@@ -1,13 +1,20 @@
 /*================Breakpoints===============*/
 /*1420, 1190, 1040, 900, 700*/
 /*================Breakpoints===============*/
-@import "buttons.css";
-@import "colors.css";
-@import "menu.css";
-@import "input.css";
-@import "../avatar/avatar.css";
-@import "tabs.css";
-@import "fonts.css";
+@import "config/colors.css";
+
+@import "lib/fonts.css";
+@import "lib/helpers.css";
+@import "lib/sizes.css";
+@import "lib/spacing.css";
+@import "lib/buttons.css";
+
+@import "components/menu.css";
+@import "components/input.css";
+@import "components/avatar.css";
+@import "components/tabs.css";
+@import "components/card.css";
+
 /*===============General start========*/
 * {
     box-sizing: border-box;
@@ -131,6 +138,19 @@ a:active {
 
 /*===============aside-left end============*/
 
+/*===============aside-right start=============*/
+
+.hidden-card{
+	visibility: hidden;
+    position: absolute;
+    right: 442px;
+}
+
+.contact_items__item.rounded-8.pos-rel.hover:hover > .hidden-card{
+	visibility: visible;
+}
+
+/*===============aside-right end=============*/
 
 /*=====================content start===============*/
 .container {

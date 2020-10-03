@@ -1,0 +1,51 @@
+@import "config/colors.css";
+
+.contacts-menu{
+	background-color: var(--dark);
+	color: var(--gray-light);
+	padding: 0 0 0 10px;
+}
+
+.contacts-head{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.header-text{
+	padding: 10px 150px 0 0px;
+}
+
+
+.button-panel{
+	display: flex;
+	flex-direction: row;
+	padding-right: 10px;
+}
+
+.header-button{
+	background-color: var(--dark);
+	color: var(--gray);
+}
+
+.header-button:hover{
+	background-color: var(--gray-dark-hover);
+}
+
+.contacts-item:hover{
+	background-color: var(--gray-dark-hover);
+}
+
+.item-text{
+	padding: 10px 0 0 15px;
+}
+
+.hidden-card{
+	visibility: hidden;
+    position: absolute;
+    right: 442px;
+}
+
+.menu_items__item.avatar:hover > .hidden-card{
+	visibility: visible;
+}

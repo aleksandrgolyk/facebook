@@ -1,5 +1,5 @@
-@import "../Styles/colors.css";
-
+@import "../config/colors.css";
+@import "../lib/fonts.css";
 /*  only for preview  */
 body{
     margin: 0;
@@ -27,6 +27,7 @@ body{
 
 
 .avatar{
+    position: relative;
     border-radius: 50%;
     width: 2.5rem;
     height: 2.5rem;
@@ -37,23 +38,11 @@ body{
     max-width: 100%;
     max-height: 100%;
 }
-/*   Sizes   */
-.avatar.avatar-xl{
-    width: 6rem;
-    height: 6rem;
-}
 
 
 /*   Hover effect   */
-.avatar.hover {
-    background-color: #fff;
-}
-.avatar.hover > img:hover{
-    opacity: .8;
-}
-.avatar.hover.avatar-add-btn > img:hover{
-    opacity: .7;
-}
+
+
 
 
 
@@ -72,7 +61,7 @@ body{
 .avatar.status-active{
     position: relative;
 }
-.avatar.status-active::after{
+.avatar.status-active::before{
     content: "";
     position: absolute;
     z-index: 99;
@@ -85,7 +74,7 @@ body{
     border: 2px solid var(--gray-background);
 }
 
-.avatar.wh-96.status-active::after{
+.avatar.wh-96.status-active::before{
     bottom: 3%;
     right: 7%;
     height: 1rem;
@@ -108,7 +97,7 @@ body{
 }
 .avatar.status-offline > div > span{
     padding: 0 .1rem;
-    background-color: var(--success-shade2);
+    background-color: var(--success-darken2);
     border-radius: 1rem;
     font-size: .625rem;
 }
