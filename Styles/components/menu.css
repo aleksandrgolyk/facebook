@@ -35,10 +35,10 @@ a {
 }
 
 .menu_items__item {
-    display: flex;
+   
     width: 95%;
-   /* height: 52px;*/
-    align-items: center;
+   /* height: 52px;*//*
+    align-items: center;*/
 
 }
 
@@ -206,11 +206,6 @@ a {
 
 .contact-item-img {
     margin: 8px 12px 8px 8px;
-}
-
-.contact_items__item {
-    display: flex;
-    align-items: center;
 }
 
 /*.contact_items__item:hover {*/
