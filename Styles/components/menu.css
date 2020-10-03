@@ -10,10 +10,8 @@ body {
 a {
     text-decoration: none;
 }
-
-.flex {
-    display: flex;
-    justify-content: space-between;
+p{
+    margin: 0;
 }
 
 .menu {
@@ -26,12 +24,6 @@ a {
 
 .avatar {
     border-radius: 50%;
-}
-
-.menu_items {
-    padding: 0;
-    margin: 0;
-
 }
 
 .menu_items__item {
@@ -70,10 +62,6 @@ a {
 }
 
 
-.menu_inform a {
-    text-decoration: none;
-}
-
 .menu_inform a:hover {
     text-decoration: underline;
 }
@@ -91,96 +79,31 @@ a {
     padding-top: 0;
 }
 
-.advertising-wrapper {
-    padding-left: 8px;
-    padding-right: 8px;
-
-}
-
-.advertising {
-    /*padding-top: 20px;*/
-    padding-left: 8px;
-
-}
-
 .advertising-items {
-    padding-top: 8px;
-    padding-bottom: 8px;
     border-bottom: 1px solid var(--gray-line);
 }
 
-.advertising-items-item {
-    display: flex;
-    padding-top: 8px;
-    padding-bottom: 8px;
-    padding-left: 8px;
-    align-items: center;
-}
 
-.advertising-items-item:hover {
+.advertising-item:hover {
     background-color: var(--gray-dark);
     border-radius: 10px;
 }
 
-.advertising-items-item img {
-    border-radius: 8px;
-    display: block;
-    width: 130px;
-}
-
-.advertising-items-inform {
-    /*margin-left: 12px;*/
-    padding-left: 12px;
-}
-
-.title-request {
-    display: flex;
-    justify-content: space-between;
-    padding-left: 8px;
-}
-
-.request {
-    width: 80%;
-}
 
 .all-requests {
     text-decoration: none;
 }
 
-.request-friends-wrapper {
-    padding-left: 8px;
-    padding-right: 8px;
-}
-
 .requests {
     border-bottom: 1px solid var(--gray-line);
-    margin-bottom: 4px;
    
 }
-
-.title-request {
-    /*margin-top: 20px;*/
-    padding-top: 20px;
-}
-
 
 /*.request-item:hover {*/
 /*    border-radius: 10px;*/
 /*    background-color: rgba(255, 255, 255, 0.05);*/
 /*}*/
 
-.request-descr {
-    margin-left: 12px;
-}
-
-.request-descr a {
-    margin-bottom: 4px;
-}
-
-.request-descr p {
-    margin: 5px 0 9px 0;
-
-}
 
 .contact_items {
     border-bottom: 1px solid var(--gray-line);
@@ -192,32 +115,11 @@ a {
 /*    border-radius: 10px;*/
 /*}*/
 
-.group-chats-wrapper {
-    padding-top: 20px;
-    padding-left: 8px;
-    padding-right: 8px;
-
-}
-
-.group-chats {
-    /*margin-top: 20px;*/
-}
 
 .group-chats_items {
-    padding-top: 8px;
-    padding-bottom: 8px;
     border-bottom: 1px solid var(--gray-line);
 }
-
-.add-chats {
-    display: flex;
-    align-items: center;
-}
-
-.plus-chat {
-    margin: 8px 12px 8px 0;
-
-}
-
-.add-chats-text {
+.group-chats_item:hover{
+    background-color: var(--gray-dark);
+    border-radius: 10px;
 }
