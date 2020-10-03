@@ -7,77 +7,67 @@ body{
 .card{
     background-color: var(--card-background);
     color: var(--gray-light);
-    width: fit-content;
-    height: 200px;
     border: 1px solid rgba(255,255,255,0.2);
-
-    border-radius: 5px;
-    padding: 10px 0 10px 0;
+    max-width: 322px;
 }
 
 .info-section{
-	height: 70%;
-    padding: 0 10px 0 10px;
     display: flex;
 }
 
-.avatar-image{
-	border-radius: 35px;
+.card-avatar{
+    margin-right: 16px;
+    display: flex;
 }
 
 .info{
     display: flex;
-    padding-left: 5px;
     flex-direction: column;
+    flex: 1;
 }
 
 .button-section{
 	display: flex;
-    margin: 10px 15px 0px 15px;
-    justify-content: space-around;
-}
-
-.person-name{
-	font-weight: bold;
-    font-size: 20px;
-    color: white;
 }
 
 .friends-info{
-    padding-top: 10px;
     display: flex;
     flex-direction: column;
 }
 
 .friends{
-    padding-top: 2px;
-    font-size: 14px;
+    display: flex;
+    align-items: center;
 }
 
-.friends-icon{
-	float: left;
+.friends:last-child{
+    margin-bottom: 0;
+}
+
+.icon-info{
+margin-right: 8px !important;
+width: 2em !important;
+height: 2em !important;
+}
+
+.friends:last-child{
+    padding-bottom: 0px;
 }
 
 .friends-text{
-	padding: 0px 10px 0px 50px;
-    max-width: 250px;
+    line-height: 16px;
+    min-width: 186px;
 }
 
 .card-button{
-	border-radius: 5px 5px 5px 5px;
-	padding: 0;
-    border: 0;
-    height: 32px;
-	width: 47px;
-
+    margin-right: 8px;
+    border:none;
 }
 
-.card-message-button{
-	
-	padding: 0;
-    border: 0;
-    border-radius: 5px 5px 5px 5px;
-    width: 155px;
-    height: 32px;
+.card-button:first-child{
+    flex: 1;
+}
 
+.card-button:last-child{
+    margin-right: 0;
 }

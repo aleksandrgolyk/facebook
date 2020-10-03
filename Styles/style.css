@@ -13,6 +13,7 @@
 @import "components/input.css";
 @import "components/avatar.css";
 @import "components/tabs.css";
+@import "components/card.css";
 
 /*===============General start========*/
 * {
@@ -137,6 +138,19 @@ a:active {
 
 /*===============aside-left end============*/
 
+/*===============aside-right start=============*/
+
+.hidden-card{
+	visibility: hidden;
+    position: absolute;
+    right: 442px;
+}
+
+.contact_items__item.rounded-8.pos-rel.hover:hover > .hidden-card{
+	visibility: visible;
+}
+
+/*===============aside-right end=============*/
 
 /*=====================content start===============*/
 .container {

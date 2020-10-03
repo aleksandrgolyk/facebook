@@ -3,6 +3,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
+
 	<link rel="stylesheet" href="../Styles/font-awesome.min.css">
 	<link href="../Styles/config/reset.css" rel="stylesheet">
 	<link href="../Styles/config/normalize.css" rel="stylesheet">
@@ -11,43 +12,44 @@
 	<link href="../Styles/lib/fonts.css" rel="stylesheet">
 	<link href="../Styles/lib/buttons.css" rel="stylesheet">
 	<script defer src="https://use.fontawesome.com/releases/v5.0.13/js/all.js"></script>
+	<link href="../Styles/contacts.css" rel="stylesheet">
+	<link rel="stylesheet" href="../Styles/components/menu.css">
+	<link href="../Styles/lib/spacing.css" rel="stylesheet">
 
 </head>
 <body>
-	<div class="card">
-		<div class="info-section">
-			<div class="avatar hover avatar-xl status-offline">
-                    <img
-                         src="https://scontent.fhmj1-1.fna.fbcdn.net/v/t31.0-1/p200x200/15003378_1783738588557672_7445462418353354926_o.jpg?_nc_cat=102&_nc_sid=7206a8&_nc_ohc=qM8aA0jFweEAX85SL6t&_nc_ht=scontent.fhmj1-1.fna&tp=6&oh=6cd329d28e16339fbdd4def8158b5f0e&oe=5F9A7FF4"
-                         alt="">
-                </div>
+	<div class="card rounded-6 py-12">
+		<div class="info-section px-12 mb-16">
+			<div class="avatar hover wh-60 status-active card-avatar">
+				<img
+						src="https://scontent.fhmj1-1.fna.fbcdn.net/v/t31.0-1/p200x200/15003378_1783738588557672_7445462418353354926_o.jpg?_nc_cat=102&_nc_sid=7206a8&_nc_ohc=qM8aA0jFweEAX85SL6t&_nc_ht=scontent.fhmj1-1.fna&tp=6&oh=6cd329d28e16339fbdd4def8158b5f0e&oe=5F9A7FF4"
+						alt="">
+			</div>
 			<div class="info">
-				<div class="fs-mainTitle">
+				<div class="fs-mainTitle mb-8 lh-0">
 					 <strong>Виктория Гордеева</strong>
 				</div>
 				<div class="friends-info">
-				<div class="friends">
-					<div class="friends-icon">
-						<img src="../images/addedFriends.png" alt="addfriend">
-					</div>
-					<div class="friends-text">Дружить з <strong>Ivan Zaikin</strong> та <strong>29 іншими особами</strong>
+				<div class="friends mb-4 fs-caption1 fw-600">
+					<i class="fas fa-user-friends icon-info"></i>
+					<div class="friends-text">
+						<p>Дружить з <strong>Ivan Zaikin</strong> та <strong>29 іншими особами</strong>
+						</p>
 					</div>
 				</div>
-				<div class="friends">
-					<div class="friends-icon">
-						<img src="../images/addedFriends.png" alt="addfriend">
-					</div>
+				<div class="friends mb-4 fs-caption1 fw-600">
+					<i class="fas fa-user-friends icon-info"></i>
 					<div class="friends-text">5 спільних друзів, враховуючи <strong>Машу Гордееву</strong> та <strong>Карину Гордееву</strong>
 					</div>
 				</div>
 				</div>
 			</div>
 		</div>
-		<div class="button-section">
-			<button type="submit" class="btn btn-default btn-icon-rectangle" value="Повідомлення"><i class="far fa-comment"></i><span>Повідомлення</span></button>
-			<button type="submit" class="btn btn-default btn-icon-square"><i class="fas fa-phone"></i></button>
-			<button type="submit" class="btn btn-default btn-icon-square"><i class="far fa-user"></i></button>
-			<button type="submit" class="btn btn-default btn-icon-square"><i class="fas fa-ellipsis-h"></i></button>
+		<div class="button-section px-12">
+			<button type="submit" class=" btn-secondary py-4 px-12 rounded-6 card-button " value="Повідомлення"><i class="far fa-comment"></i><span> Повідомлення</span></button>
+			<button type="submit" class="btn btn-secondary py-4 px-12 rounded-6 card-button btn-lg"><i class="fas fa-phone"></i></button>
+			<button type="submit" class="btn btn-secondary py-4 px-12 rounded-6 card-button btn-lg"><i class="far fa-user"></i></button>
+			<button type="submit" class="btn btn-secondary py-4 px-12 rounded-6 card-button btn-lg"><i class="fas fa-ellipsis-h"></i></button>
 		</div>
 	</div>
 </body>
