@@ -14,7 +14,7 @@
 @import "components/avatar.css";
 @import "components/tabs.css";
 @import "components/card.css";
-
+@import "components/slider.css";
 /*===============General start========*/
 * {
     box-sizing: border-box;
@@ -48,23 +48,17 @@ a:active {
     display: flex;
     justify-content: space-between;
     position: fixed;
-    width: 100%;
-    height: 60px;
+    /*width: 100%;*/
     z-index: 3;
-    background-color: #242526;
-    padding: 10px 8px 8px;
-    border-bottom: 1px outset var(--gray-light);
-    outline: white;
+    background-color: var(--dark-darken1);
+
+    /*border-bottom: 1px outset var(--gray-light);*/
 }
 
-.logo {
-    margin-right: 12px;
+.header-content{
+    /*display: flex;*/
+    flex: 1;
 }
-
-.logo img {
-    width: 40px;
-}
-
 .aside-header__left, .aside-header__right {
     display: flex;
     color: #fff;
@@ -153,102 +147,7 @@ a:active {
 /*===============aside-right end=============*/
 
 /*=====================content start===============*/
-.container {
-    max-width: 680px;
-    margin: 0 auto;
-}
 
-.stories {
-    position: relative;
-    /*margin: 0 -4px;*/
-    display: flex;
-    justify-content: space-between;
-}
-
-.stories-item {
-    position: relative;
-    width: calc((100% / 6) - 4px);
-    /*padding: 0 4px;*/
-    overflow: hidden;
-    min-height: 190px;
-    border-radius: 10px;
-}
-
-.stories-item__link {
-    display: block;
-    height: 100%;
-}
-
-.stories-item__link:before {
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    left: 0;
-    top: 0;
-    background-color: rgba(0, 0, 0, .1);
-    opacity: 0;
-    visibility: collapse;
-    transition: .3s;
-    z-index: 1;
-}
-
-.stories-item:hover .stories-item__link:before {
-    opacity: 1;
-    visibility: visible;
-}
-
-.stories-item__bg {
-    position: absolute;
-    top: 0;
-    right: 0;
-    left: 0;
-    bottom: 0;
-    margin: 0 -50%;
-    transition: .2s ease-in-out;
-}
-
-.stories-item:hover .stories-item__bg {
-    transform: scale(1.1);
-}
-
-.stories-item_avatar {
-    position: absolute;
-    width: 40px;
-    height: 40px;
-    top: 12px;
-    left: 12px;
-    border-radius: 50%;
-    border: 4px solid var(--blue-hover);
-}
-
-.stories-item__title {
-    position: absolute;
-    right: 0;
-    left: 0;
-    bottom: 0;
-    padding: 12px;
-    font-weight: 600;
-}
-
-.stories-arrow {
-    position: absolute;
-    top: 70px;
-    right: -20px;
-    padding: 15px;
-    background-color: #3e4042;
-    border-radius: 50%;
-    color: var(--gray);
-    cursor: pointer;
-}
-
-.stories-arrow:hover {
-    background-color: var(--gray-dark-hover);
-}
-
-.arrow {
-    display: flex;
-}
 
 @media (max-width: 1470px) {
     .container {
