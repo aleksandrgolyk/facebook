@@ -34,7 +34,10 @@
     border-bottom: 1px solid rgba(255, 255, 255, 0.15);
 }
 
-.transition:after{
+.transition-hover:after{
+    transition: all .2s ease-out !important;
+}
+.transition{
     transition: all .2s ease-out !important;
 }
 

@@ -44,11 +44,10 @@ body{
 }
 .tabs-nav-item > div.active{
 
-    height: 2px;
     width: 100%;
     position: absolute;
     z-index: 5;
-    bottom: -1px;
+    bottom: -5px;
     border-bottom: 3px solid var(--primary);
 }
 .tabs-nav-item > i{
