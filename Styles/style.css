@@ -22,13 +22,13 @@
 
 body {
     background-color: #18191A;
-    overflow: hidden;
+    /*overflow: hidden;*/
 
 }
 
-::-webkit-scrollbar {
-    display: none;
-}
+/*::-webkit-scrollbar {*/
+/*    display: none;*/
+/*}*/
 
 a {
     cursor: pointer;
@@ -91,9 +91,10 @@ a:active {
 }
 
 .aside-left, .aside-right, .content {
-    /*overflow: auto;*/
     overflow-y: scroll;
-
+    overflow-x: visible;
+    /*overflow: scroll;*/
+/*scroll-behavior: smooth;*/
 }
 
 /*==============body end=============*/
@@ -114,23 +115,23 @@ a:active {
     overflow: scroll;
 }
 
-.content::-webkit-scrollbar {
-    width: 10px;
-}
+/*.content::-webkit-scrollbar {*/
+/*    width: 10px;*/
+/*}*/
 
-.content::-webkit-scrollbar {
-    width: 12px;
-}
+/*.content::-webkit-scrollbar {*/
+/*    width: 12px;*/
+/*}*/
 
-.content::-webkit-scrollbar-track {
-    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
-    border-radius: 10px;
-}
+/*.content::-webkit-scrollbar-track {*/
+/*    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);*/
+/*    border-radius: 10px;*/
+/*}*/
 
-.content::-webkit-scrollbar-thumb {
-    border-radius: 10px;
-    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
-}
+/*.content::-webkit-scrollbar-thumb {*/
+/*    border-radius: 10px;*/
+/*    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);*/
+/*}*/
 
 .aside-left ul, .aside-right ul {
     width: 100%;
@@ -143,7 +144,7 @@ a:active {
 .hidden-card{
 	visibility: hidden;
     position: absolute;
-    right: 442px;
+    right: 105%;
 }
 
 .contact_items__item.rounded-8.pos-rel.hover:hover > .hidden-card{

@@ -1,8 +1,8 @@
 @import "../config/colors.css";
 
-body{
-    background-color: var(--gray-background);
-}
+/*body{*/
+/*    background-color: var(--gray-background);*/
+/*}*/
 
 .card{
     background-color: var(--card-background);
