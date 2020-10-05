@@ -1,29 +1,28 @@
 @import "../config/colors.css";
 
 .input {
+    position: relative;
     width: 100%;
     outline: none;
     box-sizing: border-box;
     border: none;
     color: var(--text-primary-darken2);
-    background-repeat: no-repeat;
     background-color: var(--dark-darken2);
     cursor: pointer;
     text-align: left;
-    line-height: 18px;
 }
 
-.input-with-icon {
-    max-height: 40px;
-    border-radius: 24px;
-    max-width: 240px;
-    font-size: 16px;
-    background-image: url('../../images/searchicon.png');
-    background-position: 10px 10px;
-    padding: 6px 8px 6px 40px;
+.input-flex{
+  flex:1;
+  background: transparent;
+  outline: none;
+  border:none;
 }
+.input-justify {
 
-.input-WithOut-Icon {
+  justify-content: space-between;
+}
+.input-icon {
     max-height: 40px;
     border-radius: 24px;
     max-width: 400px;
@@ -31,10 +30,6 @@
     padding: 12px 12px 12px;
 }
 
-.input-Under-Post {
-    max-width: 410px;
-    max-height: 40px;
-    padding: 8px 12px 8px 12px;
-    font-size: 14px;
-
+.input-display {
+display: flex;
 }
