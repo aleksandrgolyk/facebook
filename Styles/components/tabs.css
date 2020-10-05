@@ -1,13 +1,21 @@
-    body{
+body{
     /*background-color: var(--gray-background);*/
+}
+
+
+.header-block{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex: 1;
 }
 .tabs-nav{
     width: 100%;
-    margin: 0;
-    padding: 0;
-    position: relative;
     display: inline-flex;
     justify-content: space-between;
+}
+.tabs-nav-item:last-child{
+    margin: 0 !important;
 }
 @media(max-width:700px){
     .tabs-nav-item{
@@ -15,38 +23,38 @@
     }
 }
 .tabs-nav-item{
+    display: flex;
+    position: relative;
+    flex: 1;
     justify-content: center;
-    text-align: center;
+    align-items: center;
+    align-content: center;
     text-decoration: none;
-    margin: 0;
-    padding: 0;
-    width: 18%;
-    max-width: 130px;
-    min-width: 50px;
+    margin-right: 8px;
 }
-.fa .notif-badge{
+.tabs-nav-item > i .notif-badge{
     position: absolute;
     font-size: 13px;
-    left: 45px;
-    top: 0;
+    left: 80%;
+    top: -20%;
     background-color: var(--notification);
     color: var(--text-primary);
-    border-radius: 40px;
+    border-radius: 20px;
     padding: 2px 6px;
 }
-.hov:hover{
-    background-color: var(--dark-darken3);
-    border-radius: 5px;
+.tabs-nav-item > div.active{
+
+    height: 2px;
+    width: 100%;
+    position: absolute;
+    z-index: 5;
+    bottom: -1px;
+    border-bottom: 3px solid var(--primary);
 }
-.tabs-nav .active{
-    border-bottom: 2px solid var(--primary);
-}
-.tabs-nav .fa{
-    color: var(--gray);
+.tabs-nav-item > i{
     font-size: 28px;
-    padding: 0.5rem 1.5rem;
     position: relative;
 }
-.tabs-nav .active .fa{
+.tabs-nav-item.active .fa{
     color: var(--primary);
 }

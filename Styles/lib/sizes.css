@@ -36,8 +36,8 @@
     height: 2.25rem !important;
 }
 .wh-40{
-    width: 2.25rem !important;
-    height: 2.25rem !important;
+    width: 2.5rem !important;
+    height: 2.5rem !important;
 }
 .wh-48{
     width: 3rem !important;
@@ -50,6 +50,9 @@
 .wh-96{
     width: 6rem !important;
     height: 6rem !important;
+}
+.w-130{
+    width: 8.12rem;
 }
 
 .w-100{

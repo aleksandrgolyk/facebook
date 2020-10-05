@@ -34,7 +34,6 @@ body{
 }
 .avatar > img{
     border-radius: 50%;
-    transition: opacity .15s ease;
     max-width: 100%;
     max-height: 100%;
 }
@@ -49,11 +48,11 @@ body{
 /*when set border in rem/em but not in px, have fantom 1px gap between border and img(in 100% page scale)*/
 .avatar.stories > img{
     box-sizing: border-box;
-    border: 3px solid #fff;
+    border: 4px solid var(--dark);
 }
 .avatar.stories-active > img{
     box-sizing: border-box;
-    border: 3px solid var(--primary);
+    border: 4px solid var(--primary);
 }
 
 
@@ -69,8 +68,8 @@ body{
     right: 0;
     background-color: var(--success-darken1);
     border-radius: 50%;
-    height: .75rem;
-    width: .75rem;
+    height: .5rem;
+    width: .5rem;
     border: 2px solid var(--gray-background);
 }
 
@@ -80,6 +79,12 @@ body{
     height: 1rem;
     width: 1rem;
 }
+.avatar.wh-60.status-active::before{
+    bottom: 5%;
+    right: 5%;
+    height: .65rem;
+    width: .65rem;
+}
 
 .avatar.status-offline{
     position: relative;
@@ -88,18 +93,20 @@ body{
     margin: 0;
     position: absolute;
     bottom: 0;
-    right: 0;
+    right: -2px;
     background-color: var(--dark);
     color: var(--success);
-    border-radius: 1rem;
-    font-size: .625rem;
+    border-radius: 15px;
     border: 2px solid var(--dark);
+
+    line-height: 12px;
 }
 .avatar.status-offline > div > span{
-    padding: 0 .1rem;
+    padding: 0 .15rem;
     background-color: var(--success-darken2);
     border-radius: 1rem;
-    font-size: .625rem;
+    font-size: .6rem;
+    line-height: 12px;
 }
 
 
