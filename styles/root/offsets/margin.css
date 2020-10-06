@@ -1,9 +1,9 @@
 :root {
-    --margin-0: 0;
-    --margin-1: calc(var(--base--rythm) * 1);
-    --margin-2: calc(var(--base--rythm) * 2);
-    --margin-3: calc(var(--base--rythm) * 3);
-    --margin-4: calc(var(--base--rythm) * 4);
-    --margin-5: calc(var(--base--rythm) * 5);
-    --margin-6: calc(var(--base--rythm) * 6);
+    --margin-0: 0 !important;
+    --margin-1: calc(var(--base--rythm) * 1) !important;
+    --margin-2: calc(var(--base--rythm) * 2) !important;
+    --margin-3: calc(var(--base--rythm) * 3) !important;
+    --margin-4: calc(var(--base--rythm) * 4) !important;
+    --margin-5: calc(var(--base--rythm) * 5) !important;
+    --margin-6: calc(var(--base--rythm) * 6) !important;
 }

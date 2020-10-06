@@ -1,42 +1,42 @@
 .mb-0 {
-  margin-bottom: var(--margin-0);
+  margin-bottom: var(--margin-0) !important;
 }
 .mb-1 {
-  margin-bottom: var(--margin-1);
+  margin-bottom: var(--margin-1) !important;
 }
 .mb-2 {
-  margin-bottom: var(--margin-2);
+  margin-bottom: var(--margin-2) !important;
 }
 .mb-3 {
-  margin-bottom: var(--margin-3);
+  margin-bottom: var(--margin-3) !important;
 }
 .mb-4 {
-  margin-bottom: var(--margin-4);
+  margin-bottom: var(--margin-4) !important;
 }
 .mb-5 {
-  margin-bottom: var(--margin-5);
+  margin-bottom: var(--margin-5) !important;
 }
 .mb-6 {
-  margin-bottom: var(--margin-6);
+  margin-bottom: var(--margin-6) !important;
 }
 .mr-0 {
-  margin-right: var(--margin-0);
+  margin-right: var(--margin-0) !important;
 }
 .mr-1 {
-  margin-right: var(--margin-1);
+  margin-right: var(--margin-1) !important;
 }
 .mr-2 {
-  margin-right: var(--margin-2);
+  margin-right: var(--margin-2) !important;
 }
 .mr-3 {
-  margin-right: var(--margin-3);
+  margin-right: var(--margin-3) !important;
 }
 .mr-4 {
-  margin-right: var(--margin-4);
+  margin-right: var(--margin-4) !important;
 }
 .mr-5 {
-  margin-right: var(--margin-5);
+  margin-right: var(--margin-5) !important;
 }
 .mr-6 {
-  margin-right: var(--margin-6);
+  margin-right: var(--margin-6) !important;
 }

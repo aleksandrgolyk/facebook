@@ -1,10 +1,10 @@
 :root{
-    --base--font-size: 15px;
-    --base--rythm: 4px;
+    --base--font-size: 15px !important;
+    --base--rythm: 4px !important;
 
-    --breakpoint-xs: 576px;
-    --breakpoint-sm: 576px;
-    --breakpoint-md: 768px;
-    --breakpoint-lg: 992px;
-    --breakpoint-xl: 1200px;
+    --breakpoint-xs: 576px !important;
+    --breakpoint-sm: 576px !important;
+    --breakpoint-md: 768px !important;
+    --breakpoint-lg: 992px !important;
+    --breakpoint-xl: 1200px !important;
 }
