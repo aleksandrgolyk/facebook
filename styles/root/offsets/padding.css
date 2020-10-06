@@ -1,0 +1,8 @@
+:root{
+    --padding-xs: calc(1 * var(--base--rythm));
+    --padding-sm: calc(2 * var(--base--rythm));
+    --padding-md: calc(3 * var(--base--rythm));
+    --padding-lg: calc(4 * var(--base--rythm));
+    --padding-xl: calc(5 * var(--base--rythm));
+    --padding-xxl: calc(6 * var(--base--rythm));
+}
