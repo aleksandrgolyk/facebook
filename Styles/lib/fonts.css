@@ -7,19 +7,17 @@ body {
 h1, h2, h3, h4{
     margin: 0;
 }
-.fs-mainTitle {
+.fs-17 { /*fs-mainTitle*/
     font-size: 17px;
 }
-.fs-title {
+.fs-15 { /*fs-title*/
     font-size: 15px;
 }
-.fs-body1 {
-    font-size: 15px;    
-}
-.fs-caption1 {
+
+.fs-13 {/*fs-caption1*/
     font-size: 13px;
 }
-.fs-caption2 {
+.fs-12 {/*fs-caption2*/
     font-size: 12px;
 }
 
