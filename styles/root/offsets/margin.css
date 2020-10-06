@@ -1,0 +1,8 @@
+:root {
+--margin-xs: calc(var(--base--rythm) * 1);
+--margin-sm: calc(var(--base--rythm) * 2);
+--margin-md: calc(var(--base--rythm) * 3);
+--margin-lg: calc(var(--base--rythm) * 4);
+--margin-xl: calc(var(--base--rythm) * 5);
+--margin-xxl: calc(var(--base--rythm) * 6);
+}
