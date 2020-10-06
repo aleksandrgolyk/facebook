@@ -1,51 +1,51 @@
 /*---   horizontal   ---*/
-.px-xs{
-    padding-left: var(--padding-xs);
-    padding-right: var(--padding-xs);
+.px-1{
+    padding-left: var(--padding-1);
+    padding-right: var(--padding-1);
 }
-.px-sm{
-    padding-left: var(--padding-sm);
-    padding-right: var(--padding-sm);
+.px-2{
+    padding-left: var(--padding-2);
+    padding-right: var(--padding-2);
 }
-.px-md{
-    padding-left: var(--padding-md);
-    padding-right: var(--padding-md);
+.px-3{
+    padding-left: var(--padding-3);
+    padding-right: var(--padding-3);
 }
-.px-lg{
-    padding-left: var(--padding-lg);
-    padding-right: var(--padding-lg);
+.px-4{
+    padding-left: var(--padding-4);
+    padding-right: var(--padding-4);
 }
-.px-xl{
-    padding-left: var(--padding-xl);
-    padding-right: var(--padding-xl);
+.px-5{
+    padding-left: var(--padding-5);
+    padding-right: var(--padding-5);
 }
-.px-xxl{
-    padding-left: var(--padding-xxl);
-    padding-right: var(--padding-xxl);
+.px-6{
+    padding-left: var(--padding-6);
+    padding-right: var(--padding-6);
 }
 
 /*---   vertical   ---*/
-.py-xs{
-    padding-top: var(--padding-xs);
-    padding-bottom: var(--padding-xs);
+.py-1{
+    padding-top: var(--padding-1);
+    padding-bottom: var(--padding-1);
 }
-.py-sm{
-    padding-top: var(--padding-sm);
-    padding-bottom: var(--padding-sm);
+.py-2{
+    padding-top: var(--padding-2);
+    padding-bottom: var(--padding-2);
 }
-.py-md{
-    padding-top: var(--padding-md);
-    padding-bottom: var(--padding-md);
+.py-3{
+    padding-top: var(--padding-3);
+    padding-bottom: var(--padding-3);
 }
-.py-lg{
-    padding-top: var(--padding-lg);
-    padding-bottom: var(--padding-lg);
+.py-4{
+    padding-top: var(--padding-4);
+    padding-bottom: var(--padding-4);
 }
-.py-xl{
-    padding-top: var(--padding-xl);
-    padding-bottom: var(--padding-xl);
+.py-5{
+    padding-top: var(--padding-5);
+    padding-bottom: var(--padding-5);
 }
-.py-xxl{
-    padding-top: var(--padding-xxl);
-    padding-bottom: var(--padding-xxl);
+.py-6{
+    padding-top: var(--padding-6);
+    padding-bottom: var(--padding-6);
 }
