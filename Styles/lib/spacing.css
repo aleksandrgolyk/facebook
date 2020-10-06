@@ -84,6 +84,30 @@
   margin-bottom: 24px !important;
 }
 
+/* Margin, flow to right*/
+
+.mb-4 {
+  margin-right: 4px !important;
+}
+.mb-6 {
+  margin-right: 6px !important;
+}
+.mb-8 {
+  margin-right: 8px !important;
+}
+.mb-12 {
+  margin-right: 12px !important;
+}
+.mb-16 {
+  margin-right: 16px !important;
+}
+.mb-20 {
+  margin-right: 20px !important;
+}
+.mb-24 {
+  margin-right: 24px !important;
+}
+
 /* Border radius */
 
 .rounded-6 {
@@ -105,14 +129,18 @@
 /* Line heights */
 
 .lh-0 {
+  line-height: 15px !important;
+  /* for font size 10 */
+}
+.lh-1 {
   line-height: 20px !important;
   /* for font size 12 and 13 */
 }
-.lh-1 {
+.lh-2 {
   line-height: 24px !important;
   /* for font size 15 */
 }
-.lh-2 {
+.lh-3 {
   line-height: 28px !important;
   /* for font size 17 */
 }

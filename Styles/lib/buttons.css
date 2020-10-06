@@ -61,25 +61,6 @@
   rectangle: py-4, px-12
   */
 
-/*Sizes diff */
-
-.btn-sm {
-  height: 28px;
-  width: 28px;
-}
-.btn-md {
-  height: 32px;
-  width: 32px;
-}
-.btn-lg {
-  height: 40px;
-  width: 40px;
-}
-.btn-xl {
-  height: 50px;
-  width: 50px;
-}
-
 /* Button text align */
 
 .btn-text-left {
