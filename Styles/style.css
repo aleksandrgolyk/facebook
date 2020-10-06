@@ -76,7 +76,7 @@ a:active {
 
 /*==============body start=============*/
 .body-wrapper {
-    padding-top: 90px;
+    padding-top: 60px;
     padding-right: 8px;
     padding-left: 8px;
     height: 100vh;
@@ -95,7 +95,7 @@ a:active {
 
 /*===============aside-left start============*/
 .aside-left, .aside-right, .aside-header__left, .aside-header__right {
-    width: 360px;
+    /*width: 360px;*/
 }
 
 .aside-left, .aside-right {
@@ -209,7 +209,7 @@ a:active {
 
 @media (max-width: 900px) {
     .container {
-        max-width: 680px
+        /*max-width: 680px*/
     }
 
     .stories-item {
