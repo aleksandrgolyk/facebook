@@ -1,6 +1,6 @@
 /*---   horizontal   ---*/
 .px-0{
-    padding: 0 !important;
+    padding: var(--padding-0) !important;
 }
 .px-1{
     padding-left: var(--padding-1) !important;
@@ -28,7 +28,7 @@
 }
 @media screen and (max-width: var(--breakpoint-xs)){
     .px-xs-0{
-        padding: 0 !important;
+        padding: var(--padding-0) !important;
     }
     .px-xs-1{
         padding-left: var(--padding-1) !important;
@@ -76,6 +76,35 @@
         padding-right: var(--padding-4) !important;
     }
     .px-sm-5{
+        padding-left: var(--padding-5) !important;
+        padding-right: var(--padding-5) !important;
+    }
+    .px-sm-6{
+        padding-left: var(--padding-6) !important;
+        padding-right: var(--padding-6) !important;
+    }
+}
+@media screen and (min-width: var(--breakpoint-md)){
+    .px-md-0{
+        padding: var(--padding-0) !important;
+    }
+    .px-md-1{
+        padding-left: var(--padding-1) !important;
+        padding-right: var(--padding-1) !important;
+    }
+    .px-md-2{
+        padding-left: var(--padding-2) !important;
+        padding-right: var(--padding-2) !important;
+    }
+    .px-md-3{
+        padding-left: var(--padding-3) !important;
+        padding-right: var(--padding-3) !important;
+    }
+    .px-md-4{
+        padding-left: var(--padding-4) !important;
+        padding-right: var(--padding-4) !important;
+    }
+    .px-md-5{
         padding-left: var(--padding-5) !important;
         padding-right: var(--padding-5) !important;
     }
