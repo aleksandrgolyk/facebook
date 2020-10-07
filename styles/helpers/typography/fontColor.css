@@ -1,0 +1,12 @@
+.fc-primary {
+  color: var(--font-color-primary);
+}
+.fc-secondary {
+  color: var(--font-color-secondary);
+}
+.fc-brand {
+  color: var(--font-color-brand);
+}
+.fc-white {
+  color: var(--font-color-white);
+}
