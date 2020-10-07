@@ -7,15 +7,3 @@
     /*--breakpoint-lg: 992px;*/
     /*--breakpoint-xl: 1200px;*/
 }
-
-[data-theme='dark']:root{
-    --bgc:blue;
-}
-[data-theme='light']:root {
-    --bgc: red;
-}
-
-
-body{
-    background-color: var(--bgc);
-}

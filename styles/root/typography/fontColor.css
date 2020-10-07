@@ -1,3 +1,6 @@
 :root{
-
+    --font-color-primary: var(--secondary-lighten1); /* other */ 
+    --font-color-secondary: var(--secondary-lighten2); /* for title2, caption1*/
+    --font-color-disabled: var(--primary-lighten1); /* for caption2, body*/
+    --font-color-white: var(--white); /* for caption1*/
 }
