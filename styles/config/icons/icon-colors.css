@@ -1,11 +1,11 @@
 :root{
-    --primary-icon-color: #2d88ff; /* tab selected icon color, like icon color, logo color */
+    --primary-icon-color: var(--primary); /* tab selected icon color, like icon color, logo color */
 
-    --secondary-icon-color: #e4e6eb; /* most icons on the page */
-    --context-button-color: #3a3b3c; /* icons in complex elements(not buttons), like inputs, or on card */ 
+    --secondary-icon-color: var(--secondary-lighten1); /* most icons on the page */
+    --context-button-color: var(--secondary-lighten5); /* icons in complex elements(not buttons), like inputs, or on card */ 
     
-    --alert-icon-color: #f02849; 
-    --success-icon-color: #31a24c; /* icon color on newsline buttons */
-    --info-icon-color: #f5bb41;
+    --info-icon-color: var(--info); 
+    --success-icon-color: var(--success); /* icon color on newsline buttons */
+    --alert-icon-color: var(--icon-allert);
 }
 
