@@ -1,0 +1,54 @@
+.c-primary-lighten1{
+    color: var(--primary-lighten1);
+}
+.c-primary{
+    color: var(--primary);
+}
+.c-success{
+    color: var(--success);
+}
+.c-success-darken1{
+    color: var(--success-darken1);
+}
+.c-info{
+    color: var(--info);
+}
+.c-black{
+    color: var(--black);
+}
+.c-white{
+    color: var(--white);
+}
+.c-secondary-lighten1{
+    color: var(--secondary-lighten1);
+}
+.c-secondary-lighten2{
+    color: var(--secondary-lighten2);
+}
+.c-secondary-lighten3{
+    color: var(--secondary-lighten3);
+}
+.c-secondary-lighten4{
+    color: var(--secondary-lighten4);
+}
+.c-secondary-lighten5{
+    color: var(--secondary-lighten5);
+}
+.c-secondary-lighten6{
+    color: var(--secondary-lighten6);
+}
+.c-secondary-lighten7{
+    color: var(--secondary-lighten7);
+}
+.c-secondary-lighten8{
+    color: var(--secondary-lighten8);
+}
+.c-secondary-lighten9{
+    color: var(--secondary-lighten9);
+}
+.c-secondary-lighten10{
+    color: var(--secondary-lighten10);
+}
+.c-secondary{
+    color: var(--secondary);
+}
