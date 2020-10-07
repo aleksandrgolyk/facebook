@@ -19,6 +19,9 @@
 .c-white{
     color: var(--white);
 }
+.c-icon-allert {
+    color: var(--icon-allert);
+}
 .c-secondary-lighten1{
     color: var(--secondary-lighten1);
 }
