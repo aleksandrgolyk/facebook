@@ -26,6 +26,10 @@
     background-color: var(--white);
 }
 
+.bg-icon-allert {
+    background-color: var(--icon-allert);
+}
+
 .bg-secondary-lighten1 {
     background-color: var(--secondary-lighten1);
 }
