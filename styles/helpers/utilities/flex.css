@@ -22,7 +22,7 @@
 
 
 /*---   flex-order   ---*/
-.flex-order--1{
+.flex-order-negative{
     order: -1 !important;
 }
 .flex-order-0{
@@ -132,7 +132,7 @@
     }
 
 
-    .flex-order--1-sm{
+    .flex-order-negative-sm{
         order: -1 !important;
     }
     .flex-order-0-sm{
@@ -225,7 +225,7 @@
     }
 
 
-    .flex-order--1-md{
+    .flex-order-negative-md{
         order: -1 !important;
     }
     .flex-order-0-md{
@@ -324,7 +324,7 @@
     }
 
 
-    .flex-order--1-lg{
+    .flex-order-negative-lg{
         order: -1 !important;
     }
     .flex-order-0-lg{
@@ -424,7 +424,7 @@
     }
 
 
-    .flex-order--1-xl{
+    .flex-order-negative-xl{
         order: -1 !important;
     }
     .flex-order-0-xl{
@@ -525,7 +525,7 @@
     }
 
 
-    .flex-order--1-xxl{
+    .flex-order-negative-xxl{
         order: -1 !important;
     }
     .flex-order-0-xxl{
