@@ -31,117 +31,117 @@
     padding-right: var(--padding-6) !important;
 }
 @media screen and (min-width: 576px){
-    .px-sm-0{
+    .px-0-sm{
         padding: var(--padding-0) !important;
     }
-    .px-sm-1{
+    .px-1-sm{
         padding-left: var(--padding-1) !important;
         padding-right: var(--padding-1) !important;
     }
-    .px-sm-2{
+    .px-2-sm{
         padding-left: var(--padding-2) !important;
         padding-right: var(--padding-2) !important;
     }
-    .px-sm-3{
+    .px-3-sm{
         padding-left: var(--padding-3) !important;
         padding-right: var(--padding-3) !important;
     }
-    .px-sm-4{
+    .px-4-sm{
         padding-left: var(--padding-4) !important;
         padding-right: var(--padding-4) !important;
     }
-    .px-sm-5{
+    .px-5-sm{
         padding-left: var(--padding-5) !important;
         padding-right: var(--padding-5) !important;
     }
-    .px-sm-6{
+    .px-6-sm{
         padding-left: var(--padding-6) !important;
         padding-right: var(--padding-6) !important;
     }
 }
 @media screen and (min-width: 768px){
-    .px-md-0{
+    .px-0-md{
         padding: var(--padding-0) !important;
     }
-    .px-md-1{
+    .px-1-md{
         padding-left: var(--padding-1) !important;
         padding-right: var(--padding-1) !important;
     }
-    .px-md-2{
+    .px-2-md{
         padding-left: var(--padding-2) !important;
         padding-right: var(--padding-2) !important;
     }
-    .px-md-3{
+    .px-3-md{
         padding-left: var(--padding-3) !important;
         padding-right: var(--padding-3) !important;
     }
-    .px-md-4{
+    .px-4-md{
         padding-left: var(--padding-4) !important;
         padding-right: var(--padding-4) !important;
     }
-    .px-md-5{
+    .px-5-md{
         padding-left: var(--padding-5) !important;
         padding-right: var(--padding-5) !important;
     }
-    .px-sm-6{
+    .px-6-md{
         padding-left: var(--padding-6) !important;
         padding-right: var(--padding-6) !important;
     }
 }
 @media screen and (min-width: 992px){
-    .px-lg-0{
+    .px-0-lg{
         padding: var(--padding-0) !important;
     }
-    .px-lg-1{
+    .px-1-lg{
         padding-left: var(--padding-1) !important;
         padding-right: var(--padding-1) !important;
     }
-    .px-lg-2{
+    .px-2-lg{
         padding-left: var(--padding-2) !important;
         padding-right: var(--padding-2) !important;
     }
-    .px-lg-3{
+    .px-3-lg{
         padding-left: var(--padding-3) !important;
         padding-right: var(--padding-3) !important;
     }
-    .px-lg-4{
+    .px-4-lg{
         padding-left: var(--padding-4) !important;
         padding-right: var(--padding-4) !important;
     }
-    .px-lg-5{
+    .px-5-lg{
         padding-left: var(--padding-5) !important;
         padding-right: var(--padding-5) !important;
     }
-    .px-lg-6{
+    .px-6-lg{
         padding-left: var(--padding-6) !important;
         padding-right: var(--padding-6) !important;
     }
 }
 @media screen and (min-width: 1200px){
-    .px-xl-0{
+    .px-0-xl{
         padding: var(--padding-0) !important;
     }
-    .px-xl-1{
+    .px-1-xl{
         padding-left: var(--padding-1) !important;
         padding-right: var(--padding-1) !important;
     }
-    .px-xl-2{
+    .px-2-xl{
         padding-left: var(--padding-2) !important;
         padding-right: var(--padding-2) !important;
     }
-    .px-xl-3{
+    .px-3-xl{
         padding-left: var(--padding-3) !important;
         padding-right: var(--padding-3) !important;
     }
-    .px-xl-4{
+    .px-4-xl{
         padding-left: var(--padding-4) !important;
         padding-right: var(--padding-4) !important;
     }
-    .px-xl-5{
+    .px-5-xl{
         padding-left: var(--padding-5) !important;
         padding-right: var(--padding-5) !important;
     }
-    .px-xl-6{
+    .px-6-xl{
         padding-left: var(--padding-6) !important;
         padding-right: var(--padding-6) !important;
     }
@@ -177,117 +177,117 @@
 }
 
 @media screen and (min-width: 576px){
-    .py-sm-0{
+    .py-0-sm{
         padding: var(--padding-0) !important;
     }
-    .py-sm-1{
+    .py-1-sm{
         padding-left: var(--padding-1) !important;
         padding-right: var(--padding-1) !important;
     }
-    .py-sm-2{
+    .py-2-sm{
         padding-left: var(--padding-2) !important;
         padding-right: var(--padding-2) !important;
     }
-    .py-sm-3{
+    .py-3-sm{
         padding-left: var(--padding-3) !important;
         padding-right: var(--padding-3) !important;
     }
-    .py-sm-4{
+    .py-4-sm{
         padding-left: var(--padding-4) !important;
         padding-right: var(--padding-4) !important;
     }
-    .py-sm-5{
+    .py-5-sm{
         padding-left: var(--padding-5) !important;
         padding-right: var(--padding-5) !important;
     }
-    .py-sm-6{
+    .py-6-sm{
         padding-left: var(--padding-6) !important;
         padding-right: var(--padding-6) !important;
     }
 }
 @media screen and (min-width: 768px){
-    .py-md-0{
+    .py-0-md{
         padding: var(--padding-0) !important;
     }
-    .py-md-1{
+    .py-1-md{
         padding-left: var(--padding-1) !important;
         padding-right: var(--padding-1) !important;
     }
-    .py-md-2{
+    .py-2-md{
         padding-left: var(--padding-2) !important;
         padding-right: var(--padding-2) !important;
     }
-    .py-md-3{
+    .py-3-md{
         padding-left: var(--padding-3) !important;
         padding-right: var(--padding-3) !important;
     }
-    .py-md-4{
+    .py-4-md{
         padding-left: var(--padding-4) !important;
         padding-right: var(--padding-4) !important;
     }
-    .py-md-5{
+    .py-5-md{
         padding-left: var(--padding-5) !important;
         padding-right: var(--padding-5) !important;
     }
-    .py-sm-6{
+    .py-6-md{
         padding-left: var(--padding-6) !important;
         padding-right: var(--padding-6) !important;
     }
 }
 @media screen and (min-width: 992px){
-    .py-lg-0{
+    .py-0-lg{
         padding: var(--padding-0) !important;
     }
-    .py-lg-1{
+    .py-1-lg{
         padding-left: var(--padding-1) !important;
         padding-right: var(--padding-1) !important;
     }
-    .py-lg-2{
+    .py-2-lg{
         padding-left: var(--padding-2) !important;
         padding-right: var(--padding-2) !important;
     }
-    .py-lg-3{
+    .py-3-lg{
         padding-left: var(--padding-3) !important;
         padding-right: var(--padding-3) !important;
     }
-    .py-lg-4{
+    .py-4-lg{
         padding-left: var(--padding-4) !important;
         padding-right: var(--padding-4) !important;
     }
-    .py-lg-5{
+    .py-5-lg{
         padding-left: var(--padding-5) !important;
         padding-right: var(--padding-5) !important;
     }
-    .py-lg-6{
+    .py-6-lg{
         padding-left: var(--padding-6) !important;
         padding-right: var(--padding-6) !important;
     }
 }
 @media screen and (min-width: 1200px){
-    .py-xl-0{
+    .py-0-xl{
         padding: var(--padding-0) !important;
     }
-    .py-xl-1{
+    .py-1-xl{
         padding-left: var(--padding-1) !important;
         padding-right: var(--padding-1) !important;
     }
-    .py-xl-2{
+    .py-2-xl{
         padding-left: var(--padding-2) !important;
         padding-right: var(--padding-2) !important;
     }
-    .py-xl-3{
+    .py-3-xl{
         padding-left: var(--padding-3) !important;
         padding-right: var(--padding-3) !important;
     }
-    .py-xl-4{
+    .py-4-xl{
         padding-left: var(--padding-4) !important;
         padding-right: var(--padding-4) !important;
     }
-    .py-xl-5{
+    .py-5-xl{
         padding-left: var(--padding-5) !important;
         padding-right: var(--padding-5) !important;
     }
-    .py-xl-6{
+    .py-6-xl{
         padding-left: var(--padding-6) !important;
         padding-right: var(--padding-6) !important;
     }

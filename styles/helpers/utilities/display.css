@@ -4,6 +4,9 @@
 .d-flex{
     display: flex !important;
 }
+.d-inline-flex{
+    display: inline-flex !important;
+}
 .d-block{
     display: block !important;
 }
@@ -17,6 +20,9 @@
     }
     .d-flex-sm{
         display: flex !important;
+    }
+    .d-inline-flex-sm{
+        display: inline-flex !important;
     }
     .d-block-sm{
         display: block !important;
@@ -32,6 +38,9 @@
     .d-flex-md{
         display: flex !important;
     }
+    .d-inline-flex-md{
+        display: inline-flex !important;
+    }
     .d-block-md{
         display: block !important;
     }
@@ -45,6 +54,9 @@
     }
     .d-flex-lg{
         display: flex !important;
+    }
+    .d-inline-flex-lg{
+        display: inline-flex !important;
     }
     .d-block-lg{
         display: block !important;
@@ -60,10 +72,30 @@
     .d-flex-xl{
         display: flex !important;
     }
+    .d-inline-flex-xl{
+        display: inline-flex !important;
+    }
     .d-block-xl{
         display: block !important;
     }
     .d-inline-block-xl{
+        display: inline-block !important;
+    }
+}
+@media screen and(min-width: 1400px) {
+    .d-none-xxl{
+        display: none !important;
+    }
+    .d-flex-xxl{
+        display: flex !important;
+    }
+    .d-inline-flex-xxl{
+        display: inline-flex !important;
+    }
+    .d-block-xxl{
+        display: block !important;
+    }
+    .d-inline-block-xxl{
         display: inline-block !important;
     }
 }
