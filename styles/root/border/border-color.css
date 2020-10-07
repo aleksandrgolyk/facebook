@@ -1,0 +1,4 @@
+:root{
+    --border-color-primary: var(--primary);
+    --border-color-secondary: rgba(255,255,255,.15);    /*   ??!!   */
+}

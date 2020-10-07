@@ -1,0 +1,9 @@
+:root{
+    --border-r-circle: 50%;
+    /*sm,md,xl... has ref with btn size(for create rectangle-rounded shape(input etc.) )*/
+    /*found 20px 50px 18px 10px - strange.   8px, 6px - main*/
+    /*--border-r-sm: calc(1.5 * var(--base--rythm))px;*/
+    /*--border-r-md: calc(2 * var(--base--rythm))px;*/
+    --border-r-sm: 6px;
+    --border-r-md: 8px;
+}
