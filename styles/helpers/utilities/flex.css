@@ -6,10 +6,10 @@
 }
 
 .flex-row{
-    flex-direction: row;
+    flex-direction: row !important;
 }
 .flex-col{
-    flex-direction: column;
+    flex-direction: column !important;
 }
 
 .justify-content-start{
@@ -68,10 +68,10 @@
     }
 
     .flex-row-sm{
-        flex-direction: row;
+        flex-direction: row !important;
     }
     .flex-col-sm{
-        flex-direction: column;
+        flex-direction: column !important;
     }
 
     .justify-content-start-sm{
@@ -128,10 +128,10 @@
     }
 
     .flex-row-md{
-        flex-direction: row;
+        flex-direction: row !important;
     }
     .flex-col-md{
-        flex-direction: column;
+        flex-direction: column !important;
     }
 
     .justify-content-start-md{
@@ -188,10 +188,10 @@
     }
 
     .flex-row-lg{
-        flex-direction: row;
+        flex-direction: row !important;
     }
     .flex-col-lg{
-        flex-direction: column;
+        flex-direction: column !important;
     }
 
     .justify-content-start-lg{
@@ -248,10 +248,10 @@
     }
 
     .flex-row-xl{
-        flex-direction: row;
+        flex-direction: row !important;
     }
     .flex-col-xl{
-        flex-direction: column;
+        flex-direction: column !important;
     }
 
     .justify-content-start-xl{
