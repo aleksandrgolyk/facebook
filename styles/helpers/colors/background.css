@@ -1,0 +1,71 @@
+.bg-primary-lighten1 {
+    background-color: var(--primary-lighten1);
+}
+
+.bg-primary {
+    background-color: var(--primary);
+}
+
+.bg-success {
+    background-color: var(--success);
+}
+
+.bg-success-darken1 {
+    background-color: var(--success-darken1);
+}
+
+.bg-info {
+    background-color: var(--info);
+}
+
+.bg-black {
+    background-color: var(--black);
+}
+
+.bg-white {
+    background-color: var(--white);
+}
+
+.bg-secondary-lighten1 {
+    background-color: var(--secondary-lighten1);
+}
+
+.bg-secondary-lighten2 {
+    background-color: var(--secondary-lighten2);
+}
+
+.bg-secondary-lighten3 {
+    background-color: var(--secondary-lighten3);
+}
+
+.bg-secondary-lighten4 {
+    background-color: var(--secondary-lighten4);
+}
+
+.bg-secondary-lighten5 {
+    background-color: var(--secondary-lighten5);
+}
+
+.bg-secondary-lighten6 {
+    background-color: var(--secondary-lighten6);
+}
+
+.bg-secondary-lighten7 {
+    background-color: var(--secondary-lighten7);
+}
+
+.bg-secondary-lighten8 {
+    background-color: var(--secondary-lighten8);
+}
+
+.bg-secondary-lighten9 {
+    background-color: var(--secondary-lighten9);
+}
+
+.bg-secondary-lighten10 {
+    background-color: var(--secondary-lighten10);
+}
+
+.bg-secondary {
+    background-color: var(--secondary);
+}
