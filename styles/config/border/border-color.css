@@ -1,4 +1,11 @@
 :root{
     --border-color-primary: var(--primary);
-    --border-color-secondary: rgba(255,255,255,.15);    /*   ??!!   */
+    /*
+    need one of this color
+    --border-color-secondary-lighten-2: #3e4042;
+    --border-color-secondary-lighten-1: #3d3f41;
+    */
+    --border-color-secondary: var(--secondary-lighten5);
+    --border-color-secondary-darken-1: var(--secondary-lighten8);
+    --border-color-secondary-darken-2: var(--secondary-lighten10);
 }
