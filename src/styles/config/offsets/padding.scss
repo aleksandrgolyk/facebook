@@ -1,0 +1,11 @@
+@import "../root";
+
+$padding: (
+        "0": 0,
+        "1": 1 * $base-rhythm,
+        "2": 2 * $base-rhythm,
+        "3": 3 * $base-rhythm,
+        "4": 4 * $base-rhythm,
+        "5": 5 * $base-rhythm,
+        "6": 6 * $base-rhythm
+);
