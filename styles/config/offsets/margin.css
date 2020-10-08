@@ -1,10 +1,4 @@
 :root {
-    --margin--6: calc(var(--base--rythm) * -6))px;
-    --margin--5: calc(var(--base--rythm) * -5))px;
-    --margin--4: calc(var(--base--rythm) * -4))px;
-    --margin--3: calc(var(--base--rythm) * -3))px;
-    --margin--2: calc(var(--base--rythm) * -2))px;
-    --margin--1: calc(var(--base--rythm) * -1))px;
     --margin-0: 0;
     --margin-1: calc(var(--base--rythm) * 1)px;
     --margin-2: calc(var(--base--rythm) * 2)px;
