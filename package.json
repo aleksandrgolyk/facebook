@@ -2,10 +2,10 @@
   "name": "facebook",
   "version": "1.0.0",
   "description": "our awesome facebook",
-  "main": "index.html",
+  "main": "src/index.html",
   "scripts": {
-    "dev": "parcel index.html",
-    "build": "parcel build index.html"
+    "dev": "parcel src/index.html",
+    "build": "parcel build src/index.html"
   },
   "repository": {
     "type": "git",
