@@ -1,0 +1,10 @@
+@import "../sizes";
+
+$border-radius:(
+        "circle": 50%,
+        "xs": 1.5 * $base-rhythm,
+        "sm": 2 * $base-rhythm,
+        "md": map-get($sizes, "9") / 2,
+        "lg": map-get($sizes, "10") / 2,
+        "xl": map-get($sizes, "24"),
+);

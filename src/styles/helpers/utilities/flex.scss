@@ -1,4 +1,4 @@
-@import "../../config/utilities/flex";
+@import "../../config";
 @each $point, $screen-size in $grid-breakpoints{
     @if $point == xs {
         @each $wrap in $flex-wrap {
