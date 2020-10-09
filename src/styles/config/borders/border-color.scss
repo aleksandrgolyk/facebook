@@ -1,10 +1,10 @@
 
     $border-color-primary: var(--primary);
-    /*
-    need one of this color
-    --border-color-secondary-lighten-2: #3e4042;
-    --border-color-secondary-lighten-1: #3d3f41;
-    */
+    //
+    //need one of this color
+    //--border-color-secondary-lighten-2: #3e4042;
+    //--border-color-secondary-lighten-1: #3d3f41;
+    //
     $border-color-secondary:(
         "default": var(--secondary-lighten5),
         "darken-1": var(--secondary-lighten8),
