@@ -1,0 +1,38 @@
+@import "../../config/offsets/margin";
+
+.m-0{
+    margin: map-get($margin, "0") !important;
+}
+
+@each $key, $value in $margin {
+    @each $point, $screen-size in $grid-breakpoints{
+            @media screen and (min-width: $screen-size){
+                @if $point == xs{
+                    $point: "";
+                } @else {
+                    $point: -#{$point};
+                }
+            .mt-#{$key}#{$point} {
+                padding-top: $value !important;
+            }
+            .mb-#{$key}#{$point} {
+                padding-bottom: $value !important;
+            }
+            .ml-#{$key}#{$point} {
+                padding-left: $value!important;
+            }
+            .mr-#{$key}#{$point} {
+                padding-right: $value !important;
+            }
+            .mx-#{$key}#{$point} {
+                padding-right: $value !important;
+                padding-left: $value !important;
+            }
+            .my-#{$key}#{$point} {
+                padding-top: $value !important;
+                padding-bottom: $value !important;
+            }
+        }
+    }
+
+}
