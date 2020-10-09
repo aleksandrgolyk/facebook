@@ -1,10 +1,13 @@
-@import "../sizes";
+@import "../sizes/sizes";
 
 $border-radius:(
-        "circle": 50%,
-        "xs": 1.5 * $base-rhythm,
-        "sm": 2 * $base-rhythm,
-        "md": map-get($sizes, "9") / 2,
-        "lg": map-get($sizes, "10") / 2,
-        "xl": map-get($sizes, "24"),
+        "circle": 50%,  /*round button*/
+        "xxs": 1.5 * $base-rhythm, /*card, hover for advertising, buttons*/
+        "xs": 2 * $base-rhythm, /*photo for advertising, hover for contact" */
+        "sm": map-get($sizes, "5") / 2, /*stories*/
+        "md": map-get($sizes, "4"), /*last visit(contact)*/
+        "lg": map-get($sizes, "9") / 2, /*inputs for comment*/
+        "xl": map-get($sizes, "10") / 2, /*inputs for post*/
+        "xxl": map-get($sizes, "12"), /*input search*/
+        "xxxl": map-get($sizes, "24") /*notification*/
 );
