@@ -1,12 +1,7 @@
-
-    $border-color-primary: var(--primary);
-    //
-    //need one of this color
-    //--border-color-secondary-lighten-2: #3e4042;
-    //--border-color-secondary-lighten-1: #3d3f41;
-    //
-    $border-color-secondary:(
-        "default": var(--secondary-lighten5),
-        "darken-1": var(--secondary-lighten8),
-        "darken-2": var(--secondary-lighten10),
+$border-color-primary: $primary; /*tabs, active story*/
+    
+$border-color-secondary:(
+        "default": $secondary-lighten1, /*contact*/
+        "darken": $secondary-lighten2, /*showed story*/
+        "lighten": $secondary-lighten3,/*menu*/
     );

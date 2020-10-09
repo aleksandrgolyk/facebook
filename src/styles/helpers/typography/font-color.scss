@@ -1,15 +1,5 @@
-.fc-primary {
-  color: $fc-primary;
-}
-
-.fc-secondary {
-  color: $fc-secondary;
-}
-
-.fc-brand {
-  color: $fc-brand;
-}
-
-.fc-white {
-  color: $fc-white;
+@each $name, $value in $font-color {
+  .fc-#{$name} {
+    color: $value;
+  }
 }

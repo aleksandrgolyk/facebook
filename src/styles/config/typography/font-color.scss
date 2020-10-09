@@ -1,5 +1,7 @@
-$fc-primary: $secondary-lighten4; /*!* other *!*/
-$fc-secondary: $secondary-lighten3; /*!* for title2, caption1*/
-$fc-brand: $primary-lighten1; /*!* for caption2, body*!*/
-$fc-white: $white; /*!* for caption1*!*/
+$font-color: (
+        "primary": $secondary-lighten4, /*!* other *!*/
+        "secondary": $secondary-lighten3, /*!* for title2, caption1*/
+        "brand": $primary-lighten1, /*!* for caption2, body*!*/
+        "white": $white /*!* for caption1*!*/
+)
 
