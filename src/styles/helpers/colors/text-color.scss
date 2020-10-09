@@ -1,0 +1,7 @@
+@import "../../config/typography/font-color";
+
+@each $key, $value in $font-color {
+  .fc-#{key} {
+    color: $value;
+  }
+}

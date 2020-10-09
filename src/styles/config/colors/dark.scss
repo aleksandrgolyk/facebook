@@ -1,16 +1,35 @@
-$primary-lighten1: #2e98ff; //references
-$primary: #2d88ff; //brand color
+$primary: (
+  "default": #2d88ff,
+  "lighten1": #2e98ff,
+);
 
-$success: #31a24c;
-$success-darken1: #1F3520; //background for offline friends
-$allert: #f5bb41;
+$secondary: (
+  "default": #18191a,
+  "lighten1": #242526,
+  "lighten2": #3a3b3c,
+  "lighten3": #b0b3b8,
+  "lighten4": #e4e6eb,
+);
+
+$success: (
+  "default": #31a24c,
+  "darken1": #1f3520,
+);
+
+$alert: #f5bb41;
 $info: #f02849;
 
 $black: #000; //system black color
 $white: #fff; //notification text
 
-$secondary-lighten4: #e4e6eb; //text, nicknames
-$secondary-lighten3: #b0b3b8; //text, likes, dates
-$secondary-lighten2: #3a3b3c; //background of round buttons and card buttons 
-$secondary-lighten1: #242526; //header, post and card background
-$secondary: #18191a; //body background
+// $primary-lighten: #2e98ff; //references
+// $primary: #2d88ff; //brand color
+
+// $secondary-lighten4: #e4e6eb; //text, nicknames
+// $secondary-lighten3: #b0b3b8; //text, likes, dates
+// $secondary-lighten2: #3a3b3c; //background of round buttons and card buttons
+// $secondary-lighten1: #242526; //header, post and card background
+// $secondary: #18191a; //body background
+
+// $success: #31a24c;
+// $success-darken1: #1F3520; //background for offline friends

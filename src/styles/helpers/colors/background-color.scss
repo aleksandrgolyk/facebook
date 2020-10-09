@@ -1,0 +1,38 @@
+@import "../../config/colors/dark";
+
+@each $key, $value in $primary {
+  @if $key != "default" {
+    .bgc-#{$key} {
+      background-color: $value;
+    }
+  }
+}
+
+@each $key, $value in $secondary {
+  @if $key != "default" {
+    .bgc-#{$key} {
+      background-color: $value;
+    }
+  }
+}
+
+@each $key, $value in $success {
+  @if $key != "default" {
+    .bgc-#{$key} {
+      background-color: $value;
+    }
+  }
+}
+
+.bgc-alert {
+  background-color: $alert;
+}
+.bgc-info {
+  background-color: $info;
+}
+.bgc-black {
+  background-color: $black;
+}
+.bgc-white {
+  background-color: $white;
+}
