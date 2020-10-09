@@ -13,24 +13,24 @@
                     $point: -#{$point};
                 }
             .mt-#{$key}#{$point} {
-                padding-top: $value !important;
+                margin-top: $value !important;
             }
             .mb-#{$key}#{$point} {
-                padding-bottom: $value !important;
+                margin-bottom: $value !important;
             }
             .ml-#{$key}#{$point} {
-                padding-left: $value!important;
+                margin-left: $value!important;
             }
             .mr-#{$key}#{$point} {
-                padding-right: $value !important;
+                margin-right: $value !important;
             }
             .mx-#{$key}#{$point} {
-                padding-right: $value !important;
-                padding-left: $value !important;
+                margin-right: $value !important;
+                margin-left: $value !important;
             }
             .my-#{$key}#{$point} {
-                padding-top: $value !important;
-                padding-bottom: $value !important;
+                margin-top: $value !important;
+                margin-bottom: $value !important;
             }
         }
     }
