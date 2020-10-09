@@ -1,11 +1,7 @@
-.fw-thin {
-  font-weight: $fw-thin;
+@each $name, $value in $font-weight {
+  .fw-#{$name} {
+    font-weight: $value;
+  }
 }
 
-.fw-regular {
-  font-weight: $fw-regular;
-}
 
-.fw-bold {
-  font-weight: $fw-bold;
-}

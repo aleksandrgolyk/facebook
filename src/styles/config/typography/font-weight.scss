@@ -1,4 +1,7 @@
-$fw-thin: 300;
-$fw-regular: 400;
-$fw-bold: 600;
+$font-weight: (
+        "thin": 300,
+        "regular":400,
+        "bold":600,
+        "dark":900
+);
 
