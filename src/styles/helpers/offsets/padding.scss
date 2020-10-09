@@ -3,32 +3,30 @@
 .p-0{
     padding: map-get($padding, "0") !important;
 }
-
+@each $name, $padding in $padding {
+    .pt-#{$name} {
+        padding-top: $padding !important;
+    }
+    .pb-#{$name} {
+        padding-bottom: $padding !important;
+    }
+    .pl-#{$name} {
+        padding-left: $padding !important;
+    }
+    .pr-#{$name} {
+        padding-right: $padding !important;
+    }
+    .px-#{$name} {
+        padding-right: $padding !important;
+        padding-left: $padding !important;
+    }
+    .py-#{$name} {
+        padding-top: $padding !important;
+        padding-bottom: $padding !important;
+    }
+}
 @each $point, $screen-size in $grid-breakpoints{
-    @if $point == xs{
-        @each $name, $padding in $padding {
-            .pt-#{$name} {
-                padding-top: $padding !important;
-            }
-            .pb-#{$name} {
-                padding-bottom: $padding !important;
-            }
-            .pl-#{$name} {
-                padding-left: $padding !important;
-            }
-            .pr-#{$name} {
-                padding-right: $padding !important;
-            }
-            .px-#{$name} {
-                padding-right: $padding !important;
-                padding-left: $padding !important;
-            }
-            .py-#{$name} {
-                padding-top: $padding !important;
-                padding-bottom: $padding !important;
-            }
-        }
-    }@else{
+    @if $point != xs{
         @media screen and (min-width: $screen-size){
             @each $name, $padding in $padding {
                 .pt-#{$name}-#{$point} {
