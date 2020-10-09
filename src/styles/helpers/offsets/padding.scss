@@ -27,7 +27,7 @@
     @if $point != xs{
         @media screen and (min-width: $screen-size){
             @each $name, $padding in $padding {
-                .fw-#{$name}-#{$point} {
+                .pt-#{$name}-#{$point} {
                     padding-top: $padding !important;
                 }
                 .pb-#{$name}-#{$point} {
