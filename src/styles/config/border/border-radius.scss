@@ -1,0 +1,29 @@
+@import "../sizes/sizes";
+//:root{
+//    --border-r-circle: 50%;
+//    --border-r-1-5: calc(1.5 * var(--base--rythm))px;
+//    --border-r-2: calc(2 * var(--base--rythm))px;
+//    --border-r-3: calc(var(--size-3) / 2)px;
+//    --border-r-4: calc(var(--size-4) / 2)px;
+//    --border-r-4-5: calc(var(--size-4-5) / 2)px;
+//    --border-r-5: calc(var(--size-5) / 2)px;
+//    --border-r-6: calc(var(--size-6) / 2)px;
+//    --border-r-7: calc(var(--size-7) / 2)px;
+//    --border-r-8: calc(var(--size-8) / 2)px;
+//    --border-r-9: calc(var(--size-9) / 2)px;
+//    --border-r-10: calc(var(--size-10) / 2)px;
+//    --border-r-12: calc(var(--size-12) / 2)px;
+//    --border-r-15: calc(var(--size-15) / 2)px;
+//    --border-r-23: calc(var(--size-23) / 2)px;
+//    --border-r-24: calc(var(--size-24) / 2)px;
+//}
+
+
+$border-radius:(
+        "circle": 50%,
+        "xs": 1.5 * $base-rhythm,
+        "sm": 2 * $base-rhythm,
+        "md": map-get($sizes, "9") / 2,
+        "lg": map-get($sizes, "10") / 2,
+        "xl": map-get($sizes, "24"),
+);

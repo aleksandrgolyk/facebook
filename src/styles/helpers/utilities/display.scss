@@ -1,0 +1,18 @@
+@import "../../config/utilities/display";
+@each $point, $screen-size in $grid-breakpoints{
+    @if $point == xs{
+        @each $display in $display{
+            .d-#{$display}{
+                display: $display !important;
+            }
+        }
+    }@else{
+        @media screen and (min-width: $screen-size){
+            @each $display in $display{
+                .d-#{$display}-#{$point}{
+                    display: $display !important;
+                }
+            }
+        }
+    }
+}
