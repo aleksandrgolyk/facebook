@@ -1,14 +1,13 @@
 @import "../../config";
+@each $display in $display{
+    .d-#{$display}{
+        display: $display !important;
+    }
+}
 @each $point, $screen-size in $grid-breakpoints{
-    @if $point == xs{
-        @each $display in $displays{
-            .d-#{$display}{
-                display: $display !important;
-            }
-        }
-    }@else{
+    @if $point != xs{
         @media screen and (min-width: $screen-size){
-            @each $display in $displays{
+            @each $display in $display{
                 .d-#{$display}-#{$point}{
                     display: $display !important;
                 }

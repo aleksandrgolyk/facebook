@@ -1,43 +1,41 @@
 @import "../../config";
-@each $point, $screen-size in $grid-breakpoints{
-    @if $point == xs {
-        @each $wrap in $flex-wrap {
-            .flex-#{$wrap} {
-                flex-wrap: $wrap !important;
-            }
-        }
-        @each $grow in $flex-grow {
-            .flex-grow-#{$grow} {
-                flex-grow: $grow !important;
-            }
-        }
-        @each $name, $order in $flex-order {
-            .flex-order-#{$name} {
-                order: $order !important;
-            }
-        }
-        @each $dir in $flex-dir {
-            .flex-dir-#{$dir} {
-                flex-direction: $dir !important;
-            }
-        }
-        @each $name, $value in $justify-content {
-            .justify-content-#{$name} {
-                justify-content: $value !important;
-            }
-        }
-        @each $name, $value in $align-content {
-            .align-content-#{$name} {
-                align-content: $value !important;
-            }
-        }
-        @each $name, $value in $align-items {
-            .align-items-#{$name} {
-                align-items: $value !important;
-            }
-        }
+@each $wrap in $flex-wrap {
+    .flex-#{$wrap} {
+        flex-wrap: $wrap !important;
     }
-    @else {
+}
+@each $grow in $flex-grow {
+    .flex-grow-#{$grow} {
+        flex-grow: $grow !important;
+    }
+}
+@each $name, $order in $flex-order {
+    .flex-order-#{$name} {
+        order: $order !important;
+    }
+}
+@each $dir in $flex-dir {
+    .flex-dir-#{$dir} {
+        flex-direction: $dir !important;
+    }
+}
+@each $name, $value in $justify-content {
+    .justify-content-#{$name} {
+        justify-content: $value !important;
+    }
+}
+@each $name, $value in $align-content {
+    .align-content-#{$name} {
+        align-content: $value !important;
+    }
+}
+@each $name, $value in $align-items {
+    .align-items-#{$name} {
+        align-items: $value !important;
+    }
+}
+@each $point, $screen-size in $grid-breakpoints{
+    @if $point != xs {
         @media screen and (min-width: $screen-size){
             @each $wrap in $flex-wrap {
                 .flex-#{$wrap}-#{$point} {
