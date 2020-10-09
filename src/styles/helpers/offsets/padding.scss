@@ -1,5 +1,3 @@
-@import "../../config";
-
 .p-0{
     padding: map-get($padding, "0") !important;
 }
@@ -29,7 +27,7 @@
     @if $point != xs{
         @media screen and (min-width: $screen-size){
             @each $name, $padding in $padding {
-                .pt-#{$name}-#{$point} {
+                .fw-#{$name}-#{$point} {
                     padding-top: $padding !important;
                 }
                 .pb-#{$name}-#{$point} {

@@ -14,3 +14,11 @@ $secondary-lighten3: #b0b3b8; //text, likes, dates
 $secondary-lighten2: #3a3b3c; //background of round buttons and card buttons 
 $secondary-lighten1: #242526; //header, post and card background
 $secondary: #18191a; //body background
+
+$secondary:(
+    "default": #18191a,
+    "lighten1": #242526,
+    "lighten2": #3a3b3c,
+    "lighten3": #b0b3b8,
+    "lighten4": #e4e6eb,
+)

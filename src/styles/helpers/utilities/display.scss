@@ -1,4 +1,3 @@
-@import "../../config";
 @each $display in $display{
     .d-#{$display}{
         display: $display !important;
