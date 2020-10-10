@@ -1,8 +1,7 @@
-@import "../../config";
-
 .p-0{
     padding: map-get($padding, "0") !important;
 }
+
 @each $name, $padding in $padding {
     .pt-#{$name} {
         padding-top: $padding !important;

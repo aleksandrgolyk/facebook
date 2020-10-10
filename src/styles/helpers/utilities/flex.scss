@@ -1,4 +1,3 @@
-@import "../../config";
 @each $wrap in $flex-wrap {
     .flex-#{$wrap} {
         flex-wrap: $wrap !important;
