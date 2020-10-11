@@ -1,0 +1,14 @@
+@each $type, $value in $position{
+    .pos-#{$type}{
+        position: $value !important;
+    }
+}
+@each $point, $screen-size in $grid-breakpoints{
+    @each $type, $value in $position{
+        @media screen and (min-width: $screen-size){
+            .pos-#{$type}-#{$point}{
+                position: $value !important;
+            }
+        }
+    }
+}
