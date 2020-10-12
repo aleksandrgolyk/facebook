@@ -2,51 +2,55 @@
     padding: map-get($padding, "0") !important;
 }
 
-@each $name, $padding in $padding {
+@each $name, $offset in $padding {
     .pt-#{$name} {
-        padding-top: $padding !important;
+        padding-top: $offset !important;
     }
     .pb-#{$name} {
-        padding-bottom: $padding !important;
+        padding-bottom: $offset !important;
     }
     .pl-#{$name} {
-        padding-left: $padding !important;
+        padding-left: $offset !important;
     }
     .pr-#{$name} {
-        padding-right: $padding !important;
+        padding-right: $offset !important;
     }
     .px-#{$name} {
-        padding-right: $padding !important;
-        padding-left: $padding !important;
+        padding-right: $offset !important;
+        padding-left: $offset !important;
     }
     .py-#{$name} {
-        padding-top: $padding !important;
-        padding-bottom: $padding !important;
+        padding-top: $offset !important;
+        padding-bottom: $offset !important;
     }
 }
 @each $point, $screen-size in $grid-breakpoints{
-    @if $point != xs{
+    //grid-breakpoints:( sm: 576px, md:768px... )
+    //point = sm, screen-size = 576px
+    @if $point != xs{ //for all sizes except "xs" add prefix
         @media screen and (min-width: $screen-size){
-            @each $name, $padding in $padding {
+            @each $name, $offset in $padding {
+                //padding: (  "1": 4px, "2": 8px... )
+                //name = 1, offset = 4px
                 .pt-#{$name}-#{$point} {
-                    padding-top: $padding !important;
+                    padding-top: $offset !important;
                 }
                 .pb-#{$name}-#{$point} {
-                    padding-bottom: $padding !important;
+                    padding-bottom: $offset !important;
                 }
                 .pl-#{$name}-#{$point} {
-                    padding-left: $padding !important;
+                    padding-left: $offset !important;
                 }
                 .pr-#{$name}-#{$point} {
-                    padding-right: $padding !important;
+                    padding-right: $offset !important;
                 }
                 .px-#{$name}-#{$point} {
-                    padding-right: $padding !important;
-                    padding-left: $padding !important;
+                    padding-right: $offset !important;
+                    padding-left: $offset !important;
                 }
                 .py-#{$name}-#{$point} {
-                    padding-top: $padding !important;
-                    padding-bottom: $padding !important;
+                    padding-top: $offset !important;
+                    padding-bottom: $offset !important;
                 }
             }
         }
