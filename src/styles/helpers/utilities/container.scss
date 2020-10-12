@@ -1,15 +1,22 @@
+//need to create list like that: .container-sm, .container-md, .container-lg...
+//of classes that need to apply the same style(s)
 @function combine($map, $prefix){
   $classes: "";
   @each $name, $value in $map {
-    $classes: $classes + ".#{$prefix}-#{$name}, "
+    $classes: $classes + ".#{$prefix}-#{$name}, " //concatenation what we have with new generated class
   }
   @return $classes;
 }
+
+//need to create list like that: .container-sm, .container-md, .container-lg...
+//of classes that need to apply the same style(s)
+//but it must stop adding class to list and return it when it reached breakpoint
 @function combine-with-break($map, $prefix, $break){
   $classes: "";
   @each $name, $value in $map {
     @if $name != fluid {
       $classes: $classes + ".#{$prefix}-#{$name}, ";
+      // Once the current breakpoint is reached, stop extending
       @if $name==$break {
         @return $classes;
       }
@@ -31,6 +38,7 @@
   @if $point != xs{
     @media screen and (min-width: $screen-size) {
       @each $size, $width in $container-max-widths {
+        // Once the current breakpoint is reached, stop extending
         @if $size==$point {
           .container, #{combine-with-break($container-max-widths,"container",$point)} {
             max-width: $width;
