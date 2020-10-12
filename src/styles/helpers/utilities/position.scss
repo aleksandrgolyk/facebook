@@ -4,8 +4,8 @@
     }
 }
 @each $point, $screen-size in $grid-breakpoints{
-    @each $type, $value in $position{
-        @media screen and (min-width: $screen-size){
+    @media screen and (min-width: $screen-size){
+        @each $type, $value in $position{
             .pos-#{$type}-#{$point}{
                 position: $value !important;
             }

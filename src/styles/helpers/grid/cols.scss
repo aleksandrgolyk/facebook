@@ -1,0 +1,20 @@
+$col-width: 100%/$grid-columns;
+
+@for $i from $grid-columns through 1 {
+  .col-#{$i}{
+    width: $col-width * $i;
+    padding-left: $grid-gutter-width;
+    padding-right: $grid-gutter-width;
+  }
+}
+@each $point, $screen-size in $grid-breakpoints {
+  @media screen and (min-width: $screen-size){
+    @for $i from $grid-columns through 1 {
+      .col-#{$i}-#{$point}{
+        width: $col-width * $i;
+        padding-left: $grid-gutter-width;
+        padding-right: $grid-gutter-width;
+      }
+    }
+  }
+}
