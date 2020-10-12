@@ -10,13 +10,13 @@
 .h4 {
   font-size: map_get($font-size, h4);
 }
-.h5 {
+.h5, .title1 {
   font-size: map_get($font-size, title1);
 }
-.h6 {
+.h6, .title2 {
   font-size: map_get($font-size, title2);
 }
-.body {
+.body, .p {
   font-size: map_get($font-size, body);
 }
 .caption1 {
