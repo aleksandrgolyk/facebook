@@ -1,0 +1,14 @@
+/*create config for sizing, this will be values for width and height*/
+$values: 25, 50, 75, 100;
+/*create map for height, 
+  left part(keys) for short name helpers, 
+  right part(values) for dimensions of this type helpers */
+$height:(
+    "h": "%",
+    "vh": "vh"
+);
+/*there is the same structure as height, but for width helpers*/
+$width: (
+    "w": "%",
+    "vw": "vw"
+);

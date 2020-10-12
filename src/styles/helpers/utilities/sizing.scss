@@ -1,0 +1,46 @@
+/*create helpers for height and width with value - auto*/
+.h-auto{
+    height: auto;
+}
+.w-auto{
+    width: auto;
+}
+
+/*----------------Height----------------*/
+/*first loop goes through height shortnames and their dimensions*/
+@each $name, $dimension in $height{
+    /*second loop goes through all posible values of height*/
+    @each $value in $values {
+        /*helper name consists of shortname(that we get from keys of height map)
+          and height value
+        /* Create helpers for height in '%' and 'vievport' dimensions*/
+        .#{$name}-#{$value}{
+            height: #{$value} + #{$dimension};
+        }
+        /*Create helpers for min-height in '%' and 'vievport' dimensions*/
+        .min-#{$name}-#{$value}{
+            min-height: #{$value} + #{$dimension};
+        }
+        /*Create helpers for max-height in '%' and 'vievport' dimensions*/
+        .max-#{$name}-#{$value}{
+            max-height: #{$value} + #{$dimension};
+        }
+    }
+}
+/*----------------Width---------------*/
+@each $name, $dimension in $width{
+    @each $value in $values {
+        /*Create helpers for width in '%' and 'vievport' dimensions*/
+        .#{$name}-#{$value}{
+            width: #{$value} + #{$dimension};
+        }
+        /*Create helpers for min-width in '%' and 'vievport' dimensions*/
+        .min-#{$name}-#{$value}{
+            min-width: #{$value} + #{$dimension};
+        }
+        /*Create helpers for max-width in '%' and 'vievport' dimensions*/
+        .max-#{$name}-#{$value}{
+            max-width: #{$value} + #{$dimension};
+        }
+    }
+} 
