@@ -1,0 +1,15 @@
+@import "../../config/borders/border-position";
+
+//border-position maps are in config
+
+@each $name_position, $position in $border-position{
+    .border-#{$name_position}{ //name_position - top, right, bottom, left
+        border-#{$position}-style: solid; //position - top, right, bottom, left
+     }
+}
+//example css: .border-top{ border-top-style: solid; }
+
+//top, bottom, right and left borders are solid
+.borders-solid{
+  border-style: solid;
+}
