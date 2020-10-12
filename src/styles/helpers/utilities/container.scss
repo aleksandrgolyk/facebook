@@ -1,0 +1,42 @@
+@function combine($map, $prefix){
+  $classes: "";
+  @each $name, $value in $map {
+    $classes: $classes + ".#{$prefix}-#{$name}, "
+  }
+  @return $classes;
+}
+@function combine-with-break($map, $prefix, $break){
+  $classes: "";
+  @each $name, $value in $map {
+    @if $name != fluid {
+      $classes: $classes + ".#{$prefix}-#{$name}, ";
+      @if $name==$break {
+        @return $classes;
+      }
+    }
+  }
+}
+
+
+
+.container, #{combine($container-max-widths, "container")}{
+  width: 100%;
+  padding-right: $grid-gutter-width;
+  padding-left: $grid-gutter-width;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@each $point, $screen-size in $grid-breakpoints {
+  @if $point != xs{
+    @media screen and (min-width: $screen-size) {
+      @each $size, $width in $container-max-widths {
+        @if $size==$point {
+          .container, #{combine-with-break($container-max-widths,"container",$point)} {
+            max-width: $width;
+          }
+        }
+      }
+    }
+  }
+}

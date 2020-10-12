@@ -1,5 +1,10 @@
 $col-width: 100%/$grid-columns;
 
+.col-auto{
+  flex: 0 0 auto;
+  width: auto;
+  max-width: 100%;
+}
 @for $i from $grid-columns through 1 {
   .col-#{$i}{
     width: $col-width * $i;
@@ -7,13 +12,22 @@ $col-width: 100%/$grid-columns;
     padding-right: $grid-gutter-width;
   }
 }
+
 @each $point, $screen-size in $grid-breakpoints {
-  @media screen and (min-width: $screen-size){
-    @for $i from $grid-columns through 1 {
-      .col-#{$i}-#{$point}{
-        width: $col-width * $i;
-        padding-left: $grid-gutter-width;
-        padding-right: $grid-gutter-width;
+  @if $point != xs{
+    @media screen and (min-width: $screen-size){
+      .col-auto-#{$point}{
+        flex: 0 0 auto;
+        width: auto;
+        max-width: 100%;
+      }
+      @for $i from $grid-columns through 1 {
+        .col-#{$i}-#{$point}{
+          flex: 0 0 $col-width * $i;
+          max-width: $col-width * $i;
+          padding-left: $grid-gutter-width;
+          padding-right: $grid-gutter-width;
+        }
       }
     }
   }
