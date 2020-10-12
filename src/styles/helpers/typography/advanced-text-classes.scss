@@ -1,0 +1,98 @@
+.title1-bold {
+  font-size: map_get($font-size, title1);
+  font-family: $ff-base;
+  line-height: map_get($line-height, title1);
+  font-weight: map_get($font-weight, bold);
+  color: map_get($secondary, lighten4);
+}
+.title1-regular {
+  font-size: map_get($font-size, title1);
+  font-family: $ff-base;
+  line-height: map_get($line-height, title1);
+  font-weight: map_get($font-weight, regular);
+  color: map_get($secondary, lighten4);
+}
+.title2-bold {
+  font-size: map_get($font-size, title2);
+  font-family: $ff-base;
+  line-height: map_get($line-height, title2);
+  font-weight: map_get($font-weight, bold);
+  color: map_get($secondary, lighten4);
+}
+.title2-bold-shadow {
+  font-size: map_get($font-size, title2);
+  font-family: $ff-base;
+  line-height: map_get($line-height, title2);
+  font-weight: map_get($font-weight, bold);
+  color: map_get($secondary, lighten3);
+}
+.title2-regular {
+  font-size: map_get($font-size, title2);
+  font-family: $ff-base;
+  line-height: map_get($line-height, title2);
+  font-weight: map_get($font-weight, regular);
+  color: map_get($secondary, lighten3);
+}
+.title2-regular-shadow {
+   font-size: map_get($font-size, title2);
+   font-family: $ff-base;
+   line-height: map_get($line-height, title2);
+   font-weight: map_get($font-weight, regular);
+   color: map_get($secondary, lighten3);
+ }
+.body-regular{
+  font-size: map_get($font-size, body);
+  font-family: $ff-base;
+  line-height: map_get($line-height, body);
+  font-weight: map_get($font-weight, regular);
+  color: map_get($secondary, lighten4);
+}
+.body-regular-shadow{
+  font-size: map_get($font-size, body);
+  font-family: $ff-base;
+  line-height: map_get($line-height, body);
+  font-weight: map_get($font-weight, regular);
+  color: map_get($secondary, lighten3);
+}
+.body-bold{
+  font-size: map_get($font-size, body);
+  font-family: $ff-base;
+  line-height: map_get($line-height, body);
+  font-weight: map_get($font-weight, bold);
+  color: map_get($secondary, lighten4);
+}
+.body-bold-shadow{
+  font-size: map_get($font-size, body);
+  font-family: $ff-base;
+  line-height: map_get($line-height, body);
+  font-weight: map_get($font-weight, bold);
+  color: map_get($secondary, lighten3);
+}
+.caption1{
+  font-size: map_get($font-size, caption1);
+  font-family: $ff-base;
+  line-height: map_get($line-height, caption1);
+  font-weight: map_get($font-weight, caption1);
+  color: map_get($secondary, lighten3);
+}
+.caption2{
+  font-size: map_get($font-size, caption2);
+  font-family: $ff-base;
+  line-height: map_get($line-height, caption2);
+  font-weight: map_get($font-weight, caption2);
+  color: map_get($secondary, lighten3);
+}
+.caption3{
+  font-size: map_get($font-size, caption3);
+  font-family: $ff-base;
+  line-height: map_get($line-height, caption3);
+  font-weight: map_get($font-weight, caption3);
+  color: map_get($secondary, lighten4);
+}
+.caption3-link{
+  font-size: map_get($font-size, caption3);
+  font-family: $ff-base;
+  line-height: map_get($line-height, caption3);
+  font-weight: map_get($font-weight, caption3);
+  color: map_get($primary, lighten1);
+}

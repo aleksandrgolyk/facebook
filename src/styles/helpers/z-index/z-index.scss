@@ -1,16 +1,37 @@
+<<<<<<< HEAD
 //name is variable from z-index.sccs - config\z-index.scss for name z-index-name
 //name value = negative,0,1000,1100,1200,1300,1400,1500,1600,1700
 //value is variable from z-index.sccs - config\z-index.scss for value z-index-name
 //value value = -1,0,1000,1100,1200,1300,1400,1500,1600,1700
 //z-index  this is map from config\z-index.scss
+=======
+/*
+name is variable from z-index.sccs - config\z-index.scss for name z-index-name
+name value = negative,0,1000,1100,1200,1300,1400,1500,1600,1700
+value is variable from z-index.sccs - config\z-index.scss for value z-index-name
+value value = -1,0,1000,1100,1200,1300,1400,1500,1600,1700
+z-index  this is map from config\z-index.scss
+*/
+>>>>>>> master
 @each $name, $value in $z-index {
   .z-index-#{$name} {
     z-index: $value;
   }
 }
 
+<<<<<<< HEAD
 //In result loop classes with the set values should turn out
 //example :
 //.z-index-0 {
 //z-index: 0;
 //}
+=======
+/*
+In result loop classes with the set values should turn out
+
+example :
+.z-index-0 {
+  z-index: 0;
+}
+*/
+>>>>>>> master
