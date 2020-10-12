@@ -1,8 +1,13 @@
 @import "../../config/colors/dark";
 
 @each $key, $value in $primary {
-  @if $key != "default" {
-    .bgc-#{$key} {
+  @if $key != "default" { // all items except default will have next changes
+    .bgc-#{$key} { // key - "lighten1"
+      background-color: $value; // value - color hex
+    }
+  }
+  @else { //handling default value
+    .bgc-primary {
       background-color: $value;
     }
   }
@@ -10,7 +15,12 @@
 
 @each $key, $value in $secondary {
   @if $key != "default" {
-    .bgc-#{$key} {
+    .bgc-#{$key} { // key - "lighten1", "lighten2", "lighten3", etc.
+      background-color: $value; // value - color hex
+    }
+  }
+  @else {
+    .bgc-secondary {
       background-color: $value;
     }
   }
@@ -18,7 +28,12 @@
 
 @each $key, $value in $success {
   @if $key != "default" {
-    .bgc-#{$key} {
+    .bgc-#{$key} { // key - "darken1", etc.
+      background-color: $value; // value - color hex
+    }
+  }
+  @else {
+    .bgc-success {
       background-color: $value;
     }
   }
