@@ -1,7 +1,7 @@
-//$border-color-primary: $primary; /*tabs, active story*/
-//
-//$border-color-secondary:(
-//        "default": $secondary-lighten1, /*contact*/
-//        "darken": $secondary-lighten2, /*showed story*/
-//        "lighten": $secondary-lighten3,/*menu*/
-//   );
+$border-color-primary:  map-get($primary,"lighten1"); //tabs, active story
+
+$border-color-secondary:(
+        "lighten1": map-get($secondary, "default"), //last visit
+        "lighten2": map-get($secondary, "lighten2"),//showed story
+        "lighten3": map-get($secondary, "lighten3"), //menu and header
+   );

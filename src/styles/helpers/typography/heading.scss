@@ -1,0 +1,30 @@
+.h1 {
+  font-size: map_get($font-size, h1);
+}
+.h2 {
+  font-size: map_get($font-size, h2);
+}
+.h3 {
+  font-size: map_get($font-size, h3);
+}
+.h4 {
+  font-size: map_get($font-size, h4);
+}
+.h5, .title1 {
+  font-size: map_get($font-size, title1);
+}
+.h6, .title2 {
+  font-size: map_get($font-size, title2);
+}
+.body, .p {
+  font-size: map_get($font-size, body);
+}
+.caption1 {
+  font-size: map_get($font-size, caption1);
+}
+.caption2 {
+  font-size: map_get($font-size, caption2);
+}
+.caption3 {
+  font-size: map_get($font-size, caption3);
+}

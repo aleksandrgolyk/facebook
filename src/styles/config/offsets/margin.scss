@@ -1,7 +1,8 @@
 $margin: ();
 
+/* loop that creates map "margin" that has format "0":0 where first is the key and second is the value
 /* just change 6 to any other number to increase/decrease amount of margin configs */
   @for $i from 0 through 6 {
-    $tmpMargin: ("#{$i}": $i*$base-rhythm, );
-    $margin: map-merge($margin, $tmpMargin);
+    $tmpMargin: ("#{$i}": $i*$base-rhythm, ); /* temporary map that contain only one current key-value*/
+    $margin: map-merge($margin, $tmpMargin); /* adding new item to main map ("margin") merging temporary map with "margin"*/
   }

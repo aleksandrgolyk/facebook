@@ -1,0 +1,32 @@
+//name is variable from visibility.sccs - config\visibility.scss for name visibility-name
+//name value = visible,invisible
+//value is variable from visibility.sccs - config\visibility.scss for value visibility-name
+//value value = visible, hidden
+//visibility  this is map from config\visibility.scss
+
+@each $name, $value in $visibility {
+  .visibility-#{$name} {
+    visibility: $value;
+  }
+}
+//In result loop classes with the set values should turn out
+//example :
+//.visibility-visible {
+//  visibility: visible;
+//}
+
+@each $point, $screen-size in $grid-breakpoints{
+    //grid-breakpoints:( sm: 576px, md:768px... )
+    //point = sm, screen-size = 576px
+    @if $point != xs{ //for all sizes except "xs" add prefix
+        @media screen and (min-width: $screen-size){
+            @each $name, $value in $visibility {
+                //padding: (  "1": 4px, "2": 8px... )
+                //name = 1, offset = 4px
+                .#{$name}-#{$point} {
+                    visibility: $value !important;
+                }
+            }
+        }
+    }
+}
