@@ -1,8 +1,8 @@
 $border-radius:(
         "circle": 50%,  /*round button*/
-        "xxs": 1.5 * $base-rhythm, /*card, hover for advertising, buttons*/
+        "xxs": 1.5 * $base-rhythm, /*example $base-rhythm = 4px. card, hover for advertising, buttons*/
         "xs": 2 * $base-rhythm, /*photo for advertising, hover for contact" */
-        "sm": map-get($sizes, "5") / 2, /*stories*/
+        "sm": map-get($sizes, "5") / 2, /*example size key - "3" ... "24", value - 3*$base-rhythm. stories*/
         "md": map-get($sizes, "4"), /*last visit(contact)*/
         "lg": map-get($sizes, "9") / 2, /*inputs for comment*/
         "xl": map-get($sizes, "10") / 2, /*inputs for post*/
