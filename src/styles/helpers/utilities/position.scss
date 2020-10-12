@@ -1,12 +1,20 @@
-
-@each $type, $value in $position{
+/*Starting loop over map config position,
+  position is a map with pairs type:value,
+  type - iterates through short names of position values,
+  value - iterates through values of position values*/
+  @each $type, $value in $position{
+    /*create general position helpers for each position value*/
     .pos-#{$type}{
         position: $value !important;
     }
 }
+/*Starting double loop over map grid-breackpoints and position,
+  grid-breackpoints contains point(short name for media size) and screeen-size(value of point in pixels)*/
 @each $point, $screen-size in $grid-breakpoints{
-    @media screen and (min-width: $screen-size){
-        @each $type, $value in $position{
+    /*Starting loop throw each position value and create helpers for each breakpoint with different values of position*/
+    @each $type, $value in $position{
+        @media screen and (min-width: $screen-size){
+            /*Naming example "pos-abs-xl" means creating position helper for "absolute" value of position with "xl" breackpoint*/
             .pos-#{$type}-#{$point}{
                 position: $value !important;
             }
