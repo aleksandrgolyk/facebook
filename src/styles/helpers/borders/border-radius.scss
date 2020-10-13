@@ -2,8 +2,8 @@
 
 //border-radius maps are in config
 @each $size_name, $value in $border-radius{
-    .border-radius-#{$size_name} { // name - "circle", "xxs", "xs" ... "xxxl"
+    .br-#{$size_name} { // name - "circle", "xxs", "xs" ... "xxxl"
         border-radius: $value; // value - 50%, 1.5 * $base-rhythm (example base-rhythm = 4px)...
       }
 }
-//example css: .border-radius-circle { border-radius: 50%; }
+//example css: .br-circle { border-radius: 50%; }

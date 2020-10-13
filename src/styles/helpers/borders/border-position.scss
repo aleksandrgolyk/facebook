@@ -1,15 +1,33 @@
 @import "../../config/borders/border-position";
 
-//border-position maps are in config
-
-@each $name_position, $position in $border-position{
-    .border-#{$name_position}{ //name_position - top, right, bottom, left
-        border-#{$position}-style: solid; //position - top, right, bottom, left
-     }
+//border-position array are in config
+//position shows where border is (top, bottom, left, right)
+@each $position in $border-position{
+  @if $position=="top"{
+    .b-top{ 
+      border-#{$position}-style: solid; 
+   }
+  }
+  @else if $position=="bottom"{
+    .b-bottom{ 
+      border-#{$position}-style: solid; 
+   }
+  }
+  @else if $position=="left"{
+    .b-left{ 
+      border-#{$position}-style: solid;
+   }
+  }
+  @else {
+    .b-right{ 
+      border-#{$position}-style: solid; 
+   }
+  }
 }
-//example css: .border-top{ border-top-style: solid; }
+//example css: .b-top{ border-top-style: solid; }
 
-//top, bottom, right and left borders are solid
-.borders-solid{
+//.b-each - top, bottom, right and left borders are solid
+.b-each{
   border-style: solid;
-}
+} 
+   
