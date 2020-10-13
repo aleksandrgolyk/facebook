@@ -10,21 +10,21 @@
 .h4 {
   font-size: map_get($font-size, h4);
 }
-.h5, .title1 {
-  font-size: map_get($font-size, title1);
+.h5, .title-1 {
+  font-size: map_get($font-size, title-1);
 }
-.h6, .title2 {
-  font-size: map_get($font-size, title2);
+.h6, .title-2 {
+  font-size: map_get($font-size, title-2);
 }
 .body, .p {
   font-size: map_get($font-size, body);
 }
-.caption1 {
-  font-size: map_get($font-size, caption1);
+.caption-1 {
+  font-size: map_get($font-size, caption-1);
 }
-.caption2 {
-  font-size: map_get($font-size, caption2);
+.caption-2 {
+  font-size: map_get($font-size, caption-2);
 }
-.caption3 {
-  font-size: map_get($font-size, caption3);
+.caption-3 {
+  font-size: map_get($font-size, caption-3);
 }

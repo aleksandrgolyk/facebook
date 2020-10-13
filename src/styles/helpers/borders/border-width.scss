@@ -1,7 +1,10 @@
 @import "../../config/borders/border-width";
 
-@each $key, $value in $border-width{
-    .border-width-#{$key} { //key - "xs", "sm", "md", "xl"
+//bw maps are in config border-width
+@each $name_width, $value in $bw{
+    .bw-#{$name_width} { //name_width - "xs", "sm", "md", "xl"
         border-width: $value; //value - 1px, 3px, 4px, 5px
       }
 }
+
+//example css: .bw-xs{ border-width: 1px; }
