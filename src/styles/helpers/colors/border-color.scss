@@ -5,7 +5,7 @@
 }
 
 @each $key, $value in $bc-secondary {
- .bc-#{$key} {
-   border-color: $value;
+ .bc-#{$key} { //key - "lighten1, lighten2..."
+   border-color: $value; //value - var, that contains hex from dark.scss
  }
 }

@@ -1,7 +1,7 @@
 @import "../../config/typography/font-color";
 
 @each $key, $value in $font-color {
-  .fc-#{$key} {
-    color: $value;
+  .fc-#{$key} { //key - "primary", "secondary" etc.
+    color: $value; //value - var, that contains hex from dark.scss
   }
 }
