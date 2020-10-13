@@ -1,20 +1,97 @@
 $col-width: 100%/$grid-columns;
 
+.col-auto{
+  position: relative;
+  flex: 0 0 auto;
+  width: auto;
+  max-width: 100%;
+}
+.col {
+  position: relative;
+  width: 100%;
+  flex-basis: 0;
+  flex-grow: 1;
+  max-width: 100%;
+}
 @for $i from $grid-columns through 1 {
   .col-#{$i}{
+    position: relative;
     width: $col-width * $i;
     padding-left: $grid-gutter-width;
     padding-right: $grid-gutter-width;
   }
 }
+
 @each $point, $screen-size in $grid-breakpoints {
-  @media screen and (min-width: $screen-size){
-    @for $i from $grid-columns through 1 {
-      .col-#{$i}-#{$point}{
-        width: $col-width * $i;
-        padding-left: $grid-gutter-width;
-        padding-right: $grid-gutter-width;
+  @if $point != xs{
+    @media screen and (min-width: $screen-size){
+      .col-auto-#{$point}{
+        position: relative;
+        flex: 0 0 auto;
+        width: auto;
+        max-width: 100%;
+      }
+      .col-#{$point} {
+        position: relative;
+        width: 100%;
+        flex-basis: 0;
+        flex-grow: 1;
+        max-width: 100%;
+      }
+      //$grid-columns: 12
+      //from 12 to 1(included) run cycle
+      @for $i from $grid-columns through 1 {
+        .col-#{$i}-#{$point}{
+          position: relative;
+          width: 100%;
+          flex: 0 0 $col-width * $i;
+          max-width: $col-width * $i;
+          padding-left: $grid-gutter-width;
+          padding-right: $grid-gutter-width;
+        }
       }
     }
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//
+//@function combine($count, $prefix){
+//  $selectors: "";
+//  @each $point, $screen-size in $grid-breakpoints {
+//    @if $point == xs{
+//      $point:""
+//    }@else{
+//      $point: "-#{$point}";
+//    }
+//    $classes: ".col-auto#{$point}, .col#{$point},";
+//    @for $i from 1 through $count {
+//      $classes:$classes + ".#{$prefix}-#{$i}#{$point}, " //concatenation what we have with new generated class
+//    }
+//    $selectors:$selectors + $classes+"\a";
+//
+//  }
+//  @return $selectors;
+//}
+//
+//#{combine($grid-columns, "col")} {
+//  position: relative;
+//  width: 100%;
+//  padding-left: $grid-gutter-width;
+//  padding-right: $grid-gutter-width;
+//}

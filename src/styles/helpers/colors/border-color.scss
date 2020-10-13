@@ -1,11 +1,11 @@
 @import "../../config/borders/border-color";
 
-//.bc-primary {
-//  border-color: $border-color-primary;
-//}
-//
-//@each $key, $value in $border-color-secondary {
-//  .bc-#{key} {
-//    border-color: $value;
-//  }
-//}
+.bc-primary {
+ border-color: $border-color-primary;
+}
+
+@each $key, $value in $border-color-secondary {
+ .bc-#{$key} {
+   border-color: $value;
+ }
+}
