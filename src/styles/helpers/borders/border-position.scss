@@ -1,8 +1,8 @@
 @import "../../config/borders/border-position";
 
-//border-position array are in config
+//bp array are in config border-position
 //position shows where border is (top, bottom, left, right)
-@each $position in $border-position{
+@each $position in $bp{
   @if $position=="top"{
     .b-top{ 
       border-#{$position}-style: solid; 
