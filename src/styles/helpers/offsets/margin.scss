@@ -1,15 +1,23 @@
 @import "../../config/offsets/margin";
 
+/* class that clears all existing margins of the container */
 .m-0{
     margin: map-get($margin, "0") !important;
 }
 
+/* loop that iterates objects in "margin" map 
+    $key - margin multiplier that we use to calculate actual margin value i.e. "1"
+    $value - actual margin value that we calculate using multiplier and base rhythm i.e. 4 (base-rhythm(4)*key(1))*/
 @each $key, $value in $margin {
+    /* loop that iterates objects in "grid-breakpoints" 
+        $point - media size short name that we use when we make adaptive classes i.e. sm, md
+        $screen size - actual size of screen that associated with short name i.e. 576 (for sm), 768(for md)*/
     @each $point, $screen-size in $grid-breakpoints{
             @media screen and (min-width: $screen-size){
+                /* if-condition to create default margin classes that works with any screen size */
                 @if $point == xs{
                     $point: "";
-                } @else {
+                } @else { /* else-statement to create margin classes for specified screen-sizes using breakpoints table */
                     $point: -#{$point};
                 }
             .mt-#{$key}#{$point} {

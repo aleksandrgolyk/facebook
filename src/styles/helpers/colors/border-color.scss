@@ -1,10 +1,10 @@
 @import "../../config/borders/border-color";
 
 .bc-primary {
- border-color: $border-color-primary;
+ border-color: $bc-primary;
 }
 
-@each $key, $value in $border-color-secondary {
+@each $key, $value in $bc-secondary {
  .bc-#{$key} {
    border-color: $value;
  }
