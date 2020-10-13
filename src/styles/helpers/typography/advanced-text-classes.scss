@@ -1,93 +1,93 @@
 .title-1-bold {
-  font-size: map_get($font-size, title1);
+  font-size: map_get($font-size, title-1);
   font-family: $ff-base;
-  line-height: map_get($line-height, title1);
+  line-height: map_get($line-height, title-1);
   font-weight: map_get($font-weight, bold);
-  color: map_get($secondary, lighten4);
+  color: map_get($secondary, lighten-4);
 }
 .title-1-regular {
-  font-size: map_get($font-size, title1);
+  font-size: map_get($font-size, title-1);
   font-family: $ff-base;
-  line-height: map_get($line-height, title1);
+  line-height: map_get($line-height, title-1);
   font-weight: map_get($font-weight, regular);
-  color: map_get($secondary, lighten4);
+  color: map_get($secondary, lighten-4);
 }
 .title-2-bold {
-  font-size: map_get($font-size, title2);
+  font-size: map_get($font-size, title-2);
   font-family: $ff-base;
-  line-height: map_get($line-height, title2);
+  line-height: map_get($line-height, title-2);
   font-weight: map_get($font-weight, bold);
-  color: map_get($secondary, lighten4);
+  color: map_get($secondary, lighten-4);
 }
 .title-2-bold-shadow {
-  font-size: map_get($font-size, title2);
+  font-size: map_get($font-size, title-2);
   font-family: $ff-base;
-  line-height: map_get($line-height, title2);
+  line-height: map_get($line-height, title-2);
   font-weight: map_get($font-weight, bold);
-  color: map_get($secondary, lighten3);
+  color: map_get($secondary, lighten-3);
 }
 .title-2-regular {
-  font-size: map_get($font-size, title2);
+  font-size: map_get($font-size, title-2);
   font-family: $ff-base;
-  line-height: map_get($line-height, title2);
+  line-height: map_get($line-height, title-2);
   font-weight: map_get($font-weight, regular);
-  color: map_get($secondary, lighten3);
+  color: map_get($secondary, lighten-3);
 }
 .title-2-regular-shadow {
-   font-size: map_get($font-size, title2);
+   font-size: map_get($font-size, title-2);
    font-family: $ff-base;
    line-height: map_get($line-height, title2);
    font-weight: map_get($font-weight, regular);
-   color: map_get($secondary, lighten3);
+   color: map_get($secondary, lighten-3);
  }
 .body-regular{
   font-size: map_get($font-size, body);
   font-family: $ff-base;
   line-height: map_get($line-height, body);
   font-weight: map_get($font-weight, regular);
-  color: map_get($secondary, lighten4);
+  color: map_get($secondary, lighten-4);
 }
 .body-regular-shadow{
   font-size: map_get($font-size, body);
   font-family: $ff-base;
   line-height: map_get($line-height, body);
   font-weight: map_get($font-weight, regular);
-  color: map_get($secondary, lighten3);
+  color: map_get($secondary, lighten-3);
 }
 .body-bold{
   font-size: map_get($font-size, body);
   font-family: $ff-base;
   line-height: map_get($line-height, body);
   font-weight: map_get($font-weight, bold);
-  color: map_get($secondary, lighten4);
+  color: map_get($secondary, lighten-4);
 }
 .body-bold-shadow{
   font-size: map_get($font-size, body);
   font-family: $ff-base;
   line-height: map_get($line-height, body);
   font-weight: map_get($font-weight, bold);
-  color: map_get($secondary, lighten3);
+  color: map_get($secondary, lighten-3);
 }
 .caption-1{
-  font-size: map_get($font-size, caption1);
+  font-size: map_get($font-size, caption-1);
   font-family: $ff-base;
-  line-height: map_get($line-height, caption1);
-  font-weight: map_get($font-weight, caption1);
-  color: map_get($secondary, lighten3);
+  line-height: map_get($line-height, caption-1);
+  font-weight: map_get($font-weight, caption-1);
+  color: map_get($secondary, lighten-3);
 }
 .caption-2{
-  font-size: map_get($font-size, caption2);
+  font-size: map_get($font-size, caption-2);
   font-family: $ff-base;
-  line-height: map_get($line-height, caption2);
-  font-weight: map_get($font-weight, caption2);
-  color: map_get($secondary, lighten3);
+  line-height: map_get($line-height, caption-2);
+  font-weight: map_get($font-weight, caption-2);
+  color: map_get($secondary, lighten-3);
 }
 .caption-3{
   font-size: map_get($font-size, caption-3);
   font-family: $ff-base;
   line-height: map_get($line-height, caption-3);
   font-weight: map_get($font-weight, caption-3);
-  color: map_get($secondary, lighten4);
+  color: map_get($secondary, lighten-4);
 }
 .caption-3-link{
   font-size: map_get($font-size, caption-3);
