@@ -72,27 +72,27 @@
   font-size: map_get($font-size, caption-1);
   font-family: $ff-base;
   line-height: map_get($line-height, caption-1);
-  font-weight: map_get($font-weight, caption-1);
+  font-weight: map_get($font-weight, regular);
   color: map_get($secondary, lighten-3);
 }
 .caption-2{
   font-size: map_get($font-size, caption-2);
   font-family: $ff-base;
   line-height: map_get($line-height, caption-2);
-  font-weight: map_get($font-weight, caption-2);
+  font-weight: map_get($font-weight, regular);
   color: map_get($secondary, lighten-3);
 }
 .caption-3{
   font-size: map_get($font-size, caption-3);
   font-family: $ff-base;
   line-height: map_get($line-height, caption-3);
-  font-weight: map_get($font-weight, caption-3);
+  font-weight: map_get($font-weight, regular);
   color: map_get($secondary, lighten-4);
 }
 .caption-3-link{
   font-size: map_get($font-size, caption-3);
   font-family: $ff-base;
   line-height: map_get($line-height, caption-3);
-  font-weight: map_get($font-weight, caption-3);
+  font-weight: map_get($font-weight, regular);
   color: map_get($primary, lighten-1);
 }
