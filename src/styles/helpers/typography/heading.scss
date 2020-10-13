@@ -1,30 +1,41 @@
 .h1 {
   font-size: map_get($font-size, h1);
+  line-height: map_get($line-height,h1);
+  font-weight: map_get($font-weight,bold);
+  margin-bottom: map_get($margin,"6");
 }
 .h2 {
   font-size: map_get($font-size, h2);
+  line-height: map_get($line-height,h2);
+  font-weight: map_get($font-weight,bold);
+  margin-bottom: map_get($margin,"5");
+
 }
 .h3 {
   font-size: map_get($font-size, h3);
+  line-height: map_get($line-height,h3);
+  font-weight: map_get($font-weight,bold);
+  margin-bottom: map_get($margin,"4");
+
 }
 .h4 {
   font-size: map_get($font-size, h4);
+  line-height: map_get($line-height,h4);
+  font-weight: map_get($font-weight,bold);
+  margin-bottom: map_get($margin,"3");
+
 }
 .h5, .title-1 {
   font-size: map_get($font-size, title-1);
+  line-height: map_get($line-height,title-1);
+  font-weight: map_get($font-weight,regular);
+  margin-bottom: map_get($margin,"2");
+
 }
 .h6, .title-2 {
   font-size: map_get($font-size, title-2);
-}
-.body, .p {
-  font-size: map_get($font-size, body);
-}
-.caption-1 {
-  font-size: map_get($font-size, caption-1);
-}
-.caption-2 {
-  font-size: map_get($font-size, caption-2);
-}
-.caption-3 {
-  font-size: map_get($font-size, caption-3);
+  line-height: map_get($line-height,title-2);
+  font-weight: map_get($font-weight,regular);
+  margin-bottom: map_get($margin,"1");
+
 }
