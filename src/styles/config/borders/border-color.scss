@@ -1,6 +1,12 @@
+<<<<<<< Updated upstream
 $bc-primary:  map-get($primary,"lighten-1"); //tabs, active story
 
 $bc-secondary:(
+=======
+$border-color-primary:  map-get($primary,"lighten-1"); //tabs, active story
+
+$border-color-secondary:(
+>>>>>>> Stashed changes
         "lighten-1": map-get($secondary, "default"), //last visit
         "lighten-2": map-get($secondary, "lighten-2"),//showed story
         "lighten-3": map-get($secondary, "lighten-3"), //menu and header

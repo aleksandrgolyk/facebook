@@ -4,8 +4,13 @@
  border-color: $bc-primary;
 }
 
+<<<<<<< Updated upstream
 @each $key, $value in $bc-secondary {
  .bc-#{$key} { //key - "lighten1, lighten2..."
+=======
+@each $key, $value in $border-color-secondary {
+ .bc-secondary-#{$key} { //key - "lighten-1, lighten-2..."
+>>>>>>> Stashed changes
    border-color: $value; //value - var, that contains hex from dark.scss
  }
 }

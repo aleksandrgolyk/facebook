@@ -1,8 +1,8 @@
 //$merged: map-merge($primary,$secondary, $success, $alert, $info, $black, $white);
 $font-color: (
-        "primary": map_get($secondary, lighten4), /*!* other *!*/
-        "secondary": map_get($secondary, lighten3), /*!* for title2, caption1*/
-        "brand": map_get($primary, lighten1), /*!* for caption2, body*!*/
+        "primary": map_get($secondary, lighten-4), /*!* other *!*/
+        "secondary": map_get($secondary, lighten-3), /*!* for title2, caption1*/
+        "brand": map_get($primary, lighten-1), /*!* for caption2, body*!*/
         "white": $white /*!* for caption1*!*/
 );
 
