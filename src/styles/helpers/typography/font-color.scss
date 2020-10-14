@@ -1,5 +1,5 @@
 @each $name, $value in $font-color {
   .fc-#{$name} {
-    color: $value;
+    color: $value !important;
   }
 }

@@ -4,8 +4,81 @@
     <meta charset="UTF-8">
     <title>padding</title>
     <link rel="stylesheet" href="../../styles/index.scss">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,900;1,300;1,400&display=swap" rel="stylesheet">
+    <style>
+        .code{
+            font-family: 'Montserrat', sans-serif;
+        }
+        .hover:hover{
+            background-color: rgba(0,0,0,.05);
+        }
+        body{
+            font-size: 1.2rem;
+        }
+        html{
+            box-sizing: border-box;
+
+        }
+    </style>
 </head>
-<body>
-        <h2 class="h2">padding</h2>
+<body class="fc-system">
+    <div class="container-fluid pt-4">
+        <div class="row">
+            <div class="col-3">
+                <nav class="d-flex flex-dir-column  title-2-regular fc-system">
+                    <a class="flex-grow-1 px-2 py-2 hover br-sm d-flex align-items-center" href="/">
+                        <img class="br-circle mr-3" style="height: 36px; width: 36px"
+                             src="https://interactive-examples.mdn.mozilla.net/media/cc0-images/grapefruit-slice-332-332.jpg" alt="">
+                        <p>Home</p>
+                    </a>
+                    <a class="flex-grow-1 px-2 py-2 br-sm hover" data-toggle="collapse" data-target="#offsets">Offsets</a>
+                    <div class="collapse d-flex flex-dir-column w-100" id="offsets">
+                        <a class="flex-grow-1 px-2 py-2 br-sm hover" href="padding.html">padding</a>
+                        <a class="flex-grow-1 px-2 py-2 br-sm hover" href="">margin</a>
+                    </div>
+                    <a class="flex-grow-1 px-2 py-2 br-sm hover" data-toggle="collapse" data-target="#typography">Typography</a>
+                    <div class="collapse d-flex flex-dir-column w-100" id="typography">
+                        <a class="flex-grow-1 px-2 py-2 br-sm hover" href="padding.html">font-color</a>
+                        <a class="flex-grow-1 px-2 py-2 br-sm hover" href="">font-sizes</a>
+                    </div>
+                </nav>
+            </div>
+            <div class="col">
+                <h1 class="h1 fw-thin">Padding</h1>
+                <section class="mb-4">
+                    <h3 class="h3 fw-thin">Config:</h3>
+                        <p class="p">-contains coefficients(coef.) that show multiplication by base-rhythm.</p>
+                    <div>
+                        <p class="code pl-2 pt-2">$padding: (...  "coef.": coef. * $base-rhythm  ...);</p>
+                    </div>
+                </section>
+                <section>
+                    <h3 class="h3 fw-thin">Helpers:</h3>
+                    <p class="p"></p>
+                    <ul>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                    <p></p>
+                    <ul>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </section>
+
+            </div>
+        </div>
+
+    </div>
+
+    <script src="../../js/index.js"></script>
 </body>
 </html>

@@ -2,6 +2,10 @@
 
 @each $key, $value in $font-color {
   .fc-#{$key} { //key - "primary", "secondary" etc.
-    color: $value; //value - var, that contains hex from dark.scss 
+    color: $value !important; //value - var, that contains hex from dark.scss
   }
+}
+
+.fc-system{
+  color: $black !important;
 }

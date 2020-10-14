@@ -1,6 +1,6 @@
 @each $name, $value in $font-weight {
   .fw-#{$name} {
-    font-weight: $value;
+    font-weight: $value !important;
   }
 }
 
