@@ -30,3 +30,10 @@
         }
     }
 }
+
+
+.collapse:not(.show) {
+  height: 0;
+  transition: height .3s ease-out;
+  overflow: hidden;
+}
