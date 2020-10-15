@@ -1,8 +1,7 @@
-.p-0{
-    padding: map-get($padding, "0") !important;
-}
-
 @each $name, $offset in $padding {
+    .p-#{$name}{
+        padding: $offset !important;
+    }
     .pt-#{$name} {
         padding-top: $offset !important;
     }
@@ -32,6 +31,9 @@
             @each $name, $offset in $padding {
                 //padding: (  "1": 4px, "2": 8px... )
                 //name = 1, offset = 4px
+                .p-#{$name}-#{$point}{
+                    padding: $offset !important;
+                }
                 .pt-#{$name}-#{$point} {
                     padding-top: $offset !important;
                 }
