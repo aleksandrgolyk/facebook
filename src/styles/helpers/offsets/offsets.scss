@@ -1,0 +1,20 @@
+@for $i from $grid-columns through 1 {
+  .offset-#{$i}{
+    margin-right: $col-width * $i;
+  }
+}
+
+
+@each $point, $screen-size in $grid-breakpoints {
+  @if $point != xs{
+    @media screen and (min-width: $screen-size){
+      //$grid-columns: 12
+      //from 12 to 1(included) run cycle
+      @for $i from $grid-columns through 1 {
+        .offset-#{$i}-#{$point}{
+          margin-right: $col-width * $i;
+        }
+      }
+    }
+  }
+}
