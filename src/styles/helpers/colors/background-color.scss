@@ -1,14 +1,12 @@
-@import "../../config/colors/dark";
-
 @each $key, $value in $primary {
   @if $key != "default" { // all items except default will have next changes
     .bgc-primary-#{$key} { // key - "lighten-1"
-      background-color: $value; // value - color hex
+      background-color: $value !important; // value - color hex
     }
   }
   @else { //handling default value
     .bgc-primary {
-      background-color: $value;
+      background-color: $value !important;
     }
   }
 }
@@ -16,12 +14,12 @@
 @each $key, $value in $secondary {
   @if $key != "default" {
     .bgc-secondary-#{$key} { // key - "lighten-1", "lighten-2", "lighten-3", etc.
-      background-color: $value; // value - color hex
+      background-color: $value !important; // value - color hex
     }
   }
   @else {
     .bgc-secondary {
-      background-color: $value;
+      background-color: $value !important;
     }
   }
 }
@@ -29,25 +27,25 @@
 @each $key, $value in $success {
   @if $key != "default" {
     .bgc-success-#{$key} { // key - "darken-1", etc.
-      background-color: $value; // value - color hex
+      background-color: $value !important; // value - color hex
     }
   }
   @else {
     .bgc-success {
-      background-color: $value;
+      background-color: $value !important;
     }
   }
 }
 
 .bgc-alert {
-  background-color: $alert;
+  background-color: $alert !important;
 }
 .bgc-info {
-  background-color: $info;
+  background-color: $info !important;
 }
 .bgc-black {
-  background-color: $black;
+  background-color: $black !important;
 }
 .bgc-white {
-  background-color: $white;
+  background-color: $white !important;
 }

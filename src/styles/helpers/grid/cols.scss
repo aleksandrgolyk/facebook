@@ -5,6 +5,8 @@ $col-width: 100%/$grid-columns;
   flex: 0 0 auto;
   width: auto;
   max-width: 100%;
+  padding-left: $grid-gutter-width;
+  padding-right: $grid-gutter-width;
 }
 .col {
   position: relative;
@@ -12,6 +14,8 @@ $col-width: 100%/$grid-columns;
   flex-basis: 0;
   flex-grow: 1;
   max-width: 100%;
+  padding-left: $grid-gutter-width;
+  padding-right: $grid-gutter-width;
 }
 @for $i from $grid-columns through 1 {
   .col-#{$i}{

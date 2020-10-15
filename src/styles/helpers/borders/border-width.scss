@@ -1,5 +1,3 @@
-@import "../../config/borders/border-width";
-
 //bw maps are in config border-width
 @each $name_width, $value in $bw{
     .bw-#{$name_width} { //name_width - "xs", "sm", "md", "xl"
