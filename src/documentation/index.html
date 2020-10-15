@@ -9,12 +9,34 @@
     <link rel="stylesheet" href="../styles/index.scss">
 </head>
 <body>
-<nav>
-    <a href="offsets/padding.html">padding</a>
-    <a href="z-index/z-index.html">z-index</a>
-    <a href="visibility/visibility.html">visibility</a>
-    <a href="borders/borders.html">borders</a>
-    <a href="">gznm</a>
-</nav>
+<div class="container-fluid pt-4">
+    <div class="row">
+        <div class="col-2 offset-1">
+            <nav class="menu title-2-regular">
+                <a class="menu-item" href="/">
+                    <img class="br-circle mr-3" style="height: 36px; width: 36px"
+                         src="https://interactive-examples.mdn.mozilla.net/media/cc0-images/grapefruit-slice-332-332.jpg" alt="">
+                    <p>Home</p>
+                </a>
+                <a class="menu-item" data-toggle="collapse" data-target="#offsets">Offsets</a>
+                <div class="collapse menu-item-collapse" id="offsets">
+                    <a class="menu-item" href="offsets/padding.html">padding</a>
+                    <a class="menu-item" href="">margin</a>
+                </div>
+                <a class="menu-item" data-toggle="collapse" data-target="#typography">Typography</a>
+                <div class="collapse menu-item-collapse" id="typography">
+                    <a class="menu-item" href="">font-color</a>
+                    <a class="menu-item" href="">font-sizes</a>
+                </div>
+            </nav>
+        </div>
+        <div class="col d-flex align-items-center flex-dir-column ">
+            <h1 class="h1 fw-thin">Our awesome Facebook</h1>
+            <h2 class="h2 fw-thin">Documentation</h2>
+        </div>
+    </div>
+    <script src="../js/index.js"></script>
+</div>
+
 </body>
 </html>
