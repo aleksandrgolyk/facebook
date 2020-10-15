@@ -1,0 +1,23 @@
+$menu-text-color: $black;
+.menu{
+  display: flex;
+  flex-direction: column;
+  color: $menu-text-color;
+}
+.menu .menu-item{
+  flex-grow: 1;
+  display: flex;
+  padding: map-get($padding,"2");
+  border-radius: map-get($br,"xxs");
+  align-items: center;
+  color: inherit;
+  cursor: pointer;
+}
+.menu .menu-item:hover{
+  background-color: rgba(0,0,0,.05);
+}
+.menu .menu-item-collapse{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
