@@ -6,196 +6,273 @@
     <link rel="stylesheet" href="../../styles/index.scss">
 </head>
 <body class="bgc-secondary">
-    <div class="container">
-        <div class="row py-4">
-            <div class="col-12 fc-primary h2 fw-dark">Borders</div>
-            <div class="col-12 body-regular-shadow">use border styles for images, buttons, blocks. You can add border radius, color, position and width</div>
-       </div> 
-       <div id="border-colors">
-            <div class="row py-5">
-                <div class="col-12 fs-h4 fc-primary fw-regular">1. Border color</div>
-            </div>
-            <div class="row">
-                <div class="col-3 py-5" style="text-align: center;">
-                    <div class="bgc-primary br-circle d-inline-block bc-lighten-3 bw-xs bp-each" style="width: 50px; height: 50px;">
-                    </div>
-                    <p class="title-1-regular py-3">Primary</p>
-                    <p class="body-regular-shadow pb-1">use for active tabs and not reviewed stories</p>
-                    <p class="body-regular-shadow pb-1"><span class="body-regular">HTML: </span>&lt;span class="bc-primary"&gt;&lt;/span&gt;</p>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-2">
+            <nav class="menu fc-white">
+                <a class="menu-item" href="/">
+                    <img class="br-circle mr-3" style="height: 36px; width: 36px"
+                         src="https://interactive-examples.mdn.mozilla.net/media/cc0-images/grapefruit-slice-332-332.jpg"
+                         alt="">
+                    <p>Home</p>
+                </a>
+                <a class="menu-item" data-toggle="collapse" data-target="#offsets">Offsets</a>
+                <div class="collapse menu-item-collapse" id="offsets">
+                    <a class="menu-item" href="../offsets/padding.html">padding</a>
+                    <a class="menu-item" href="">margin</a>
                 </div>
-                <div class="col-3 py-5" style="text-align: center;">
-                    <div class="bgc-secondary br-circle d-inline-block bc-lighten-3 bw-xs bp-each" style="width: 50px; height: 50px;">
-                    </div>
-                    <p class="title-1-regular py-3">Secondary</p>
-                    <p class="body-regular-shadow pb-1">used for blocks that display the time of last visit</p>                
-                    <p class="body-regular-shadow pb-1"><span class="body-regular">HTML: </span> &lt;span class="bc-lighten-1"&gt;&lt;/span&gt;</p>
+                <a class="menu-item" data-toggle="collapse" data-target="#typography">Typography</a>
+                <div class="collapse menu-item-collapse" id="typography">
+                    <a class="menu-item" href="">font-color</a>
+                    <a class="menu-item" href="">font-sizes</a>
                 </div>
-                <div class="col-3 py-5" style="text-align: center;">
-                    <div class="bgc-secondary-lighten-2 br-circle d-inline-block bc-lighten-3 bw-xs bp-each" style="width: 50px; height: 50px;">
-                    </div>
-                    <p class="title-1-regular py-3">Secondary 2</p>
-                    <p class="body-regular-shadow pb-1">used for reviewed stories</p>
-                    <p class="body-regular-shadow pb-1"><span class="body-regular">HTML: </span>&lt;span class="bc-lighten-2"&gt;&lt;/span&gt;</p>
-                </div>
-                <div class="col-3 py-5" style="text-align: center;">
-                    <div class="bgc-secondary-lighten-3 br-circle d-inline-block bc-lighten-3 bw-xs bp-each" style="width: 50px; height: 50px;">
-                    </div>
-                    <p class="title-1-regular py-3">Secondary 3</p>
-                    <p class="body-regular-shadow pb-1">used for delimit blocks in the menu</p>
-                    <p class="body-regular-shadow pb-1"><span class="body-regular">HTML: </span>&lt;span class="bc-lighten-3"&gt;&lt;/span&gt;</p>
-                </div>
-            </div>  
-       </div>
-       <div id="border-radius" class="pb-3">
-            <div class="row py-5">
-                <div class="col-12 fs-h4 fc-primary fw-regular">2. Border radius</div>
-            </div>
-            <div class="row">
-                <div class="col-4 py-5" style="text-align: center;">
-                    <div class="br-circle d-inline-block bc-lighten-3 bp-each bw-xs" style="width: 50px; height: 50px;">
-                    </div>
-                    <p class="title-1-regular py-3">Circle</p>
-                    <p class="body-regular-shadow pb-1">used for avatars, buttons, notifications</p>
-                    <p class="body-regular-shadow pb-1"><span class="body-regular">HTML: </span>&lt;span class="br-circle"&gt;&lt;/span&gt;</p>
-                </div>
-                <div class="col-4 py-5" style="text-align: center;">
-                    <div class="br-xxs d-inline-block bc-lighten-3 bw-xs bp-each" style="width: 50px; height: 50px;">
-                    </div>
-                    <p class="title-1-regular py-3">XXS</p>
-                    <p class="body-regular-shadow pb-1">used for cards, hovers for advertising, buttons</p>
-                    <p class="body-regular-shadow pb-1"><span class="body-regular">HTML: </span>&lt;span class="br-xxs"&gt;&lt;/span&gt;</p>
-                </div>
-                <div class="col-4 py-5" style="text-align: center;">
-                    <div class="br-xs d-inline-block bc-lighten-3 bw-xs bp-each" style="width: 50px; height: 50px;">
-                    </div>
-                    <p class="title-1-regular py-3">XS</p>
-                    <p class="body-regular-shadow pb-1">used for photo for advertising, hovers for contacts</p>
-                    <p class="body-regular-shadow pb-1"><span class="body-regular">HTML: </span>&lt;span class="br-xs"&gt;&lt;/span&gt;</p>
-                </div>
-                <div class="col-4 py-5" style="text-align: center;">
-                    <div class="br-sm d-inline-block bc-lighten-3 bw-xs bp-each" style="width: 50px; height: 50px;">
-                    </div>
-                    <p class="title-1-regular py-3">SM</p>
-                    <p class="body-regular-shadow pb-1">used for stories</p>
-                    <p class="body-regular-shadow pb-1"><span class="body-regular">HTML: </span>&lt;span class="br-sm"&gt;&lt;/span&gt;</p>
-                </div>
-                <div class="col-4 py-5" style="text-align: center;">
-                    <div class="br-md d-inline-block bc-lighten-3 bw-xs bp-each" style="width: 50px; height: 50px;">
-                    </div>
-                    <p class="title-1-regular py-3">MD</p>
-                    <p class="body-regular-shadow pb-1">used for blocks that display the time of last visit</p>
-                    <p class="body-regular-shadow pb-1"><span class="body-regular">HTML: </span>&lt;span class="br-md"&gt;&lt;/span&gt;</p>
-                </div>
-                <div class="col-4 py-5" style="text-align: center;">
-                    <div class="br-lg d-inline-block bc-lighten-3 bw-xs bp-each" style="width: 50px; height: 50px;">
-                    </div>
-                    <p class="title-1-regular py-3">LG</p>
-                    <p class="body-regular-shadow pb-1">used for inputs of comment</p>
-                    <p class="body-regular-shadow pb-1"><span class="body-regular">HTML: </span>&lt;span class="br-lg"&gt;&lt;/span&gt;</p>
-                </div>
-                <div class="col-4 py-5" style="text-align: center;">
-                    <div class="br-xl d-inline-block bc-lighten-3 bw-xs bp-each" style="width: 50px; height: 50px;">
-                    </div>
-                    <p class="title-1-regular py-3">XL</p>
-                    <p class="body-regular-shadow pb-1">used for inputs of posts</p>
-                    <p class="body-regular-shadow pb-1"><span class="body-regular">HTML: </span>&lt;span class="br-xl"&gt;&lt;/span&gt;</p>
-                </div>
-                <div class="col-4 py-5" style="text-align: center;">
-                    <div class="br-xxl d-inline-block bc-lighten-3 bw-xs bp-each" style="width: 50px; height: 50px;">
-                    </div>
-                    <p class="title-1-regular py-3">XXL</p>
-                    <p class="body-regular-shadow pb-1">used for input of search</p>
-                    <p class="body-regular-shadow pb-1"><span class="body-regular">HTML: </span>&lt;span class="br-xxl"&gt;&lt;/span&gt;</p>
-                </div>
-                <div class="col-4 py-5" style="text-align: center;">
-                    <div class="br-xxxl d-inline-block bc-lighten-3 bw-xs bp-each" style="width: 50px; height: 50px;">
-                    </div>
-                    <p class="title-1-regular py-3">XXXL</p>
-                    <p class="body-regular-shadow pb-1">used for notifications</p>
-                    <p class="body-regular-shadow pb-1"><span class="body-regular">HTML: </span>&lt;span class="br-xxxl"&gt;&lt;/span&gt;</p>
-                </div>
-            </div> 
+                <a class="menu-item" href="borders.html">Border</a>
+            </nav>
         </div>
-        
-        <div id="border-width" class="pb-3">
-            <div class="row py-5">
-                <div class="col-12 fs-h4 fc-primary fw-regular">3. Border width</div>
-            </div>
-            <div class="row">
-                <div class="col-3 py-5" style="text-align: center;">
-                    <div class="br-circle d-inline-block bc-lighten-3 bw-xs bp-each" style="width: 50px; height: 50px;">
-                    </div>
-                    <p class="title-1-regular py-3">XS</p>
-                    <p class="body-regular-shadow pb-1">used for menu items</p>
-                    <p class="body-regular-shadow pb-1"><span class="body-regular">HTML: </span>&lt;span class="bw-xs"&gt;&lt;/span&gt;</p>
-                </div>
-                <div class="col-3 py-5" style="text-align: center;">
-                    <div class="br-circle d-inline-block bc-lighten-3 bw-sm bp-each" style="width: 50px; height: 50px;">
-                    </div>
-                    <p class="title-1-regular py-3">SM</p>
-                    <p class="body-regular-shadow pb-1">used for tabs on header</p>
-                    <p class="body-regular-shadow pb-1"><span class="body-regular">HTML: </span>&lt;span class="bw-sm"&gt;&lt;/span&gt;</p>
-                </div>
-                <div class="col-3 py-5" style="text-align: center;">
-                    <div class="br-circle d-inline-block bc-lighten-3 bw-md bp-each" style="width: 50px; height: 50px;">
-                    </div>
-                    <p class="title-1-regular py-3">MD</p>
-                    <p class="body-regular-shadow pb-1">used for cards of stories</p>
-                    <p class="body-regular-shadow pb-1"><span class="body-regular">HTML: </span>&lt;span class="bw-md"&gt;&lt;/span&gt;</p>
-                </div>
-                <div class="col-3 py-5" style="text-align: center;">
-                    <div class="br-circle d-inline-block bc-lighten-3 bw-xl bp-each" style="width: 50px; height: 50px;">
-                    </div>
-                    <p class="title-1-regular py-3">XL</p>
-                    <p class="body-regular-shadow pb-1">used for stories on cards</p>
-                    <p class="body-regular-shadow pb-1"><span class="body-regular">HTML: </span>&lt;span class="bw-xl"&gt;&lt;/span&gt;</p>
+        <div class="col">
+            <div class="row py-4">
+                <div class="col-12 fc-primary h2 fw-dark">Borders</div>
+                <div class="col-12 body-regular-shadow">use border styles for images, buttons, blocks. You can add
+                    border
+                    radius, color, position and width
                 </div>
             </div>
-        </div>
-        <div id="border-position" class="pb-3">
-            <div class="row py-5">
-                <div class="col-12 fs-h4 fc-primary fw-regular">4. Border position</div>
+            <div id="border-colors">
+                <div class="row py-5">
+                    <div class="col-12 fs-h4 fc-primary fw-regular">1. Border color</div>
+                </div>
+                <div class="row">
+                    <div class="col-3 py-5" style="text-align: center;">
+                        <div class="bgc-primary br-circle d-inline-block bc-lighten-3 bw-xs bp-each"
+                             style="width: 50px; height: 50px;">
+                        </div>
+                        <p class="title-1-regular py-3">Primary</p>
+                        <p class="body-regular-shadow pb-1">use for active tabs and not reviewed stories</p>
+                        <p class="body-regular-shadow pb-1"><span class="body-regular">HTML: </span>&lt;span
+                            class="bc-primary"&gt;&lt;/span&gt;</p>
+                    </div>
+                    <div class="col-3 py-5" style="text-align: center;">
+                        <div class="bgc-secondary br-circle d-inline-block bc-lighten-3 bw-xs bp-each"
+                             style="width: 50px; height: 50px;">
+                        </div>
+                        <p class="title-1-regular py-3">Secondary</p>
+                        <p class="body-regular-shadow pb-1">used for blocks that display the time of last visit</p>
+                        <p class="body-regular-shadow pb-1"><span class="body-regular">HTML: </span> &lt;span
+                            class="bc-lighten-1"&gt;&lt;/span&gt;</p>
+                    </div>
+                    <div class="col-3 py-5" style="text-align: center;">
+                        <div class="bgc-secondary-lighten-2 br-circle d-inline-block bc-lighten-3 bw-xs bp-each"
+                             style="width: 50px; height: 50px;">
+                        </div>
+                        <p class="title-1-regular py-3">Secondary 2</p>
+                        <p class="body-regular-shadow pb-1">used for reviewed stories</p>
+                        <p class="body-regular-shadow pb-1"><span class="body-regular">HTML: </span>&lt;span
+                            class="bc-lighten-2"&gt;&lt;/span&gt;</p>
+                    </div>
+                    <div class="col-3 py-5" style="text-align: center;">
+                        <div class="bgc-secondary-lighten-3 br-circle d-inline-block bc-lighten-3 bw-xs bp-each"
+                             style="width: 50px; height: 50px;">
+                        </div>
+                        <p class="title-1-regular py-3">Secondary 3</p>
+                        <p class="body-regular-shadow pb-1">used for delimit blocks in the menu</p>
+                        <p class="body-regular-shadow pb-1"><span class="body-regular">HTML: </span>&lt;span
+                            class="bc-lighten-3"&gt;&lt;/span&gt;</p>
+                    </div>
+                </div>
             </div>
-            <div class="row">
-                <div class="col-6 py-5" style="text-align: center;">
-                    <div class="bp-each d-inline-block bc-lighten-3 bw-xs" style="width: 50px; height: 50px;">
-                    </div>
-                    <p class="title-1-regular py-3">Each</p>
-                    <p class="body-regular-shadow pb-1">used for cards, stories</p>
-                    <p class="body-regular-shadow pb-1"><span class="body-regular">HTML: </span>&lt;span class="bp-each"&gt;&lt;/span&gt;</p>
+            <div id="border-radius" class="pb-3">
+                <div class="row py-5">
+                    <div class="col-12 fs-h4 fc-primary fw-regular">2. Border radius</div>
                 </div>
-                <div class="col-6 py-5" style="text-align: center;">
-                    <div class="bp-bottom d-inline-block bc-lighten-3 bw-xs" style="width: 50px; height: 50px;">
+                <div class="row">
+                    <div class="col-4 py-5" style="text-align: center;">
+                        <div class="br-circle d-inline-block bc-lighten-3 bp-each bw-xs"
+                             style="width: 50px; height: 50px;">
+                        </div>
+                        <p class="title-1-regular py-3">Circle</p>
+                        <p class="body-regular-shadow pb-1">used for avatars, buttons, notifications</p>
+                        <p class="body-regular-shadow pb-1"><span class="body-regular">HTML: </span>&lt;span
+                            class="br-circle"&gt;&lt;/span&gt;</p>
                     </div>
-                    <p class="title-1-regular py-3">Bottom</p>
-                    <p class="body-regular-shadow pb-1">used for menu items</p>
-                    <p class="body-regular-shadow pb-1"><span class="body-regular">HTML: </span>&lt;span class="bp-bottom"&gt;&lt;/span&gt;</p>
-                </div>
-                <div class="col-4 py-5" style="text-align: center;">
-                    <div class="bp-top d-inline-block bc-lighten-3 bw-xs" style="width: 50px; height: 50px;">
+                    <div class="col-4 py-5" style="text-align: center;">
+                        <div class="br-xxs d-inline-block bc-lighten-3 bw-xs bp-each"
+                             style="width: 50px; height: 50px;">
+                        </div>
+                        <p class="title-1-regular py-3">XXS</p>
+                        <p class="body-regular-shadow pb-1">used for cards, hovers for advertising, buttons</p>
+                        <p class="body-regular-shadow pb-1"><span class="body-regular">HTML: </span>&lt;span
+                            class="br-xxs"&gt;&lt;/span&gt;
+                        </p>
                     </div>
-                    <p class="title-1-regular py-3">Top</p>
-                    <p class="body-regular-shadow pb-1"></p>
-                    <p class="body-regular-shadow pb-1"><span class="body-regular">HTML: </span>&lt;span class="bp-top"&gt;&lt;/span&gt;</p>
-                </div>
-                <div class="col-4 py-5" style="text-align: center;">
-                    <div class="bp-left d-inline-block bc-lighten-3 bw-xs" style="width: 50px; height: 50px;">
+                    <div class="col-4 py-5" style="text-align: center;">
+                        <div class="br-xs d-inline-block bc-lighten-3 bw-xs bp-each" style="width: 50px; height: 50px;">
+                        </div>
+                        <p class="title-1-regular py-3">XS</p>
+                        <p class="body-regular-shadow pb-1">used for photo for advertising, hovers for contacts</p>
+                        <p class="body-regular-shadow pb-1"><span class="body-regular">HTML: </span>&lt;span
+                            class="br-xs"&gt;&lt;/span&gt;
+                        </p>
                     </div>
-                    <p class="title-1-regular py-3">Left</p>
-                    <p class="body-regular-shadow pb-1"></p>
-                    <p class="body-regular-shadow pb-1"><span class="body-regular">HTML: </span>&lt;span class="bp-left"&gt;&lt;/span&gt;</p>
-                </div>
-                <div class="col-4 py-5" style="text-align: center;">
-                    <div class="bp-right d-inline-block bc-lighten-3 bw-xs" style="width: 50px; height: 50px;">
+                    <div class="col-4 py-5" style="text-align: center;">
+                        <div class="br-sm d-inline-block bc-lighten-3 bw-xs bp-each" style="width: 50px; height: 50px;">
+                        </div>
+                        <p class="title-1-regular py-3">SM</p>
+                        <p class="body-regular-shadow pb-1">used for stories</p>
+                        <p class="body-regular-shadow pb-1"><span class="body-regular">HTML: </span>&lt;span
+                            class="br-sm"&gt;&lt;/span&gt;
+                        </p>
                     </div>
-                    <p class="title-1-regular py-3">Right</p>
-                    <p class="body-regular-shadow pb-1"></p>
-                    <p class="body-regular-shadow pb-1"><span class="body-regular">HTML: </span>&lt;span class="bp-right"&gt;&lt;/span&gt;</p>
+                    <div class="col-4 py-5" style="text-align: center;">
+                        <div class="br-md d-inline-block bc-lighten-3 bw-xs bp-each" style="width: 50px; height: 50px;">
+                        </div>
+                        <p class="title-1-regular py-3">MD</p>
+                        <p class="body-regular-shadow pb-1">used for blocks that display the time of last visit</p>
+                        <p class="body-regular-shadow pb-1"><span class="body-regular">HTML: </span>&lt;span
+                            class="br-md"&gt;&lt;/span&gt;
+                        </p>
+                    </div>
+                    <div class="col-4 py-5" style="text-align: center;">
+                        <div class="br-lg d-inline-block bc-lighten-3 bw-xs bp-each" style="width: 50px; height: 50px;">
+                        </div>
+                        <p class="title-1-regular py-3">LG</p>
+                        <p class="body-regular-shadow pb-1">used for inputs of comment</p>
+                        <p class="body-regular-shadow pb-1"><span class="body-regular">HTML: </span>&lt;span
+                            class="br-lg"&gt;&lt;/span&gt;
+                        </p>
+                    </div>
+                    <div class="col-4 py-5" style="text-align: center;">
+                        <div class="br-xl d-inline-block bc-lighten-3 bw-xs bp-each" style="width: 50px; height: 50px;">
+                        </div>
+                        <p class="title-1-regular py-3">XL</p>
+                        <p class="body-regular-shadow pb-1">used for inputs of posts</p>
+                        <p class="body-regular-shadow pb-1"><span class="body-regular">HTML: </span>&lt;span
+                            class="br-xl"&gt;&lt;/span&gt;
+                        </p>
+                    </div>
+                    <div class="col-4 py-5" style="text-align: center;">
+                        <div class="br-xxl d-inline-block bc-lighten-3 bw-xs bp-each"
+                             style="width: 50px; height: 50px;">
+                        </div>
+                        <p class="title-1-regular py-3">XXL</p>
+                        <p class="body-regular-shadow pb-1">used for input of search</p>
+                        <p class="body-regular-shadow pb-1"><span class="body-regular">HTML: </span>&lt;span
+                            class="br-xxl"&gt;&lt;/span&gt;
+                        </p>
+                    </div>
+                    <div class="col-4 py-5" style="text-align: center;">
+                        <div class="br-xxxl d-inline-block bc-lighten-3 bw-xs bp-each"
+                             style="width: 50px; height: 50px;">
+                        </div>
+                        <p class="title-1-regular py-3">XXXL</p>
+                        <p class="body-regular-shadow pb-1">used for notifications</p>
+                        <p class="body-regular-shadow pb-1"><span class="body-regular">HTML: </span>&lt;span
+                            class="br-xxxl"&gt;&lt;/span&gt;
+                        </p>
+                    </div>
                 </div>
-                
-                
-                
+            </div>
+
+            <div id="border-width" class="pb-3">
+                <div class="row py-5">
+                    <div class="col-12 fs-h4 fc-primary fw-regular">3. Border width</div>
+                </div>
+                <div class="row">
+                    <div class="col-3 py-5" style="text-align: center;">
+                        <div class="br-circle d-inline-block bc-lighten-3 bw-xs bp-each"
+                             style="width: 50px; height: 50px;">
+                        </div>
+                        <p class="title-1-regular py-3">XS</p>
+                        <p class="body-regular-shadow pb-1">used for menu items</p>
+                        <p class="body-regular-shadow pb-1"><span class="body-regular">HTML: </span>&lt;span
+                            class="bw-xs"&gt;&lt;/span&gt;
+                        </p>
+                    </div>
+                    <div class="col-3 py-5" style="text-align: center;">
+                        <div class="br-circle d-inline-block bc-lighten-3 bw-sm bp-each"
+                             style="width: 50px; height: 50px;">
+                        </div>
+                        <p class="title-1-regular py-3">SM</p>
+                        <p class="body-regular-shadow pb-1">used for tabs on header</p>
+                        <p class="body-regular-shadow pb-1"><span class="body-regular">HTML: </span>&lt;span
+                            class="bw-sm"&gt;&lt;/span&gt;
+                        </p>
+                    </div>
+                    <div class="col-3 py-5" style="text-align: center;">
+                        <div class="br-circle d-inline-block bc-lighten-3 bw-md bp-each"
+                             style="width: 50px; height: 50px;">
+                        </div>
+                        <p class="title-1-regular py-3">MD</p>
+                        <p class="body-regular-shadow pb-1">used for cards of stories</p>
+                        <p class="body-regular-shadow pb-1"><span class="body-regular">HTML: </span>&lt;span
+                            class="bw-md"&gt;&lt;/span&gt;
+                        </p>
+                    </div>
+                    <div class="col-3 py-5" style="text-align: center;">
+                        <div class="br-circle d-inline-block bc-lighten-3 bw-xl bp-each"
+                             style="width: 50px; height: 50px;">
+                        </div>
+                        <p class="title-1-regular py-3">XL</p>
+                        <p class="body-regular-shadow pb-1">used for stories on cards</p>
+                        <p class="body-regular-shadow pb-1"><span class="body-regular">HTML: </span>&lt;span
+                            class="bw-xl"&gt;&lt;/span&gt;
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div id="border-position" class="pb-3">
+                <div class="row py-5">
+                    <div class="col-12 fs-h4 fc-primary fw-regular">4. Border position</div>
+                </div>
+                <div class="row">
+                    <div class="col-6 py-5" style="text-align: center;">
+                        <div class="bp-each d-inline-block bc-lighten-3 bw-xs" style="width: 50px; height: 50px;">
+                        </div>
+                        <p class="title-1-regular py-3">Each</p>
+                        <p class="body-regular-shadow pb-1">used for cards, stories</p>
+                        <p class="body-regular-shadow pb-1"><span class="body-regular">HTML: </span>&lt;span
+                            class="bp-each"&gt;&lt;/span&gt;
+                        </p>
+                    </div>
+                    <div class="col-6 py-5" style="text-align: center;">
+                        <div class="bp-bottom d-inline-block bc-lighten-3 bw-xs" style="width: 50px; height: 50px;">
+                        </div>
+                        <p class="title-1-regular py-3">Bottom</p>
+                        <p class="body-regular-shadow pb-1">used for menu items</p>
+                        <p class="body-regular-shadow pb-1"><span class="body-regular">HTML: </span>&lt;span
+                            class="bp-bottom"&gt;&lt;/span&gt;</p>
+                    </div>
+                    <div class="col-4 py-5" style="text-align: center;">
+                        <div class="bp-top d-inline-block bc-lighten-3 bw-xs" style="width: 50px; height: 50px;">
+                        </div>
+                        <p class="title-1-regular py-3">Top</p>
+                        <p class="body-regular-shadow pb-1"></p>
+                        <p class="body-regular-shadow pb-1"><span class="body-regular">HTML: </span>&lt;span
+                            class="bp-top"&gt;&lt;/span&gt;
+                        </p>
+                    </div>
+                    <div class="col-4 py-5" style="text-align: center;">
+                        <div class="bp-left d-inline-block bc-lighten-3 bw-xs" style="width: 50px; height: 50px;">
+                        </div>
+                        <p class="title-1-regular py-3">Left</p>
+                        <p class="body-regular-shadow pb-1"></p>
+                        <p class="body-regular-shadow pb-1"><span class="body-regular">HTML: </span>&lt;span
+                            class="bp-left"&gt;&lt;/span&gt;
+                        </p>
+                    </div>
+                    <div class="col-4 py-5" style="text-align: center;">
+                        <div class="bp-right d-inline-block bc-lighten-3 bw-xs" style="width: 50px; height: 50px;">
+                        </div>
+                        <p class="title-1-regular py-3">Right</p>
+                        <p class="body-regular-shadow pb-1"></p>
+                        <p class="body-regular-shadow pb-1"><span class="body-regular">HTML: </span>&lt;span
+                            class="bp-right"&gt;&lt;/span&gt;</p>
+                    </div>
+
+                </div>
             </div>
         </div>
     </div>
+    <script src="../../js/index.js"></script>
+
+</div>
 </body>
