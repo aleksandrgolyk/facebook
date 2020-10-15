@@ -1,6 +1,0 @@
-:root{
-    --icon-sm: var(--size-3); /* 12x12 icons, footer icons */
-    --icon-md: var(--size-5); /* 20x20 icons, main icon size */
-    --icon-lg: var(--size-7); /* 28x28 icons, tabs icon size */
-    --icon-xl: var(--size-9); /* 36x36 icons */
-}
