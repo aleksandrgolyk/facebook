@@ -9,3 +9,10 @@
 //Components
 @import "components/buttons";
 @import "components/menu";
+
+
+
+body{
+  background-color: map-get($secondary, "default");
+  color: map-get($secondary, "lighten-4");
+}
