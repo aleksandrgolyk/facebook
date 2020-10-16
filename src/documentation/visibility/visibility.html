@@ -2,12 +2,70 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <titl>visibility</title>
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Visibility</title>
     <link rel="stylesheet" href="../../styles/index.scss">
 </head>
 <body>
-        <div class="invisible">
-
+<div class="container-fluid pt-4">
+    <div class="row" >
+        <div class="col-2 offset-1">
+            <nav class="menu title-2-regular">
+                <a class="menu-item" href="/">
+                    <img class="br-circle mr-3" style="height: 36px; width: 36px"
+                         src="https://interactive-examples.mdn.mozilla.net/media/cc0-images/grapefruit-slice-332-332.jpg" alt="">
+                    <p>Home</p>
+                </a>
+                <a class="menu-item" data-toggle="collapse" data-target="#offsets">Offsets</a>
+                <div class="collapse menu-item-collapse" id="offsets">
+                    <a class="menu-item" href="../offsets/padding.html">padding</a>
+                    <a class="menu-item" href="">margin</a>
+                </div>
+                <a class="menu-item" data-toggle="collapse" data-target="#typography">Typography</a>
+                <div class="collapse menu-item-collapse" id="typography">
+                    <a class="menu-item" href="">font-color</a>
+                    <a class="menu-item" href="">font-sizes</a>
+                </div>
+                <a class="menu-item" data-toggle="collapse" href="../z-index/z-index.html">z-index</a>
+                <a class="menu-item" data-toggle="collapse" href="visibility.html">Visibility</a>
+            </nav>
         </div>
+        <div class="col">
+            <h1 class="h1 fw-thin">Visibility</h1>
+            <section class="mb-4">
+                <h3 class="h3 fw-thin">Config:</h3>
+                <p class="p">Contains two values = visible,hidden</p>
+                <div class="pt-2">
+                    <h3 class="h3 fw-thin">Helpers:</h3>
+                    <p class="p">Contain class with name .visible-visible && .visible-invisible</p>
+                </div>
+            </section>
+            <section>
+                <div class="row" style="display: flex">
+                    <div class="pos-rel bgc-alert visibility-visible mx-3" style="width: 100px;height:100px;">
+                        <p class="col-auto">Visible Block</p>
+                    </div>
+                    <div class="pos-rel bgc-success visibility-invisible mx-3" style="width: 100px;height:100px;">
+                        <p class="col-auto">Invisible block</p>
+                    </div>
+                    <div class="pos-rel bgc-info visibility-visible mx-3" style="width: 100px;height:100px;">
+                        <p class="col-auto">Visible block</p>
+                    </div>
+                    <div class="pos-rel bgc-primary visibility-visible mx-3" style="width: 100px;height:100px;">
+                        <p class="col-auto">Visible block</p>
+                    </div>
+                </div>
+            </section>
+            <div class="pt-2">
+                <h5 class="h5 fw-thin">Warning:</h5>
+                <p class="fw-thin">*Notice that the hidden heading still takes up space on the page.</p>
+            </div>
+
+            </section>
+        </div>
+        <script src="../../js/index.js"></script>
+    </div>
 </body>
 </html>
