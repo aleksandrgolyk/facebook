@@ -1,67 +1,26 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>z-index</title>
-    <link rel="stylesheet" href="../../styles/index.scss">
-</head>
-<body>
-<div class="container-fluid pt-4">
-    <div class="row" >
-        <div class="col-2 offset-1">
-            <nav class="menu title-2-regular">
-                <a class="menu-item" href="/">
-                    <img class="br-circle mr-3" style="height: 36px; width: 36px"
-                         src="https://interactive-examples.mdn.mozilla.net/media/cc0-images/grapefruit-slice-332-332.jpg" alt="">
-                    <p>Home</p>
-                </a>
-                <a class="menu-item" data-toggle="collapse" data-target="#offsets">Offsets</a>
-                <div class="collapse menu-item-collapse" id="offsets">
-                    <a class="menu-item" href="../offsets/padding.html">padding</a>
-                    <a class="menu-item" href="">margin</a>
-                </div>
-                <a class="menu-item" data-toggle="collapse" data-target="#typography">Typography</a>
-                <div class="collapse menu-item-collapse" id="typography">
-                    <a class="menu-item" href="">font-color</a>
-                    <a class="menu-item" href="">font-sizes</a>
-                </div>
-                <a class="menu-item" data-toggle="collapse" href="z-index.html">z-index</a>
-                <a class="menu-item" data-toggle="collapse" href=" ../visibility/visibility.html">Visibility</a>
-            </nav>
-        </div>
-        <div class="col">
-            <h1 class="h1 fw-thin">Z-index</h1>
-            <section class="mb-4">
-                <h3 class="h3 fw-thin">Config:</h3>
-                <p class="p">Contains const coefficients(coef.)</p>
-                <div>
-                    <p class="code  pt-2">Include value 1000...1500 step=100</p>
-                </div>
-                <div class="pt-2">
-                    <h3 class="h3 fw-thin">Helpers:</h3>
-                    <p class="p">Contain class with name .z-index-value(from 1000 to 1500(step = 100))</p>
-                </div>
-            </section>
-            <section>
-                <div style="display: flex">
-                    <div class="pos-rel bgc-alert z-index-1000" style="width: 100px;height:100px;top: 100px; left: 5px;">
-                        <p class="col-1">z-index-1000</p>
-                    </div>
-                    <div class="pos-rel bgc-success z-index-1100" style="width: 100px;height:100px;top: 50px; left: -25px;">
-                        <p class="col-1">z-index-1100</p>
-                    </div>
-                    <div class="pos-rel bgc-info z-index-1200" style="width: 100px;height:100px; right: 50px">
-                        <p class="col-1">z-index-1200</p>
-                    </div>
-                </div>
-            </section>
 
-        </section>
+<h1 class="h1 fw-thin">Z-index</h1>
+<section class="mb-4">
+    <h3 class="h3 fw-thin">Config:</h3>
+    <p class="p">Contains const coefficients(coef.)</p>
+    <div>
+        <p class="code  pt-2">Include value 1000...1500 step=100</p>
     </div>
-    <script src="../../js/index.js"></script>
-</div>
-</body>
-</html>
+    <div class="pt-2">
+        <h3 class="h3 fw-thin">Helpers:</h3>
+        <p class="p">Contain class with name .z-index-value(from 1000 to 1500(step = 100))</p>
+    </div>
+</section>
+<section>
+    <div style="display: flex">
+        <div class="pos-rel bgc-alert z-index-1000" style="width: 100px;height:100px;top: 100px; left: 5px;">
+            <p class="col-1">z-index-1000</p>
+        </div>
+        <div class="pos-rel bgc-success z-index-1100" style="width: 100px;height:100px;top: 50px; left: -25px;">
+            <p class="col-1">z-index-1100</p>
+        </div>
+        <div class="pos-rel bgc-info z-index-1200" style="width: 100px;height:100px; right: 50px">
+            <p class="col-1">z-index-1200</p>
+        </div>
+    </div>
+</section>
