@@ -34,6 +34,9 @@ $col-width: 100%/$grid-columns;
         flex: 0 0 auto;
         width: auto;
         max-width: 100%;
+
+        padding-left: $grid-gutter-width;
+        padding-right: $grid-gutter-width;
       }
       .col-#{$point} {
         position: relative;
@@ -41,6 +44,9 @@ $col-width: 100%/$grid-columns;
         flex-basis: 0;
         flex-grow: 1;
         max-width: 100%;
+
+        padding-left: $grid-gutter-width;
+        padding-right: $grid-gutter-width;
       }
 
       //$grid-columns: 12
