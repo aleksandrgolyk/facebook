@@ -42,6 +42,7 @@ $col-width: 100%/$grid-columns;
         flex-grow: 1;
         max-width: 100%;
       }
+
       //$grid-columns: 12
       //from 12 to 1(included) run cycle
       @for $i from $grid-columns through 1 {
@@ -52,6 +53,9 @@ $col-width: 100%/$grid-columns;
           max-width: $col-width * $i;
           padding-left: $grid-gutter-width;
           padding-right: $grid-gutter-width;
+        }
+        .offset-#{$i}-#{$point}{
+          margin-right: $col-width * $i;
         }
       }
     }

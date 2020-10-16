@@ -3,3 +3,4 @@ dist
 .cache
 .vs
 package-lock.json
+.idea

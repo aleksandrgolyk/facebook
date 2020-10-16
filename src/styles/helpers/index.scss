@@ -1,9 +1,10 @@
-@import "offsets"; // paddings, margins
+@import "grid";
+
+@import "offsets";
 @import "utilities";
 @import "typography"; //fonts/
 @import "colors";
 
-@import "grid";
 
 @import "z-index";
 @import "borders";

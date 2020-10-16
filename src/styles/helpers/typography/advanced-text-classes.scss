@@ -3,104 +3,104 @@
   font-family: $ff-base;
   line-height: map_get($line-height, title-1);
   font-weight: map_get($font-weight, bold);
-  color: map_get($secondary, lighten-4);
+  color: map_get($secondary, lighten-4) !important;
 }
 .title-1-regular {
   font-size: map_get($font-size, title-1);
   font-family: $ff-base;
   line-height: map_get($line-height, title-1);
   font-weight: map_get($font-weight, regular);
-  color: map_get($secondary, lighten-4);
+  color: map_get($secondary, lighten-4) !important;
 }
 .title-2-bold {
   font-size: map_get($font-size, title-2);
   font-family: $ff-base;
   line-height: map_get($line-height, title-2);
   font-weight: map_get($font-weight, bold);
-  color: map_get($secondary, lighten-4);
+  color: map_get($secondary, lighten-4) !important;
 }
 .title-2-bold-shadow {
   font-size: map_get($font-size, title-2);
   font-family: $ff-base;
   line-height: map_get($line-height, title-2);
   font-weight: map_get($font-weight, bold);
-  color: map_get($secondary, lighten-3);
+  color: map_get($secondary, lighten-3) !important;
 }
 .title-2-regular {
   font-size: map_get($font-size, title-2);
   font-family: $ff-base;
   line-height: map_get($line-height, title-2);
   font-weight: map_get($font-weight, regular);
-  color: map_get($secondary, lighten-3);
+  color: map_get($secondary, lighten-3) !important;
 }
 .title-2-regular-shadow {
    font-size: map_get($font-size, title-2);
    font-family: $ff-base;
    line-height: map_get($line-height, title2);
    font-weight: map_get($font-weight, regular);
-   color: map_get($secondary, lighten-3);
+   color: map_get($secondary, lighten-3) !important;
  }
 .body-regular{
   font-size: map_get($font-size, body);
   font-family: $ff-base;
   line-height: map_get($line-height, body);
   font-weight: map_get($font-weight, regular);
-  color: map_get($secondary, lighten-4);
+  color: map_get($secondary, lighten-4) !important;
 }
 .body-regular-shadow{
   font-size: map_get($font-size, body);
   font-family: $ff-base;
   line-height: map_get($line-height, body);
   font-weight: map_get($font-weight, regular);
-  color: map_get($secondary, lighten-3);
+  color: map_get($secondary, lighten-3) !important;
 }
 .body-bold{
   font-size: map_get($font-size, body);
   font-family: $ff-base;
   line-height: map_get($line-height, body);
   font-weight: map_get($font-weight, bold);
-  color: map_get($secondary, lighten-4);
+  color: map_get($secondary, lighten-4) !important;
 }
 .body-bold-shadow{
   font-size: map_get($font-size, body);
   font-family: $ff-base;
   line-height: map_get($line-height, body);
   font-weight: map_get($font-weight, bold);
-  color: map_get($secondary, lighten-3);
+  color: map_get($secondary, lighten-3) !important;
 }
 .caption-1{
   font-size: map_get($font-size, caption-1);
   font-family: $ff-base;
   line-height: map_get($line-height, caption-1);
   font-weight: map_get($font-weight, regular);
-  color: map_get($secondary, lighten-3);
+  color: map_get($secondary, lighten-3) !important;
 }
 .caption-1-white{
   font-size: map_get($font-size, caption-1);
   font-family: $ff-base;
   line-height: map_get($line-height, caption-1);
   font-weight: map_get($font-weight, regular);
-  color: $white;
+  color: $white !important;
 }
 .caption-2{
   font-size: map_get($font-size, caption-2);
   font-family: $ff-base;
   line-height: map_get($line-height, caption-2);
   font-weight: map_get($font-weight, regular);
-  color: map_get($secondary, lighten-3);
+  color: map_get($secondary, lighten-3) !important;
 }
 .caption-2-link{
   font-size: map_get($font-size, caption-2);
   font-family: $ff-base;
   line-height: map_get($line-height, caption-2);
   font-weight: map_get($font-weight, regular);
-  color: map_get($primary, lighten-1);
+  color: map_get($primary, lighten-1)!important;
 }
 .caption-3{
   font-size: map_get($font-size, caption-3);
   font-family: $ff-base;
   line-height: map_get($line-height, caption-3);
   font-weight: map_get($font-weight, regular);
-  color: map_get($secondary, lighten-4);
+  color: map_get($secondary, lighten-4)!important;
 }
 
