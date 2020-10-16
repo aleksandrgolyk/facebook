@@ -1,11 +1,11 @@
 @each $key, $value in $primary {
   @if $key != "default" { // all items except default will have next changes
-    .bgc-primary-#{$key} { // key - "lighten-1"
+    .bg-primary-#{$key} { // key - "lighten-1"
       background-color: $value !important; // value - color hex
     }
   }
   @else { //handling default value
-    .bgc-primary {
+    .bg-primary {
       background-color: $value !important;
     }
   }
@@ -13,12 +13,12 @@
 
 @each $key, $value in $secondary {
   @if $key != "default" {
-    .bgc-secondary-#{$key} { // key - "lighten-1", "lighten-2", "lighten-3", etc.
+    .bg-secondary-#{$key} { // key - "lighten-1", "lighten-2", "lighten-3", etc.
       background-color: $value !important; // value - color hex
     }
   }
   @else {
-    .bgc-secondary {
+    .bg-secondary {
       background-color: $value !important;
     }
   }
@@ -26,26 +26,26 @@
 
 @each $key, $value in $success {
   @if $key != "default" {
-    .bgc-success-#{$key} { // key - "darken-1", etc.
+    .bg-success-#{$key} { // key - "darken-1", etc.
       background-color: $value !important; // value - color hex
     }
   }
   @else {
-    .bgc-success {
+    .bg-success {
       background-color: $value !important;
     }
   }
 }
 
-.bgc-alert {
+.bg-alert {
   background-color: $alert !important;
 }
-.bgc-info {
+.bg-info {
   background-color: $info !important;
 }
-.bgc-black {
+.bg-black {
   background-color: $black !important;
 }
-.bgc-white {
+.bg-white {
   background-color: $white !important;
 }
