@@ -13,30 +13,39 @@
     <div class="row">
         <div class="col-2 offset-1">
             <nav class="menu title-2-regular">
-                <a class="menu-item" href="/">
+                <a class="menu-item" data-path="main.html">
                     <img class="br-circle mr-3" style="height: 36px; width: 36px"
                          src="https://interactive-examples.mdn.mozilla.net/media/cc0-images/grapefruit-slice-332-332.jpg" alt="">
                     <p>Home</p>
                 </a>
                 <a class="menu-item" data-toggle="collapse" data-target="#offsets">Offsets</a>
                 <div class="collapse menu-item-collapse" id="offsets">
-                    <a class="menu-item" href="offsets/padding.html">padding</a>
-                    <a class="menu-item" href="">margin</a>
+                    <a class="menu-item" data-path="offsets/padding.html">padding</a>
+                    <a class="menu-item" data-path="">margin</a>
                 </div>
                 <a class="menu-item" data-toggle="collapse" data-target="#typography">Typography</a>
                 <div class="collapse menu-item-collapse" id="typography">
-                    <a class="menu-item" href="">font-color</a>
-                    <a class="menu-item" href="">font-sizes</a>
+                    <a class="menu-item" data-path="">font-color</a>
+                    <a class="menu-item" data-path="">font-sizes</a>
                 </div>
-                <a class="menu-item" href="borders/borders.html">Border</a>
+                <a class="menu-item" data-path="borders/borders.html">Border</a>
+                <a class="menu-item" data-path="grid/grid.html">Grid</a>
             </nav>
         </div>
-        <div class="col d-flex align-items-center flex-dir-column ">
-            <h1 class="h1 fw-thin">Our awesome Facebook</h1>
-            <h2 class="h2 fw-thin">Documentation</h2>
+        <div class="col d-flex flex-dir-column" id="main">
+
         </div>
     </div>
+    <div class="d-none">
+        <a href="main.html"></a>
+        <a href="offsets/padding.html"></a>
+        <a href=""></a>
+        <a href="borders/borders.html"></a>
+        <a href="grid/grid.html"></a>
+        <a href="err.html"></a>
+    </div>
     <script src="../js/index.js"></script>
+
 </div>
 
 </body>
