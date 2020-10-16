@@ -10,52 +10,87 @@
 </head>
 <body class="bgc-secondary">
 <div class="container-fluid pt-4">
-<div class="row">
-  <div class="col-2">
-    <nav class="menu title-2-regular">
-      <a class="menu-item" href="/">
-        <img class="br-circle mr-3" style="height: 36px; width: 36px" src="https://interactive-examples.mdn.mozilla.net/media/cc0-images/grapefruit-slice-332-332.jpg" alt="">
-        <p class="body-regular">Home</p>
-      </a>
-      <a class="menu-item body-regular" data-toggle="collapse" data-target="#offsets">Offsets</a>
-      <div class="collapse menu-item-collapse" id="offsets">
-        <a class="menu-item" href="/offsets\padding.html">padding</a>
-        <a class="menu-item" href="">margin</a>
+  <div class="row">
+    <div class="col-2">
+      <nav class="menu title-2-regular">
+        <a class="menu-item" href="/">
+          <img class="br-circle mr-3" style="height: 36px; width: 36px"
+               src="https://interactive-examples.mdn.mozilla.net/media/cc0-images/grapefruit-slice-332-332.jpg" alt="">
+          <p class="body-regular">Home</p>
+        </a>
+        <a class="menu-item body-regular" data-toggle="collapse" data-target="#offsets">Offsets</a>
+        <div class="collapse menu-item-collapse" id="offsets">
+          <a class="menu-item" href="/offsets\padding.html">padding</a>
+          <a class="menu-item" href="">margin</a>
+        </div>
+        <a class="menu-item body-regular" data-toggle="collapse" data-target="#typography">Typography</a>
+        <div class="collapse menu-item-collapse" id="typography">
+          <a class="menu-item" href="/typography\font-sizes.html">font-sizes</a>
+          <a class="menu-item" href="">font-sizes</a>
+        </div>
+      </nav>
+    </div>
+    <div class="col-10">
+      <div class="row pb-3 pt-3 align-items-center">
+        <div class="col">
+          <div class="h2 fc-white col-12 bp-bottom bw-xs bc-primary" style="text-align:center; border-style: solid">Font - sizes</div>
+          <div class="row justify-content-between align-items-center">
+            <div class="col-4">
+              <div class="h1 fc-white" style="text-align:center">H1 - fs 48px</div>
+            </div>
+            <div class="col-4">
+              <div class="h2 fc-white" style="text-align:center">H2 - fs 40px</div>
+            </div>
+            <div class="col-4 ">
+              <div class="h3 fc-white" style="text-align:center">H3 - fs 32px</div>
+            </div>
+          </div>
+          <div class="row justify-content-between align-items-center">
+            <div class="col-auto">
+              <div class="h4 fc-white" style="text-align:center">H4 - fs 26px</div>
+            </div>
+            <div class="col-auto">
+              <div class="h5 fc-white" style="text-align:center">H5, title1 - fs 20px</div>
+            </div>
+            <div class="col-auto">
+              <div class="h6 fc-white" style="text-align:center">H6, title2 - fs 17px</div>
+            </div>
+            <div class="col-auto">
+              <div class="fs-body fc-white" style="text-align:center">body - fs 15px</div>
+            </div>
+          </div>
+        </div>
+        <!--    </div>-->
       </div>
-      <a class="menu-item body-regular" data-toggle="collapse" data-target="#typography">Typography</a>
-      <div class="collapse menu-item-collapse" id="typography">
-        <a class="menu-item" href="/typography\font-sizes.html">font-sizes</a>
-        <a class="menu-item" href="">font-sizes</a>
+      <div class="row  pb-3 pt-3 align-items-center">
+        <div class="h2 fc-primary col-12" style="text-align:center">Font - colors</div>
+        <div class="col-6 bc-lighten-3 b-each bw-xs">
+          <div class="h2 fc-primary">Font color - primary</div>
+          <div class="bgc-secondary-lighten-4 br-circle" style="height: 20px; width: 20px; display: inline-block"></div>
+          <p class="body-regular">.fc-primary</p>
+          <p class="body-bold">#e4e6eb</p>
+        </div>
+        <div class="col-6 bc-lighten-3 b-each bw-xs">
+          <div class="h2 fc-secondary">Font color - secondary</div>
+          <div class="bgc-secondary-lighten-3 br-circle" style="height: 20px; width: 20px; display: inline-block"></div>
+          <p class="body-regular">.bgc-primary</p>
+          <p class="body-bold">#b0b3b8</p>
+        </div>
+        <div class="col-6 bc-lighten-3 b-each bw-xs">
+          <div class="h2  fc-brand">Font color - brand</div>
+          <div class="bgc-primary-lighten-1 br-circle" style="height: 20px; width: 20px; display: inline-block"></div>
+          <p class="body-regular">.fc-brand</p>
+          <p class="body-bold">#2e98ff</p>
+        </div>
+        <div class="col-6 bc-lighten-3 b-each bw-xs">
+          <div class="h2  fc-white">Font color - white</div>
+          <div class="bgc-white br-circle" style="height: 20px; width: 20px; display: inline-block"></div>
+          <p class="body-regular">.fc-brand</p>
+          <p class="body-bold">#ffffff</p>
+        </div>
+        <!--    </div>-->
       </div>
-    </nav>
-  </div>
-  <div class="col">
-      <div class="row align-items-center">
-    <!--    <div class="col bgc-white">Headings-->
-        <div class="col-auto">
-          <div class="h1 bgc-white">H1 - fs 48px</div>
-        </div>
-        <div class="col-auto">
-          <div class="h2   bgc-white">H2 - fs 40px </div>
-        </div>
-        <div class="col-auto ">
-          <div class="h3   bgc-white">H3 - fs 32px</div>
-        </div>
-        <div class="col-auto">
-          <div class="h4   bgc-white">H4 - fs 26px</div>
-        </div>
-        <div class="col-auto">
-          <div class="h5 bgc-white">H5, title1 - fs 20px</div>
-        </div>
-        <div class="col-auto">
-          <div class="h6 bgc-white">H6, title2 - fs 17px</div>
-        </div>
-        <div class="col-auto">
-          <div class="body">body - fs 15px</div>
-        </div>
-    <!--    </div>-->
-      </div>
-      <div class="row">
+      <div class="row  pb-3 pt-3 align-items-center">
         <div class="title-1-bold">.title-1-bold</div>
         <div class="title-1-regular">.title-1-regular</div>
         <div class="title-2-bold-shadow">.title-2-bold-shadow</div>
@@ -74,66 +109,37 @@
         <span class="fc-white fs-title-2">ssssssssssssssssssss</span>
         <span class="fc-white fs-caption-3">ssssssssssssssssssss</span>
       </div>
-
+    </div>
   </div>
-
 </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-</div>
+<!--<div class="container-fluid pt-4">-->
+<!--  <div class="col">-->
+<!--    <div class="row">-->
+<!--      <div class="col-2">-->
+<!--        <nav class="menu title-2-regular">-->
+<!--          <a class="menu-item" href="/">-->
+<!--            <img class="br-circle mr-3" style="height: 36px; width: 36px"-->
+<!--                 src="https://interactive-examples.mdn.mozilla.net/media/cc0-images/grapefruit-slice-332-332.jpg"-->
+<!--                 alt="">-->
+<!--            <p class="body-regular">Home</p>-->
+<!--          </a>-->
+<!--          <a class="menu-item body-regular" data-toggle="collapse" data-target="#offsets">Offsets</a>-->
+<!--          <div class="collapse menu-item-collapse" id="#offsets">-->
+<!--            <a class="menu-item" href="/offsets\padding.html">padding</a>-->
+<!--            <a class="menu-item" href="">margin</a>-->
+<!--          </div>-->
+<!--          <a class="menu-item body-regular" data-toggle="collapse" data-target="#typography">Typography</a>-->
+<!--          <div class="collapse menu-item-collapse" id="#typography">-->
+<!--            <a class="menu-item" href="/typography\font-sizes.html">font-sizes</a>-->
+<!--            <a class="menu-item" href="">font-sizes</a>-->
+<!--          </div>-->
+<!--        </nav>-->
+<!--      </div>-->
+<!--      <div class="col">-->
+<!--      </div>-->
+<!--    </div>-->
+<!--  </div>-->
 <!--</div>-->
-
+<!--</div>-->
 </body>
 </html>
