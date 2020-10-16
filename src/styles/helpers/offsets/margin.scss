@@ -5,6 +5,20 @@
     margin: map-get($margin, "0") !important;
 }
 
+.mx-auto{
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.my-auto{
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.m-auto{
+    margin: auto;
+}
+
 /* loop that iterates objects in "margin" map 
     $key - margin multiplier that we use to calculate actual margin value i.e. "1"
     $value - actual margin value that we calculate using multiplier and base rhythm i.e. 4 (base-rhythm(4)*key(1))*/
