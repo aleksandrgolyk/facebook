@@ -5,18 +5,18 @@
     margin: map-get($margin, "0") !important;
 }
 
-.mx-auto{
-    margin-right: auto;
-    margin-left: auto;
+.m-auto{
+    margin: auto !important;
 }
 
 .my-auto{
-    margin-top: auto;
-    margin-bottom: auto;
+    margin-top: auto  !important;
+    margin-bottom: auto  !important;
 }
 
-.m-auto{
-    margin: auto;
+.mx-auto{
+    margin-right: auto  !important;
+    margin-left: auto  !important;
 }
 
 /* loop that iterates objects in "margin" map 

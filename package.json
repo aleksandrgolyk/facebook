@@ -18,11 +18,10 @@
     "url": "https://github.com/aleksandrgolyk/facebook/issues"
   },
   "homepage": "https://github.com/aleksandrgolyk/facebook#readme",
-  "dependencies": {
-    "sass": "^1.27.0"
-  },
+  "dependencies": {},
   "keywords": [],
   "devDependencies": {
-    "parcel-bundler": "^1.12.4"
+    "parcel-bundler": "^1.12.4",
+    "sass": "^1.27.0"
   }
 }
