@@ -19,5 +19,5 @@ $menu-text-color: $black;
 .menu .menu-item-collapse{
   display: flex;
   flex-direction: column;
-  width: 100%;
+  flex-grow: 1;
 }

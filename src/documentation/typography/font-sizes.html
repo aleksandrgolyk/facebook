@@ -8,7 +8,7 @@
   <title>Document</title>
   <link rel="stylesheet" href="../../styles/index.scss">
 </head>
-<body class="bgc-secondary">
+<body class="bg-secondary">
 <div class="container-fluid pt-4">
   <div class="row">
     <div class="col-2">
@@ -18,22 +18,26 @@
                src="https://interactive-examples.mdn.mozilla.net/media/cc0-images/grapefruit-slice-332-332.jpg" alt="">
           <p class="body-regular">Home</p>
         </a>
-        <a class="menu-item body-regular" data-toggle="collapse" data-target="#offsets">Offsets</a>
+        <a class="menu-item" data-toggle="collapse" data-target="#offsets">Offsets</a>
         <div class="collapse menu-item-collapse" id="offsets">
-          <a class="menu-item" href="/offsets\padding.html">padding</a>
+          <a class="menu-item" href="../offsets/padding.html">padding</a>
           <a class="menu-item" href="">margin</a>
         </div>
-        <a class="menu-item body-regular" data-toggle="collapse" data-target="#typography">Typography</a>
-        <div class="collapse menu-item-collapse" id="typography">
-          <a class="menu-item" href="/typography\font-sizes.html">font-sizes</a>
-          <a class="menu-item" href="">font-sizes</a>
-        </div>
+        <!--        <a class="menu-item body-regular" data-toggle="collapse" data-target="#typography">Typography</a>-->
+        <!--        <div class="collapse menu-item-collapse" id="typography">-->
+        <a class="menu-item" href="font-sizes.html">Typography</a>
+        <!--          <a class="menu-item" href="font-colors.html">font-sizes</a>-->
+        <!--        </div>-->
+        <a class="menu-item" href="../borders/borders.html">Border</a>
+        <a class="menu-item" href="../theme/colors.html">Colors</a>
       </nav>
     </div>
     <div class="col-10">
       <div class="row pb-3 pt-3 align-items-center">
         <div class="col">
-          <div class="h2 fc-white col-12 bp-bottom bw-xs bc-primary" style="text-align:center; border-style: solid">Font - sizes</div>
+          <div class="h2 b-bottom fc-white col-12 bw-xs bc-primary" style="text-align:center; border-style: solid">Font
+            - sizes
+          </div>
           <div class="row justify-content-between align-items-center">
             <div class="col-4">
               <div class="h1 fc-white" style="text-align:center">H1 - fs 48px</div>
@@ -60,86 +64,57 @@
             </div>
           </div>
         </div>
-        <!--    </div>-->
       </div>
-      <div class="row  pb-3 pt-3 align-items-center">
+      <div class="row  bg-secondary-lighten-1 pb-3 pt-3 align-items-center">
         <div class="h2 fc-primary col-12" style="text-align:center">Font - colors</div>
-        <div class="col-6 bc-lighten-3 b-each bw-xs">
-          <div class="h2 fc-primary">Font color - primary</div>
-          <div class="bgc-secondary-lighten-4 br-circle" style="height: 20px; width: 20px; display: inline-block"></div>
+        <div class="col-6 bc-lighten-3 b-each bw-xs" style="text-align:center">
+          <div class="h4 fc-primary">Font color - primary</div>
+          <div class="bg-secondary-lighten-4 br-circle" style="height: 20px; width: 20px; display: inline-block"></div>
           <p class="body-regular">.fc-primary</p>
           <p class="body-bold">#e4e6eb</p>
         </div>
-        <div class="col-6 bc-lighten-3 b-each bw-xs">
-          <div class="h2 fc-secondary">Font color - secondary</div>
-          <div class="bgc-secondary-lighten-3 br-circle" style="height: 20px; width: 20px; display: inline-block"></div>
-          <p class="body-regular">.bgc-primary</p>
+        <div class="col-6 bc-lighten-3 b-each bw-xs" style="text-align:center">
+          <div class="h4 fc-secondary">Font color - secondary</div>
+          <div class="bg-secondary-lighten-3 br-circle" style="height: 20px; width: 20px; display: inline-block"></div>
+          <p class="body-regular">.bg-primary</p>
           <p class="body-bold">#b0b3b8</p>
         </div>
-        <div class="col-6 bc-lighten-3 b-each bw-xs">
-          <div class="h2  fc-brand">Font color - brand</div>
-          <div class="bgc-primary-lighten-1 br-circle" style="height: 20px; width: 20px; display: inline-block"></div>
+        <div class="col-6 bc-lighten-3 b-each bw-xs" style="text-align:center">
+          <div class="h4  fc-brand">Font color - brand</div>
+          <div class="bg-primary-lighten-1 br-circle" style="height: 20px; width: 20px; display: inline-block"></div>
           <p class="body-regular">.fc-brand</p>
           <p class="body-bold">#2e98ff</p>
         </div>
-        <div class="col-6 bc-lighten-3 b-each bw-xs">
-          <div class="h2  fc-white">Font color - white</div>
-          <div class="bgc-white br-circle" style="height: 20px; width: 20px; display: inline-block"></div>
+        <div class="col-6 bc-lighten-3 b-each bw-xs" style="text-align:center">
+          <div class="h4  fc-white">Font color - white</div>
+          <div class="bg-white br-circle" style="height: 20px; width: 20px; display: inline-block"></div>
           <p class="body-regular">.fc-brand</p>
           <p class="body-bold">#ffffff</p>
         </div>
         <!--    </div>-->
       </div>
-      <div class="row  pb-3 pt-3 align-items-center">
-        <div class="title-1-bold">.title-1-bold</div>
-        <div class="title-1-regular">.title-1-regular</div>
-        <div class="title-2-bold-shadow">.title-2-bold-shadow</div>
-        <div class="title-2-regular">.title-2-regular</div>
-        <div class="title-2-regular-shadow">.title-2-regular-shadow</div>
-        <div class="body-regular">.body-regular</div>
-        <div class="body-regular-shadow">.body-regular-shadow</div>
-        <div class="body-bold">.body-bold</div>
-        <div class="body-bold-shadow">.body-bold-shadow</div>
-        <div class="caption-1">.caption-1</div>
-        <div class="caption-1-white">.caption-1-white</div>
-        <div class="caption-2">.caption-2</div>
-        <div class="caption-2-link">.caption-2-link</div>
-        <div class="caption-3">.caption-3</div>
-        <span class="fc-white">ssssssssssssssssssss</span>
-        <span class="fc-white fs-title-2">ssssssssssssssssssss</span>
-        <span class="fc-white fs-caption-3">ssssssssssssssssssss</span>
+      <div class="row pb-3 pt-3 align-items-center">
+        <div class="h2 b-bottom fc-white col-12 bw-xs bc-primary" style="text-align:center; border-style: solid">Font
+          .presets
+        </div>
+        <div class="title-1-bold col-12">.title-1-bold</div>
+        <div class="title-1-regular  col-12">.title-1-regular</div>
+        <div class="title-2-bold-shadow  col-12">.title-2-bold-shadow</div>
+        <div class="title-2-regular  col-12">.title-2-regular</div>
+        <div class="title-2-regular-shadow  col-12">.title-2-regular-shadow</div>
+        <div class="body-regular  col-12">.body-regular</div>
+        <div class="body-regular-shadow  col-12">.body-regular-shadow</div>
+        <div class="body-bold  col-12">.body-bold</div>
+        <div class="body-bold-shadow  col-12">.body-bold-shadow</div>
+        <div class="caption-1  col-12">.caption-1</div>
+        <div class="caption-1-white  col-12">.caption-1-white</div>
+        <div class="caption-2  col-12">.caption-2</div>
+        <div class="caption-2-link  col-12">.caption-2-link</div>
+        <div class="caption-3  col-12">.caption-3</div>
       </div>
     </div>
   </div>
+  <script src="../../js/index.js"></script>
 </div>
-<!--<div class="container-fluid pt-4">-->
-<!--  <div class="col">-->
-<!--    <div class="row">-->
-<!--      <div class="col-2">-->
-<!--        <nav class="menu title-2-regular">-->
-<!--          <a class="menu-item" href="/">-->
-<!--            <img class="br-circle mr-3" style="height: 36px; width: 36px"-->
-<!--                 src="https://interactive-examples.mdn.mozilla.net/media/cc0-images/grapefruit-slice-332-332.jpg"-->
-<!--                 alt="">-->
-<!--            <p class="body-regular">Home</p>-->
-<!--          </a>-->
-<!--          <a class="menu-item body-regular" data-toggle="collapse" data-target="#offsets">Offsets</a>-->
-<!--          <div class="collapse menu-item-collapse" id="#offsets">-->
-<!--            <a class="menu-item" href="/offsets\padding.html">padding</a>-->
-<!--            <a class="menu-item" href="">margin</a>-->
-<!--          </div>-->
-<!--          <a class="menu-item body-regular" data-toggle="collapse" data-target="#typography">Typography</a>-->
-<!--          <div class="collapse menu-item-collapse" id="#typography">-->
-<!--            <a class="menu-item" href="/typography\font-sizes.html">font-sizes</a>-->
-<!--            <a class="menu-item" href="">font-sizes</a>-->
-<!--          </div>-->
-<!--        </nav>-->
-<!--      </div>-->
-<!--      <div class="col">-->
-<!--      </div>-->
-<!--    </div>-->
-<!--  </div>-->
-<!--</div>-->
-<!--</div>-->
 </body>
 </html>

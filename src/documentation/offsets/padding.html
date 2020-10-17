@@ -12,10 +12,14 @@
         body{
             font-size: 1.2rem;
         }
-
+        li{
+            list-style: disc;
+            margin-left: 20px;
+            margin-bottom: 4px;
+        }
     </style>
 </head>
-<body class="fc-system">
+<body class="c-system">
 <div class="container-fluid pt-4">
     <div class="row">
         <div class="col-2 offset-1">
@@ -30,11 +34,13 @@
                     <a class="menu-item" href="padding.html">padding</a>
                     <a class="menu-item" href="">margin</a>
                 </div>
-                <a class="menu-item" data-toggle="collapse" data-target="#typography">Typography</a>
-                <div class="collapse menu-item-collapse" id="typography">
-                    <a class="menu-item" href="padding.html">font-color</a>
-                    <a class="menu-item" href="">font-sizes</a>
-                </div>
+<!--                <a class="menu-item" data-toggle="collapse" data-target="#typography">Typography</a>-->
+<!--                <div class="collapse menu-item-collapse" id="typography">-->
+                    <a class="menu-item" href="../typography/font-sizes.html">Typography</a>
+<!--                    <a class="menu-item" href="../typography/font-sizes.html">font-sizes</a>-->
+<!--                </div>-->
+                <a class="menu-item" href="../borders/borders.html">Border</a>
+                <a class="menu-item" href="../theme/colors.html">Colors</a>
             </nav>
         </div>
         <div class="col">
@@ -48,24 +54,33 @@
             </section>
             <section>
                 <h3 class="h3 fw-thin">Helpers:</h3>
-                <p class="p"></p>
-                <ul>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                </ul>
-                <p></p>
-                <ul>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                </ul>
+                <p class="p pb-2">The classes are named using the format {property}{sides}-{size} for xs and
+                    {property}{sides}-{size}-{breakpoint} for sm, md, lg, and xl.</p>
+                <p class="p pb-3">property is <span class="code">padding</span>.</p>
+                <div class="pb-6">
+                    <p class="p pb-2">sides is:</p>
+                    <ul>
+                        <li>t - top</li>
+                        <li>b - bottom</li>
+                        <li>r - right</li>
+                        <li>l - left</li>
+                        <li>x - horizontal</li>
+                        <li>y - vertical</li>
+                        <li>blank - for classes that set a padding on all 4 sides of the element</li>
+                    </ul>
+                </div>
+                <div class="pb-6">
+                    <p class="p pb-2">sizes is:</p>
+                    <ul>
+                        <li>0 - for classes that eliminate the padding by setting it to 0</li>
+                        <li>1 - for classes that set the padding to <span class="code">$base-rhythm</span> * 1</li>
+                        <li>2 - for classes that set the padding to <span class="code">$base-rhythm</span> * 2</li>
+                        <li>3 - for classes that set the padding to <span class="code">$base-rhythm</span> * 3</li>
+                        <li>4 - for classes that set the padding to <span class="code">$base-rhythm</span> * 4</li>
+                        <li>5 - for classes that set the padding to <span class="code">$base-rhythm</span> * 5</li>
+                        <li>6 - for classes that set the padding to <span class="code">$base-rhythm</span> * 6</li>
+                    </ul>
+                </div>
             </section>
 
         </div>
