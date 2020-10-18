@@ -1,8 +1,7 @@
-$menu-text-color: $black;
+
 .menu{
   display: flex;
   flex-direction: column;
-  color: $menu-text-color;
 }
 .menu .menu-item{
   flex-grow: 1;
@@ -14,7 +13,7 @@ $menu-text-color: $black;
   cursor: pointer;
 }
 .menu .menu-item:hover{
-  background-color: #3a3b3c;
+  background-color: rgba(255,255,255,.05);
 }
 .menu .menu-item-collapse{
   display: flex;

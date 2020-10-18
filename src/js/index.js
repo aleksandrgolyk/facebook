@@ -21,3 +21,23 @@ document.querySelectorAll("[data-toggle=collapse]").forEach((el)=>{
         collapsedBlock.style.height = collapsedBlock.clientHeight===0 ? `${collapsedBlock.scrollHeight}px` : 0;
     })
 })
+
+document.querySelectorAll("[data-path]").forEach((el)=>{
+    el.addEventListener("click", ()=>{
+        const link = el.getAttribute("data-path");
+        if (link.length>0){
+            document.getElementById('main').innerHTML = loadPage(link);
+        }else{
+            document.getElementById('main').innerHTML = loadPage("err.html");
+        }
+    })
+})
+
+function loadPage(href)
+{
+    const xmlhttp = new XMLHttpRequest();
+    xmlhttp.open("GET", href, false);
+    xmlhttp.send();
+    return xmlhttp.responseText;
+}
+
