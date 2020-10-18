@@ -1,0 +1,116 @@
+
+    <style>
+        .code{
+            font-family: 'Montserrat', sans-serif;
+        }
+        body{
+            font-size: 1.2rem;
+        }
+
+        li{
+        list-style: disc;
+        margin-left: 20px;
+        margin-bottom: 4px;
+    }
+    </style>
+
+            <div>
+                <h1 class="h1 fw-thin">Flex</h1>
+                <section class="mb-4">
+                    <h3 class="h3 fw-thin">Config:</h3>
+                    <div class="pb-6"> 
+                      <p class="p pb-2">- Contains lists: </p>
+                        <ul>
+                          <li>flex-wrap - list of flex-wrap property values;</li>
+                          <li>flex-grow - list of flex-grow property values;</li>
+                          <li>flex-dir - list of flex-direction property values;</li>
+                        </ul>
+                    </div>
+                    <div class="pb-6"> 
+                      <p class="p pb-2">- Contains maps: </p>
+                        <ul>
+                          <li>flex-order - map of flex-order property values;</li>
+                          <li>justify-content - map of justify-content property values;</li>
+                          <li>align-content - map of align-content property values;</li>
+                          <li>align-items - map of align-items property values;</li>
+                        </ul>
+                    </div>
+                </section>
+                <section>
+                  <h3 class="h3 fw-thin">Helpers:</h3>
+                  <p class="p pb-2">The classes are named using the format {list or map name}{key from map or value from list} for xs and
+                    {list or map name}{key from map or value from list}-{breakpoint} for sm, md, lg, and xl.</p>
+                  <div class="pb-6">
+                      <p class="p pb-2">list values:</p>
+                      <div class="pb-2">
+                        <p class="p pb-1">flex-wrap values</p>
+                      <ul>
+                          <li>wrap</li>
+                          <li>wrap-reverse</li>
+                          <li>nowrap</li>
+                      </ul>
+                      </div>
+                      <div class="pb-2">
+                          <p class="p pb-1">flex-grow values</p>
+                        <ul>
+                            <li>1</li>
+                            <li>2</li>
+                            <li>3</li>
+                        </ul>
+                      </div>
+                      <div class="pb-2">
+                          <p class="p pb-1">flex-dir values</p>
+                        <ul>
+                            <li>row</li>
+                            <li>column</li>
+                        </ul>
+                      </div>
+                  </div>
+                  <div class="pb-6">
+                      <p class="p pb-2">map values:</p>
+                      <div class="pb-2">
+                        <p class="p pb-1">flex-order key: values</p>
+                      <ul>
+                          <li>first: -1</li>
+                          <li>0: 0</li>
+                          <li>1: 1</li>
+                          <li>2: 2</li>
+                          <li>3: 3</li>
+                          <li>last: 4</li>
+                      </ul>
+                      </div>
+                      <div class="pb-2">
+                          <p class="p pb-1">justify-content key: value</p>
+                        <ul>
+                            <li>start: flex-start</li>
+                            <li>end: flex-end</li>
+                            <li>center: center</li>
+                            <li>between: space-between</li>
+                            <li>around: space-around</li>
+                            <li>evenly: space-evenly</li>
+                        </ul>
+                      </div>
+                      <div class="pb-2">
+                          <p class="p pb-1">align-content key: value</p>
+                        <ul>
+                            <li>start: flex-start</li>
+                            <li>end: flex-end</li>
+                            <li>center: center</li>
+                            <li>between: space-between</li>
+                            <li>around: space-around</li>
+                            <li>stretch: stretch</li>
+                        </ul>
+                      </div>
+                      <div class="pb-2">
+                          <p class="p pb-1">align-items key: value</p>
+                        <ul>
+                            <li>start: flex-start</li>
+                            <li>end: flex-end</li>
+                            <li>center: center</li>
+                            <li>baseline: baseline</li>
+                            <li>stretch: stretch</li>
+                        </ul>
+                      </div>
+                  </div>
+                </section>
+            </div>

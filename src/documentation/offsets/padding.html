@@ -1,52 +1,344 @@
 <style>
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,900;1,300;1,400&display=swap');
     .code{
         font-family: 'Montserrat', sans-serif;
     }
     body{
         font-size: 1.2rem;
+        overflow-y: hidden;
+    }
+    span{
+        display: inline-block;
     }
     li{
         list-style: disc;
         margin-left: 20px;
         margin-bottom: 4px;
     }
+    .doc{
+        overflow-y: scroll;
+        overflow-x: hidden;
+        max-height: 100vh;
+        margin-top: -12px;
+        margin-right: -12px;
+        padding-right: .4rem;
+        box-sizing: content-box;
+
+    }
+    .doc::-webkit-scrollbar{
+        width: .5rem;
+    }
+    .doc::-webkit-scrollbar-track{
+        background-color: transparent;
+    }
+    .doc::-webkit-scrollbar-track:hover{
+        background-color: rgba(255,255,255,.05);
+    }
+    .doc::-webkit-scrollbar-thumb{
+        background-color: rgba(90,90,90,.4);
+        border-radius: .25rem;
+    }
+    .doc::-webkit-scrollbar-thumb:hover{
+        background-color: rgba(90,90,90,.8);
+    }
 </style>
-        <div >
-            <h1 class="h1 fw-thin">Padding</h1>
-            <section class="mb-4">
-                <h3 class="h3 fw-thin">Config:</h3>
-                <p class="p">-contains coefficients(coef.) that show multiplication by base-rhythm.</p>
-                <div>
-                    <p class="code pl-2 pt-2">$padding: (...  "coef.": coef. * $base-rhythm  ...);</p>
-                </div>
-            </section>
-            <section>
-                <h3 class="h3 fw-thin">Helpers:</h3>
-                <p class="p pb-2">The classes are named using the format {property}{sides}-{size} for xs and
-                    {property}{sides}-{size}-{breakpoint} for sm, md, lg, and xl.</p>
-                <p class="p pb-3">property is <span class="code">padding</span>.</p>
-                <div class="pb-6">
-                    <p class="p pb-2">sides is:</p>
-                    <ul>
-                        <li>t - top</li>
-                        <li>b - bottom</li>
-                        <li>r - right</li>
-                        <li>l - left</li>
-                        <li>x - horizontal</li>
-                        <li>y - vertical</li>
-                        <li>blank - for classes that set a padding on all 4 sides of the element</li>
-                    </ul>
-                </div>
-                <div class="pb-6">
-                    <p class="p pb-2">sizes is:</p>
-                    <ul>
-                        <li>0 - for classes that eliminate the padding by setting it to 0</li>
-                        <li>1 - for classes that set the padding to <span class="code">$base-rhythm</span> * 1</li>
-                        <li>2 - for classes that set the padding to <span class="code">$base-rhythm</span> * 2</li>
-                        <li>3 - for classes that set the padding to <span class="code">$base-rhythm</span> * 3</li>
-                        <li>4 - for classes that set the padding to <span class="code">$base-rhythm</span> * 4</li>
-                        <li>5 - for classes that set the padding to <span class="code">$base-rhythm</span> * 5</li>
-                        <li>6 - for classes that set the padding to <span class="code">$base-rhythm</span> * 6</li>
-                    </ul>
-                </div>
-            </section>
+<div class="doc">
+    <h1 class="h1 fw-thin">Padding</h1>
+    <section class="mb-4">
+        <h3 class="h3 fw-thin">Config:</h3>
+        <p class="p">-contains coefficients(coef.) that show multiplication by base-rhythm.</p>
+        <div>
+            <p class="code pl-2 pt-2">$padding: (...  "coef.": coef. * $base-rhythm  ...);</p>
+        </div>
+    </section>
+    <section>
+        <h3 class="h3 fw-thin">Helpers:</h3>
+        <p class="p pb-2">The classes are named using the format {property}{sides}-{size} for xs and
+            {property}{sides}-{size}-{breakpoint} for sm, md, lg, xl, xxl.</p>
+        <p class="p pb-3">property is <span class="code">padding</span>.</p>
+        <div class="pb-6">
+            <p class="p pb-2">sides is:</p>
+            <ul>
+                <li>t - top</li>
+                <li>b - bottom</li>
+                <li>r - right</li>
+                <li>l - left</li>
+                <li>x - horizontal</li>
+                <li>y - vertical</li>
+                <li>blank - for classes that set a padding on all 4 sides of the element</li>
+            </ul>
+        </div>
+        <div class="pb-6">
+            <p class="p pb-2">sizes is:</p>
+            <ul>
+                <li>0 - for classes that eliminate the padding by setting it to 0</li>
+                <li>1 - for classes that set the padding to <span class="code">$base-rhythm</span> * 1</li>
+                <li>2 - for classes that set the padding to <span class="code">$base-rhythm</span> * 2</li>
+                <li>3 - for classes that set the padding to <span class="code">$base-rhythm</span> * 3</li>
+                <li>4 - for classes that set the padding to <span class="code">$base-rhythm</span> * 4</li>
+                <li>5 - for classes that set the padding to <span class="code">$base-rhythm</span> * 5</li>
+                <li>6 - for classes that set the padding to <span class="code">$base-rhythm</span> * 6</li>
+            </ul>
+        </div>
+    </section>
+    <section class="mb-4">
+        <h3 class="h3 fw-thin">Examples:</h3>
+        <div class="row mb-5">
+            <div class="col-1">
+                <span class="pt-0 bg-primary">
+                    pt-0
+                </span>
+            </div>
+            <div class="col-1">
+                <span class="pt-1 bg-primary">
+                    pt-1
+                </span>
+            </div>
+            <div class="col-2">
+                <span class="pt-2 bg-primary">
+                    pt-2
+                </span>
+            </div>
+            <div class="col-2">
+                <span class="pt-3 bg-primary">
+                    pt-3
+                </span>
+            </div>
+            <div class="col-2">
+                <span class="pt-4 bg-primary">
+                    pt-4
+                </span>
+            </div>
+            <div class="col-2">
+                <span class="pt-5 bg-primary">
+                    pt-5
+                </span>
+            </div>
+            <div class="col-2">
+                <span class="pt-6 bg-primary">
+                    pt-6
+                </span>
+            </div>
+        </div>
+        <div class="row mb-5">
+            <div class="col-1">
+                <span class="pb-0 bg-primary">
+                    pb-0
+                </span>
+            </div>
+            <div class="col-1">
+                <span class="pb-1 bg-primary">
+                    pb-1
+                </span>
+            </div>
+            <div class="col-2">
+                <span class="pb-2 bg-primary">
+                    pb-2
+                </span>
+            </div>
+            <div class="col-2">
+                <span class="pb-3 bg-primary">
+                    pb-3
+                </span>
+            </div>
+            <div class="col-2">
+                <span class="pb-4 bg-primary">
+                    pb-4
+                </span>
+            </div>
+            <div class="col-2">
+                <span class="pb-5 bg-primary">
+                    pb-5
+                </span>
+            </div>
+            <div class="col-2">
+                <span class="pb-6 bg-primary">
+                    pb-6
+                </span>
+            </div>
+        </div>
+        <div class="row mb-5">
+            <div class="col-1">
+                <span class="pr-0 bg-primary">
+                    pr-0
+                </span>
+            </div>
+            <div class="col-1">
+                <span class="pr-1 bg-primary">
+                    pr-1
+                </span>
+            </div>
+            <div class="col-2">
+                <span class="pr-2 bg-primary">
+                    pr-2
+                </span>
+            </div>
+            <div class="col-2">
+                <span class="pr-3 bg-primary">
+                    pr-3
+                </span>
+            </div>
+            <div class="col-2">
+                <span class="pr-4 bg-primary">
+                    pr-4
+                </span>
+            </div>
+            <div class="col-2">
+                <span class="pr-5 bg-primary">
+                    pr-5
+                </span>
+            </div>
+            <div class="col-2">
+                <span class="pr-6 bg-primary">
+                    pr-6
+                </span>
+            </div>
+        </div>
+        <div class="row mb-5">
+            <div class="col-1">
+                <span class="pl-0 bg-primary">
+                    pl-0
+                </span>
+            </div>
+            <div class="col-1">
+                <span class="pl-1 bg-primary">
+                    pl-1
+                </span>
+            </div>
+            <div class="col-2">
+                <span class="pl-2 bg-primary">
+                    pl-2
+                </span>
+            </div>
+            <div class="col-2">
+                <span class="pl-3 bg-primary">
+                    pl-3
+                </span>
+            </div>
+            <div class="col-2">
+                <span class="pl-4 bg-primary">
+                    pl-4
+                </span>
+            </div>
+            <div class="col-2">
+                <span class="pl-5 bg-primary">
+                    pl-5
+                </span>
+            </div>
+            <div class="col-2">
+                <span class="pl-6 bg-primary">
+                    pl-6
+                </span>
+            </div>
+        </div>
+        <div class="row mb-5">
+            <div class="col-1">
+                <span class="px-0 bg-primary">
+                    px-0
+                </span>
+            </div>
+            <div class="col-1">
+                <span class="px-1 bg-primary">
+                    px-1
+                </span>
+            </div>
+            <div class="col-2">
+                <span class="px-2 bg-primary">
+                    px-2
+                </span>
+            </div>
+            <div class="col-2">
+                <span class="px-3 bg-primary">
+                    px-3
+                </span>
+            </div>
+            <div class="col-2">
+                <span class="px-4 bg-primary">
+                    px-4
+                </span>
+            </div>
+            <div class="col-2">
+                <span class="px-5 bg-primary">
+                    px-5
+                </span>
+            </div>
+            <div class="col-2">
+                <span class="px-6 bg-primary">
+                    px-6
+                </span>
+            </div>
+        </div><div class="row mb-5">
+        <div class="col-1">
+            <span class="py-0 bg-primary">
+                py-0
+            </span>
+        </div>
+        <div class="col-1">
+            <span class="py-1 bg-primary">
+                py-1
+            </span>
+        </div>
+        <div class="col-2">
+            <span class="py-2 bg-primary">
+                py-2
+            </span>
+        </div>
+        <div class="col-2">
+            <span class="py-3 bg-primary">
+                py-3
+            </span>
+        </div>
+        <div class="col-2">
+            <span class="py-4 bg-primary">
+                py-4
+            </span>
+        </div>
+        <div class="col-2">
+            <span class="py-5 bg-primary">
+                py-5
+            </span>
+        </div>
+        <div class="col-2">
+            <span class="py-6 bg-primary">
+                py-6
+            </span>
+        </div>
+    </div>
+        <div class="row mb-5">
+            <div class="col-1">
+                <span class="p-0 bg-primary">
+                    p-0
+                </span>
+            </div>
+            <div class="col-1">
+                <span class="p-1 bg-primary">
+                    p-1
+                </span>
+            </div>
+            <div class="col-2">
+                <span class="p-2 bg-primary">
+                    p-2
+                </span>
+            </div>
+            <div class="col-2">
+                <span class="p-3 bg-primary">
+                    p-3
+                </span>
+            </div>
+            <div class="col-2">
+                <span class="p-4 bg-primary">
+                    p-4
+                </span>
+            </div>
+            <div class="col-2">
+                <span class="p-5 bg-primary">
+                    p-5
+                </span>
+            </div>
+            <div class="col-2">
+                <span class="p-6  bg-primary">p-6</span>
+            </div>
+        </div>
+    </section>
+
+</div>
