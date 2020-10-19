@@ -1,0 +1,25 @@
+$background-color: map-get($secondary, "lighten-4");
+$offset: map-get($padding, "2");
+$text-color: $black;
+
+.tooltip-trigger{
+  position: relative;
+}
+.tooltip-trigger:hover > div{
+  display: flex;
+}
+.tooltip-trigger .tooltip{
+  position: absolute;
+  top: 105%;
+  display: none;
+  width: 100%;
+  justify-content: center;
+}
+.tooltip-trigger .tooltip > div{
+  padding: $offset;
+  background-color: fade-out($background-color, .2) ;
+  color: $text-color ;
+  font-size: map-get($font-size, "caption-1") ;
+  line-height: map-get($line-height, "caption-1") ;
+  border-radius: map-get($br, "xxs");
+}
