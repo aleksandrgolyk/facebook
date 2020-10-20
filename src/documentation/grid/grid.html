@@ -1,42 +1,218 @@
-
 <div>
-    <h1 class="h1 fw-thin">Grid</h1>
-    <section class="mb-4">
-        <h3 class="h3 fw-thin">Config:</h3>
-        <p class="p">-contains coefficients(coef.) that show multiplication by base-rhythm.</p>
-        <div>
-            <p class="code pl-2 pt-2">$padding: (...  "coef.": coef. * $base-rhythm  ...);</p>
+  <h1 class="h2 c-primary fw-dark">Grid: About</h1>
+  <div class="bg-secondary-lighten-1 px-3 py-3" style="margin: 6px">
+    <h4 class="h4 c-secondary pt-3">How it works</h4>
+    <p style="width: 75%" class="title-1-regular mb-3">
+      Grid system uses a series of containers, rows, and columns to layout and
+      align content. It’s built with flexbox and is fully responsive. Below is
+      an example and an in-depth look at how the grid comes together.
+    </p>
+    <div class="container-fluid bg-secondary m-0 mb-3">
+      <div class="row c-white">
+        <div class="col-sm px-3 py-3 bp-each bw-xs bc-secondary">
+          One of three columns
         </div>
-    </section>
-    <section>
-        <h3 class="h3 fw-thin">Helpers:</h3>
-        <p class="p pb-2">The classes are named using the format {property}{sides}-{size} for xs and
-            {property}{sides}-{size}-{breakpoint} for sm, md, lg, and xl.</p>
-        <p class="p pb-3">property is <span class="code">padding</span>.</p>
-        <div class="pb-6">
-            <p class="p pb-2">sides is:</p>
-            <ul>
-                <li>t - top</li>
-                <li>b - bottom</li>
-                <li>r - right</li>
-                <li>l - left</li>eo
-                <li>x - horizontal</li>
-                <li>y - vertical</li>
-                <li>blank - for classes that set a padding on all 4 sides of the element</li>
-            </ul>
+        <div class="col-sm px-3 py-3 bp-each bw-xs bc-secondary">
+          One of three columns
         </div>
-        <div class="pb-6">
-            <p class="p pb-2">sizes is:</p>
-            <ul>
-                <li>0 - for classes that eliminate the padding by setting it to 0</li>
-                <li>1 - for classes that set the padding to <span class="code">$base-rhythm</span> * 1</li>
-                <li>2 - for classes that set the padding to <span class="code">$base-rhythm</span> * 2</li>
-                <li>3 - for classes that set the padding to <span class="code">$base-rhythm</span> * 3</li>
-                <li>4 - for classes that set the padding to <span class="code">$base-rhythm</span> * 4</li>
-                <li>5 - for classes that set the padding to <span class="code">$base-rhythm</span> * 5</li>
-                <li>6 - for classes that set the padding to <span class="code">$base-rhythm</span> * 6</li>
-            </ul>
+        <div class="col-sm px-3 py-3 bp-each bw-xs bc-secondary">
+          One of three columns
         </div>
-    </section>
-
+      </div>
+    </div>
+    <div class="bg-secondary mb-3">
+      <pre class="title-1-regular pt-4 fs-body">
+            &ltdiv class="<span class="c-brand">container</span>"&gt
+                &ltdiv class="<span class="c-brand">row</span>"&gt 
+                    &ltdiv class="<span class="c-brand">col-sm</span>"&gt
+                      One of three columns
+                    &lt/div&gt
+                    &ltdiv class="<span class="c-brand">col-sm</span>"&gt
+                      One of three columns
+                    &lt/div&gt
+                    &ltdiv class="<span class="c-brand">col-sm</span>"&gt
+                      One of three columns
+                    &lt/div&gt
+                &lt/div&gt
+            &lt/div&gt
+        </pre>
+    </div>
+    <p style="width: 75%" class="title-1-regular mb-3">
+      The above example creates three equal-width columns on small, medium,
+      large, and extra large devices using our predefined grid classes. Those
+      columns are centered in the page with the parent .container. On site are
+      used rems for defining most sizes, pxs are used for grid breakpoints and
+      container widths. This is because the viewport width is in pixels and does
+      not change with the font size.
+    </p>
+  </div>
+  <div class="bg-secondary-lighten-1 px-3 py-3" style="margin: 6px">
+    <h4 class="h4 c-secondary pt-3">Gutter</h4>
+    <p style="width: 75%" class="title-1-regular mb-3">
+      Gutters can be responsively adjusted by breakpoint-specific padding and
+      negative margin utility classes. To change the gutters in a given row,
+      pair a negative margin utility on the .row and matching padding utilities
+      on the .cols. The .container or .container-fluid parent may need to be
+      adjusted too to avoid unwanted overflow, using again matching padding
+      utility.
+    </p>
+    <div class="bg-secondary mb-3">
+      <pre class="title-1-regular pt-4 fs-body">
+                <span class="c-brand">$grid-gutter-width</span>: 3 * $base-rhythm !default;
+              </pre>
+    </div>
+  </div>
+  <div class="bg-secondary-lighten-1 px-3 py-3" style="margin: 6px">
+    <h4 class="h4 c-secondary pt-3">Container</h4>
+    <div class="bg-secondary mb-3">
+      <pre class="title-1-regular pt-4 fs-body">
+                <span class="c-brand">.container</span> {
+                  width: 100%;
+                  padding-right: 12px;
+                  padding-left: 12px;
+                  margin-right: auto;
+                  margin-left: auto;
+                }
+              </pre>
+    </div>
+    <p style="width: 75%" class="title-1-regular mb-3">
+      Containers provide a means to center and horizontally pad your site’s
+      contents. Use .container for a responsive pixel width or .container-fluid
+      for width: 100% across all viewport and device sizes.
+    </p>
+  </div>
+  <div class="bg-secondary-lighten-1 px-3 py-3" style="margin: 6px">
+    <h4 class="h4 c-secondary pt-3">Row</h4>
+    <p style="width: 75%" class="title-1-regular pb-3">
+      Use row columns classes to quickly create basic grid layouts or to control
+      your card layouts. In onther words - it's used to hold columns in it.
+    </p>
+    <div class="bg-secondary mb-3">
+      <pre class="title-1-regular pt-4 fs-body">
+                <span class="c-brand">.row</span> {
+                  display: flex;
+                  flex-wrap: wrap;
+                  margin-right: -12px;
+                  margin-left: -12px;
+                }
+              </pre>
+    </div>
+    <p style="width: 75%" class="title-1-regular mb-3">
+      To use just apply it to any contextual class:
+    </p>
+    <div class="bg-secondary mb-3">
+      <pre class="title-1-regular pt-4 fs-body">
+                &ltdiv class="<span class="c-brand">row</span>"&gt&lt/div&gt
+              </pre>
+    </div>
+  </div>
+  <div class="bg-secondary-lighten-1 px-3 py-3" style="margin: 6px">
+    <h4 class="h4 c-secondary pt-3">Column</h4>
+    <p style="width: 75%" class="title-1-regular pb-3">
+      In a grid layout, content must be placed within columns and only columns
+      may be immediate children of rows. Thanks to flexbox, grid columns without
+      a specified width will automatically layout as equal width columns. For
+      example, four instances of .col-sm will each automatically be 25% wide
+      from the small breakpoint and up. See the auto-layout columns section for
+      more examples. Column classes indicate the number of columns you’d like to
+      use out of the possible 12 per row. So, if you want three equal-width
+      columns across, you can use .col-4. Column widths are set in percentages,
+      so they’re always fluid and sized relative to their parent element.
+    </p>
+    <div class="bg-secondary mb-3">
+      <pre class="title-1-regular pt-4 fs-body">
+              <span class="c-brand">.col-auto</span> {
+                  position: relative;
+                  flex: 0 0 auto;
+                  width: auto;
+                  max-width: 100%;
+                  padding-left: 12px;
+                  padding-right: 12px;
+              }
+      
+              <span class="c-brand">.col</span> {
+                  position: relative;
+                  width: 100%;
+                  flex-basis: 0;
+                  flex-grow: 1;
+                  max-width: 100%;
+                  padding-left: 12px;
+                  padding-right: 12px;
+              }
+          </pre>
+    </div>
+    <p style="width: 75%" class="title-1-regular pb-3">
+      If more than 12 columns are placed within a single row, each group of
+      extra columns will, as one unit, wrap onto a new line.
+    </p>
+    <div class="container-fluid bg-secondary m-0 mb-3">
+      <div class="row c-white">
+        <div class="col-12 px-3 py-3 bp-each bw-xs bc-secondary">.col-12</div>
+        <div class="col-11 px-3 py-3 bp-each bw-xs bc-secondary">.col-11</div>
+        <div class="col-1 px-3 py-3 bp-each bw-xs bc-secondary">.col-1</div>
+        <div class="col-10 px-3 py-3 bp-each bw-xs bc-secondary">.col-10</div>
+        <div class="col-2 px-3 py-3 bp-each bw-xs bc-secondary">.col-2</div>
+        <div class="col-9 px-3 py-3 bp-each bw-xs bc-secondary">.col-9</div>
+        <div class="col-3 px-3 py-3 bp-each bw-xs bc-secondary">.col-3</div>
+        <div class="col-8 px-3 py-3 bp-each bw-xs bc-secondary">.col-8</div>
+        <div class="col-4 px-3 py-3 bp-each bw-xs bc-secondary">.col-4</div>
+        <div class="col-7 px-3 py-3 bp-each bw-xs bc-secondary">.col-7</div>
+        <div class="col-5 px-3 py-3 bp-each bw-xs bc-secondary">.col-5</div>
+        <div class="col-6 px-3 py-3 bp-each bw-xs bc-secondary">.col-6</div>
+        <div class="col-6 px-3 py-3 bp-each bw-xs bc-secondary">.col-6</div>
+      </div>
+    </div>
+    <div class="bg-secondary mb-3">
+      <pre class="title-1-regular pt-4 fs-body">
+          &ltdiv class="row">
+            &ltdiv class="<span class="c-brand">col-12</span>"&gt .col-12  &lt/div&gt
+            &ltdiv class="<span class="c-brand">col-11</span>"&gt .col-11  &lt/div&gt
+            &ltdiv class="<span class="c-brand">col-1</span>"&gt .col-1  &lt/div&gt
+            &ltdiv class="<span class="c-brand">col-10</span>"&gt .col-10  &lt/div&gt
+            &ltdiv class="<span class="c-brand">col-2</span>"&gt .col-2  &lt/div&gt
+            &ltdiv class="<span class="c-brand">col-9</span>"&gt .col-9  &lt/div&gt
+            &ltdiv class="<span class="c-brand">col-3</span>"&gt .col-3  &lt/div&gt
+            &ltdiv class="<span class="c-brand">col-8</span>"&gt .col-8  &lt/div&gt
+            &ltdiv class="<span class="c-brand">col-4</span>"&gt .col-4  &lt/div&gt
+            &ltdiv class="<span class="c-brand">col-7</span>"&gt .col-7  &lt/div&gt
+            &ltdiv class="<span class="c-brand">col-5</span>"&gt .col-5  &lt/div&gt
+            &ltdiv class="<span class="c-brand">col-6</span>"&gt .col-6  &lt/div&gt
+            &ltdiv class="<span class="c-brand">col-6</span>"&gt .col-6  &lt/div&gt
+          &lt/div>
+          </pre>
+    </div>
+  </div>
+  <div class="bg-secondary-lighten-1 px-3 py-3" style="margin: 6px">
+    <h4 class="h4 c-secondary pt-3">Offsetting column</h4>
+    <p style="width: 75%" class="title-1-regular mb-3">
+      You can offset grid columns in two ways: responsive .offset- grid classes
+      and margin utilities. Grid classes are sized to match columns while
+      margins are more useful for quick layouts where the width of the offset is
+      variable.
+    </p>
+    <div class="container-fluid bg-secondary m-0 mb-3">
+      <div class="row c-white">
+        <div class="col-4-md offset-4-md px-3 py-3 bp-each bw-xs bc-secondary">
+          .col-4-md .offset-4-sm
+        </div>
+        <div class="col-4-md px-3 py-3 bp-each bw-xs bc-secondary">
+          .col-4-md
+        </div>
+      </div>
+    </div>
+    <div class="bg-secondary mb-3">
+      <pre class="title-1-regular pt-4 fs-body">
+        &ltdiv class="<span class="c-brand">container-fluid</span>"&gt
+            &ltdiv class="<span class="c-brand">row</span>"&gt 
+                &ltdiv class="<span class="c-brand">col-4-md offset-4-md</span>"&gt
+                    .col-4-md .offset-4-sm
+                &lt/div&gt
+                &ltdiv class="<span class="c-brand">col-4-md</span>"&gt
+                    .col-4-md
+                &lt/div&gt
+            &lt/div&gt
+        &lt/div&gt
+          </pre>
+    </div>
+  </div>
 </div>

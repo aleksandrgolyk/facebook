@@ -1,0 +1,168 @@
+<div>
+  <h1 class="h2 c-primary fw-dark">Grid: Responsiveness</h1>
+  <div class="bg-secondary-lighten-1 px-3 py-3" style="margin: 6px">
+    <h4 class="h4 c-secondary pt-3">Breakpoints</h4>
+    <p style="width: 75%" class="title-1-regular mb-3">
+      For grids that are the same from the smallest of devices to the largest,
+      use the .col and .col-* classes. Specify a numbered class when you need a
+      particularly sized column; otherwise, feel free to stick to .col. Using a
+      single set of .col-sm-* classes, you can create a basic grid system that
+      starts out stacked and becomes horizontal at the small breakpoint (sm).
+    </p>
+    <div class="bg-secondary mb-3">
+      <pre class="title-1-regular pt-4 fs-body">
+        $grid-breakpoints: (
+            <span class="c-brand">xs</span>: 0,
+            <span class="c-brand">sm</span>: 576px,
+            <span class="c-brand">md</span>: 768px,
+            <span class="c-brand">lg</span>: 992px,
+            <span class="c-brand">xl</span>: 1200px,
+            <span class="c-brand">xxl</span>: 1400px
+        ) !default;
+      </pre>
+    </div>
+  </div>
+  <div class="bg-secondary-lighten-1 px-3 py-3" style="margin: 6px">
+    <h4 class="h4 c-secondary pt-3">Container</h4>
+    <p style="width: 75%" class="title-1-regular mb-3">
+      Grid breakpoints are based on minimum width media queries, meaning they
+      apply to that one breakpoint and all those above it (e.g., .col-sm-4
+      applies to small, medium, large, and extra large devices, but not the
+      first xs breakpoint).
+    </p>
+    <div class="bg-secondary mb-3">
+      <pre class="title-1-regular pt-4 fs-body">
+            @media screen and (min-width: 576px) {
+                .container,  <span class="c-brand">.container-sm</span> {
+                  max-width: 540px;
+                }
+            }
+
+            @media screen and (min-width: 720px) {
+                .container, <span class="c-brand">.container-md</span> {
+                  max-width: 720px;
+                }
+            }
+
+            @media screen and (min-width: 960px) {
+                .container, <span class="c-brand">.container-lg</span> {
+                  max-width: 960px;
+                }
+            }
+
+            @media screen and (min-width: 1140px) {
+                .container, <span class="c-brand">.container-xl</span> {
+                  max-width: 1140px;
+                }
+            }
+
+            @media screen and (min-width: 1320px) {
+                .container, <span class="c-brand">.container-xxl</span> {
+                  max-width: 1320px;
+                }
+            }
+        </pre>
+    </div>
+  </div>
+  <div class="bg-secondary-lighten-1 px-3 py-3" style="margin: 6px">
+    <h4 class="h4 c-secondary pt-3">Columns</h4>
+    <p style="width: 75%" class="title-1-regular mb-3">
+      This is example of css class, that defines responsive column for small
+      screen. Same will be for others sizes and column number.
+    </p>
+    <div class="bg-secondary mb-3">
+      <pre class="title-1-regular pt-4 fs-body">
+        <span class="c-brand">.col-sm</span> {
+          position: relative;
+          width: 100%;
+          flex-basis: 0;
+          flex-grow: 1;
+          max-width: 100%;
+          padding-left: 12px;
+          padding-right: 12px;
+        }
+      </pre>
+    </div>
+    <p style="width: 75%" class="title-1-regular mb-3">
+      Example, how to use all classes.
+    </p>
+    <div class="bg-secondary mb-3">
+      <pre class="title-1-regular pt-4 fs-body">
+        &ltdiv class="<span class="c-brand">col-auto-sm</span>"&gt .col-auto-sm &lt/div&gt
+        &ltdiv class="<span class="c-brand">col-sm</span>"&gt .col-sm &lt/div&gt
+        &ltdiv class="<span class="c-brand">col-12-sm</span>"&gt .col-12-sm &lt/div&gt
+        &ltdiv class="<span class="c-brand">col-11-sm</span>"&gt .col-11-sm &lt/div&gt
+        &ltdiv class="<span class="c-brand">col-10-sm</span>"&gt .col-10-sm &lt/div&gt
+        &ltdiv class="<span class="c-brand">col-9-sm</span>"&gt .col-9-sm &lt/div&gt
+        &ltdiv class="<span class="c-brand">col-8-sm</span>"&gt .col-8-sm &lt/div&gt
+        &ltdiv class="<span class="c-brand">col-7-sm</span>"&gt .col-7-sm &lt/div&gt
+        &ltdiv class="<span class="c-brand">col-6-sm</span>"&gt .col-6-sm &lt/div&gt
+        &ltdiv class="<span class="c-brand">col-5-sm</span>"&gt .col-5-sm &lt/div&gt
+        &ltdiv class="<span class="c-brand">col-4-sm</span>"&gt .col-4-sm &lt/div&gt
+        &ltdiv class="<span class="c-brand">col-3-sm</span>"&gt .col-3-sm &lt/div&gt
+        &ltdiv class="<span class="c-brand">col-2-sm</span>"&gt .col-2-sm &lt/div&gt
+        &ltdiv class="<span class="c-brand">col-1-sm</span>"&gt .col-1-sm &lt/div&gt
+
+        &ltdiv class="<span class="c-brand">col-auto-md</span>"&gt .col-auto-md &lt/div&gt
+        &ltdiv class="<span class="c-brand">col-md</span>"&gt .col-md &lt/div&gt
+        &ltdiv class="<span class="c-brand">col-12-md</span>"&gt .col-12-md &lt/div&gt
+        &ltdiv class="<span class="c-brand">col-11-md</span>"&gt .col-11-md &lt/div&gt
+        &ltdiv class="<span class="c-brand">col-10-md</span>"&gt .col-10-md &lt/div&gt
+        &ltdiv class="<span class="c-brand">col-9-md</span>"&gt .col-9-md &lt/div&gt
+        &ltdiv class="<span class="c-brand">col-8-md</span>"&gt .col-8-md &lt/div&gt
+        &ltdiv class="<span class="c-brand">col-7-md</span>"&gt .col-7-md &lt/div&gt
+        &ltdiv class="<span class="c-brand">col-6-md</span>"&gt .col-6-md &lt/div&gt
+        &ltdiv class="<span class="c-brand">col-5-md</span>"&gt .col-5-md &lt/div&gt
+        &ltdiv class="<span class="c-brand">col-4-md</span>"&gt .col-4-md &lt/div&gt
+        &ltdiv class="<span class="c-brand">col-3-md</span>"&gt .col-3-md &lt/div&gt
+        &ltdiv class="<span class="c-brand">col-2-md</span>"&gt .col-2-md &lt/div&gt
+        &ltdiv class="<span class="c-brand">col-1-md</span>"&gt .col-1-md &lt/div&gt
+
+        &ltdiv class="<span class="c-brand">col-auto-lg</span>"&gt .col-auto-lg &lt/div&gt
+        &ltdiv class="<span class="c-brand">col-lg</span>"&gt .col-lg &lt/div&gt
+        &ltdiv class="<span class="c-brand">col-12-lg</span>"&gt .col-12-lg &lt/div&gt
+        &ltdiv class="<span class="c-brand">col-11-lg</span>"&gt .col-11-lg &lt/div&gt
+        &ltdiv class="<span class="c-brand">col-10-lg</span>"&gt .col-10-lg &lt/div&gt
+        &ltdiv class="<span class="c-brand">col-9-lg</span>"&gt .col-9-lg &lt/div&gt
+        &ltdiv class="<span class="c-brand">col-8-lg</span>"&gt .col-8-lg &lt/div&gt
+        &ltdiv class="<span class="c-brand">col-7-lg</span>"&gt .col-7-lg &lt/div&gt
+        &ltdiv class="<span class="c-brand">col-6-lg</span>"&gt .col-6-lg &lt/div&gt
+        &ltdiv class="<span class="c-brand">col-5-lg</span>"&gt .col-5-lg &lt/div&gt
+        &ltdiv class="<span class="c-brand">col-4-lg</span>"&gt .col-4-lg &lt/div&gt
+        &ltdiv class="<span class="c-brand">col-3-lg</span>"&gt .col-3-lg &lt/div&gt
+        &ltdiv class="<span class="c-brand">col-2-lg</span>"&gt .col-2-lg &lt/div&gt
+        &ltdiv class="<span class="c-brand">col-1-lg</span>"&gt .col-1-lg &lt/div&gt
+
+        &ltdiv class="<span class="c-brand">col-auto-xl</span>"&gt .col-auto-xl &lt/div&gt
+        &ltdiv class="<span class="c-brand">col-xl</span>"&gt .col-xl &lt/div&gt
+        &ltdiv class="<span class="c-brand">col-12-xl</span>"&gt .col-12-xl &lt/div&gt
+        &ltdiv class="<span class="c-brand">col-11-xl</span>"&gt .col-11-xl &lt/div&gt
+        &ltdiv class="<span class="c-brand">col-10-xl</span>"&gt .col-10-xl &lt/div&gt
+        &ltdiv class="<span class="c-brand">col-9-xl</span>"&gt .col-9-xl &lt/div&gt
+        &ltdiv class="<span class="c-brand">col-8-xl</span>"&gt .col-8-xl &lt/div&gt
+        &ltdiv class="<span class="c-brand">col-7-xl</span>"&gt .col-7-xl &lt/div&gt
+        &ltdiv class="<span class="c-brand">col-6-xl</span>"&gt .col-6-xl &lt/div&gt
+        &ltdiv class="<span class="c-brand">col-5-xl</span>"&gt .col-5-xl &lt/div&gt
+        &ltdiv class="<span class="c-brand">col-4-xl</span>"&gt .col-4-xl &lt/div&gt
+        &ltdiv class="<span class="c-brand">col-3-xl</span>"&gt .col-3-xl &lt/div&gt
+        &ltdiv class="<span class="c-brand">col-2-xl</span>"&gt .col-2-xl &lt/div&gt
+        &ltdiv class="<span class="c-brand">col-1-xl</span>"&gt .col-1-xl &lt/div&gt
+
+        &ltdiv class="<span class="c-brand">col-auto-xxl</span>"&gt .col-auto-xxl &lt/div&gt
+        &ltdiv class="<span class="c-brand">col-xxl</span>"&gt .col-xxl &lt/div&gt
+        &ltdiv class="<span class="c-brand">col-12-xxl</span>"&gt .col-12-xxl &lt/div&gt
+        &ltdiv class="<span class="c-brand">col-11-xxl</span>"&gt .col-11-xxl &lt/div&gt
+        &ltdiv class="<span class="c-brand">col-10-xxl</span>"&gt .col-10-xxl &lt/div&gt
+        &ltdiv class="<span class="c-brand">col-9-xxl</span>"&gt .col-9-xxl &lt/div&gt
+        &ltdiv class="<span class="c-brand">col-8-xxl</span>"&gt .col-8-xxl &lt/div&gt
+        &ltdiv class="<span class="c-brand">col-7-xxl</span>"&gt .col-7-xxl &lt/div&gt
+        &ltdiv class="<span class="c-brand">col-6-xxl</span>"&gt .col-6-xxl &lt/div&gt
+        &ltdiv class="<span class="c-brand">col-5-xxl</span>"&gt .col-5-xxl &lt/div&gt
+        &ltdiv class="<span class="c-brand">col-4-xxl</span>"&gt .col-4-xxl &lt/div&gt
+        &ltdiv class="<span class="c-brand">col-3-xxl</span>"&gt .col-3-xxl &lt/div&gt
+        &ltdiv class="<span class="c-brand">col-2-xxl</span>"&gt .col-2-xxl &lt/div&gt
+        &ltdiv class="<span class="c-brand">col-1-xxl</span>"&gt .col-1-xxl &lt/div&gt
+      </pre>
+    </div>
+  </div>
+</div>
