@@ -1,0 +1,38 @@
+<style>
+    .ff-code{
+        font-family: 'Montserrat', sans-serif;
+    }
+    li{
+        list-style: disc;
+    }
+</style>
+<div>
+    <h1 class="h1 fw-thin">Position</h1>
+    <section class="mb-4">
+        <p class="p pb-6">If you need to place block relative to parent element, 
+            <br>assign it absolute position and relative position for parent element</p>
+        <h3 class="h3 fw-thin">Config:</h3>
+        <p class="p">-contains map variable with position values.</p>
+        <div>
+            <p class="ff-code">$padding: ( "abs": absolute, "rel": relative );</p>
+        </div>
+    </section>
+    <section>
+        <h3 class="h3 fw-thin">Helpers:</h3>
+        <p class="p pb-4">There are 2 types of helpers.</p>
+        <div class="ml-4">
+            <ul>
+                <li>General.
+                    <p class="ml-4">Naming format <span class="ff-code">.pos-{type}</span>
+                        <br>type is a key in position config, short name of position value.
+                    </p>
+                </li>
+                <li>Based on screen size.
+                    <p class="ml-4">Naming format <span class="ff-code">.pos-{type}-{point}</span>.
+                        <br>point is a short name for media size (xs, sm, md, lg, xl, xxl)
+                    </p>
+                </li>
+            </ul>
+        </div>
+    </section>
+</div>
