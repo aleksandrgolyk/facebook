@@ -16,60 +16,56 @@
     </style>
 </head>
 <body>
-<div class="container-fluid pt-4">
-    <div class="row">
-        <div class="col-2 offset-1">
-            <nav class="menu title-2-regular">
-                <a class="menu-item" data-path="main.html">
-                    <img class="br-circle mr-3" style="height: 36px; width: 36px"
-                         src="https://interactive-examples.mdn.mozilla.net/media/cc0-images/grapefruit-slice-332-332.jpg" alt="">
-                    <p>Home</p>
-                </a>
-                <a class="menu-item" data-toggle="collapse" data-target="#offsets">Offsets</a>
-                <div class="collapse menu-item-collapse" id="offsets">
-                    <a class="menu-item" data-path="offsets/padding.html">padding</a>
-                    <a class="menu-item" data-path="offsets/margin.html">margin</a>
+    <div class="container-fluid pt-4">
+        <div class="row">
+            <div class="col-2 offset-1">
+                <nav class="menu title-2-regular">
+                    <a class="menu-item tooltip-trigger" data-path="main.html">
+                        <img class="br-circle mr-3" style="height: 36px; width: 36px"
+                             src="https://interactive-examples.mdn.mozilla.net/media/cc0-images/grapefruit-slice-332-332.jpg" alt="">
+                        <p>Home</p>
+                        <div class="tooltip"><div>Home page</div></div>
+                    </a>
+                    <a class="menu-item" data-toggle="collapse" data-target="#offsets">Offsets</a>
+                    <div class="collapse menu-item-collapse" id="offsets">
+                        <a class="menu-item pl-6" data-path="offsets/padding.html">padding</a>
+                        <a class="menu-item pl-6" data-path="offsets/margin.html">margin</a>
+                    </div>
+                    <a class="menu-item" data-path="typography/typography.html">Typography</a>
+                    <a class="menu-item" data-path="borders/borders.html">Border</a>
+                    <a class="menu-item" data-path="grid/grid.html">Grid</a>
+                    <a class="menu-item" data-path="theme/colors.html">Colors</a>
+                    <a class="menu-item" data-path="z-index/z-index.html">z-index</a>
+                    <a class="menu-item" data-path="visibility/visibility.html">Visibility</a>
+                    <a class="menu-item" data-toggle="collapse" data-target="#utilities">Utilities</a>
+                    <div class="collapse menu-item-collapse" id="utilities">
+                        <a class="menu-item" data-path="utilities/flex.html">flex</a>
+                        <a class="menu-item" data-path="utilities/position.html">position</a>
+                    </div>
+                </nav>
+            </div>
+            <div class="col" id="main">
+                <div class="d-flex flex-dir-column align-items-center">
+                    <h1 class="h2 fw-thin">Our awesome Facebook</h1>
+                    <h2 class="h2 fw-thin">Documentation</h2>
                 </div>
-                <a class="menu-item" data-toggle="collapse" data-target="#typography">Typography</a>
-                <div class="collapse menu-item-collapse" id="typography">
-                    <a class="menu-item" data-path="">font-color</a>
-                    <a class="menu-item" data-path="">font-sizes</a>
-                </div>
-                <a class="menu-item" data-path="borders/borders.html">Border</a>
-                <a class="menu-item" data-path="grid/grid.html">Grid</a>
-              <a class="menu-item" data-path="theme/colors.html">Colors</a>
-              <a class="menu-item" data-path="z-index/z-index.html">z-index</a>
-              <a class="menu-item" data-path="visibility/visibility.html">Visibility</a>
-              <a class="menu-item" data-toggle="collapse" data-target="#utilities">Utilities</a>
-                <div class="collapse menu-item-collapse" id="utilities">
-                    <a class="menu-item" data-path="utilities/flex.html">flex</a>
-                    <a class="menu-item" data-path="utilities/position.html">position</a>
-                </div>
-            </nav>
-        </div>
-        <div class="col" id="main">
-            <div class="d-flex flex-dir-column align-items-center">
-                <h1 class="h2 fw-thin">Our awesome Facebook</h1>
-                <h2 class="h2 fw-thin">Documentation</h2>
             </div>
         </div>
+        <div class="d-none">
+            <a href="main.html"></a>
+            <a href="offsets/padding.html"></a>
+            <a href="offsets/margin.html"></a>
+            <a href="theme/colors.html"></a>
+            <a href="z-index/z-index.html"></a>
+            <a href="visibility/visibility.html"></a>
+            <a href="borders/borders.html"></a>
+            <a href="grid/grid.html"></a>
+            <a href="utilities/flex.html"></a>
+            <a href="utilities/position.html"></a>
+            <a href="typography/typography.html"></a>
+            <a href="err.html"></a>
+        </div>
+        <script src="../js/index.js"></script>
     </div>
-    <div class="d-none">
-        <a href="main.html"></a>
-        <a href="offsets/padding.html"></a>
-        <a href="offsets/margin.html"></a>
-        <a href="theme/colors.html"></a>
-        <a href="z-index/z-index.html"></a>
-        <a href="visibility/visibility.html"></a>
-        <a href="borders/borders.html"></a>
-        <a href="grid/grid.html"></a>
-        <a href="utilities/flex.html"></a>
-        <a href="utilities/position.html"></a>
-        <a href="err.html"></a>
-    </div>
-    <script src="../js/index.js"></script>
-
-</div>
-
 </body>
 </html>
