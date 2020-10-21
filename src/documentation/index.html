@@ -2,27 +2,23 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Documentation</title>
-    <link rel="stylesheet" href="../styles/index.scss">
-    <style>
-        .menu{
+    <link rel="stylesheet" href="/styles.76d4e0c1.css">
+    <style>.menu{
             position: sticky;
             left: 0;
             top: 1rem;
-        }
-    </style>
+        }</style>
 </head>
 <body>
     <div class="container-fluid pt-4">
         <div class="row">
-            <div class="col-2 offset-1">
+            <div class="col-2">
                 <nav class="menu title-2-regular">
                     <a class="menu-item tooltip-trigger" data-path="main.html">
-                        <img class="br-circle mr-3" style="height: 36px; width: 36px"
-                             src="https://interactive-examples.mdn.mozilla.net/media/cc0-images/grapefruit-slice-332-332.jpg" alt="">
+                        <img class="br-circle mr-3" style="height: 36px; width: 36px" src="https://interactive-examples.mdn.mozilla.net/media/cc0-images/grapefruit-slice-332-332.jpg" alt="">
                         <p>Home</p>
                         <div class="tooltip"><div>Home page</div></div>
                     </a>
@@ -33,7 +29,11 @@
                     </div>
                     <a class="menu-item" data-path="typography/typography.html">Typography</a>
                     <a class="menu-item" data-path="borders/borders.html">Border</a>
-                    <a class="menu-item" data-path="grid/grid.html">Grid</a>
+                    <a class="menu-item" data-toggle="collapse" data-target="#grid">Grid</a>
+                    <div class="collapse menu-item-collapse" id="grid">
+                      <a class="menu-item" data-path="grid/grid.html">about</a>
+                      <a class="menu-item" data-path="grid/responsiveness.html">responsiveness</a>
+                    </div>
                     <a class="menu-item" data-path="theme/colors.html">Colors</a>
                     <a class="menu-item" data-path="z-index/z-index.html">z-index</a>
                     <a class="menu-item" data-path="visibility/visibility.html">Visibility</a>
@@ -52,20 +52,23 @@
             </div>
         </div>
         <div class="d-none">
-            <a href="main.html"></a>
-            <a href="offsets/padding.html"></a>
-            <a href="offsets/margin.html"></a>
-            <a href="theme/colors.html"></a>
-            <a href="z-index/z-index.html"></a>
-            <a href="visibility/visibility.html"></a>
-            <a href="borders/borders.html"></a>
-            <a href="grid/grid.html"></a>
-            <a href="utilities/flex.html"></a>
+            <a href="/main.html"></a>
+            <a href="/offsets\padding.html"></a>
+            <a href="/offsets\margin.html"></a>
+            <a href="/theme\colors.html"></a>
+            <a href="/z-index\z-index.html"></a>
+            <a href="/visibility\visibility.html"></a>
+            <a href="/borders\borders.html"></a>
+            <a href="/grid\grid.html"></a>
+            <a href="/grid\responsiveness.html"></a>
+            <a href="/utilities\flex.html"></a>
             <a href="utilities/position.html"></a>
-            <a href="typography/typography.html"></a>
-            <a href="err.html"></a>
+            <a href="/typography\typography.html"></a>
+            <a href="/err.html"></a>
         </div>
-        <script src="../js/index.js"></script>
+
+        <script src="/js.fcffc47e.js"></script>
+
     </div>
 </body>
 </html>
